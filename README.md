@@ -1,6 +1,6 @@
 CrossCompute Examples
 =====================
-Here are example computational apps made with the CrossCompute framework. ::
+Here are example computational apps made with the CrossCompute framework.
 
     ENV=~/.virtualenvs/crosscompute
     virtualenv $ENV
