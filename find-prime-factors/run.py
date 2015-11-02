@@ -7,7 +7,7 @@ integer = int(sys.argv[1])
 minimum_factor = 2
 factors = []
 while integer > 1:
-    for i in xrange(minimum_factor, int(sqrt(integer + 0.05)) + 1):
+    for i in range(minimum_factor, int(sqrt(integer + 0.05)) + 1):
         if integer % i == 0:
             integer /= i
             minimum_factor = i
