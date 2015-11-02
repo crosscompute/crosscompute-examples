@@ -44,7 +44,7 @@ if __name__ == '__main__':
     argument_parser.add_argument(
         '--target_timezone', metavar='TIMEZONE', required=True)
     argument_parser.add_argument(
-        '--target_strftime', metavar='STRFTIME')
+        '--target_strftime', metavar='STRFTIME', default='%H:%M')
     args = argument_parser.parse_args()
     summary = run(
         args.target_folder or make_enumerated_folder_for(__file__),
