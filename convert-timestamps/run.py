@@ -16,8 +16,8 @@ def run(
     source_tz = timezone(source_timezone)
     target_tz = timezone(target_timezone)
     convert_timestamp = lambda x: source_tz.localize(x).astimezone(target_tz)
-    timestamp_column_index = timestamp_table.columns.index(timestamp_column)
-
+    timestamp_column_index = list(timestamp_table.columns).index(
+        timestamp_column)
     csv_writer = csv.writer(open(target_path, 'wt'))
     csv_writer.writerow(duplicate_selected_columns(
         timestamp_table.columns, [timestamp_column]))
