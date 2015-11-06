@@ -3,7 +3,7 @@ from argparse import ArgumentParser
 from crosscompute_table import TableType
 from dateutil.parser import parse as parse_datetime
 from invisibleroads_macros.disk import make_enumerated_folder_for, make_folder
-from invisibleroads_macros.log import format_nested_dictionary, format_path
+from invisibleroads_macros.log import format_summary
 from invisibleroads_macros.table import duplicate_selected_columns
 from os.path import join
 from pytz import timezone
@@ -53,6 +53,4 @@ if __name__ == '__main__':
         args.source_timezone,
         args.target_timezone,
         args.target_strftime)
-    print(format_nested_dictionary(summary, [
-        ('_path', format_path),
-    ]))
+    print(format_summary(summary))

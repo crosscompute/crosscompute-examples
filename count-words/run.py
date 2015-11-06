@@ -3,7 +3,7 @@ import re
 from argparse import ArgumentParser
 from collections import Counter
 from invisibleroads_macros.disk import make_enumerated_folder_for, make_folder
-from invisibleroads_macros.log import format_nested_dictionary, format_path
+from invisibleroads_macros.log import format_summary
 from os.path import join
 
 
@@ -32,6 +32,4 @@ if __name__ == '__main__':
     summary = run(
         args.target_folder or make_enumerated_folder_for(__file__),
         args.document_text_path)
-    print(format_nested_dictionary(summary, [
-        ('_path', format_path),
-    ]))
+    print(format_summary(summary))
