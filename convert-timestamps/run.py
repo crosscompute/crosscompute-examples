@@ -16,11 +16,11 @@ def run(
     source_tz = timezone(source_timezone)
     target_tz = timezone(target_timezone)
     convert_timestamp = lambda x: source_tz.localize(x).astimezone(target_tz)
-    timestamp_column_index = list(timestamp_table.columns).index(
-        timestamp_column)
-    csv_writer = csv.writer(open(target_path, 'wt'))
+    columns = list(timestamp_table.columns)
+    timestamp_column_index = columns.index(timestamp_column)
+    csv_writer = csv.writer(open(target_path, 'w'))
     csv_writer.writerow(duplicate_selected_columns(
-        timestamp_table.columns, [timestamp_column]))
+        columns, [timestamp_column]))
     for row in timestamp_table.values:
         row = list(row)
         old_timestamp = parse_datetime(row[timestamp_column_index])
