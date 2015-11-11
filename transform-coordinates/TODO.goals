@@ -1,0 +1,5 @@
+Convert table to geotable
+Add test for inexistent column_x or column_y
+Add test for untransformable coordinates
+Add test for non-table
+Add test for non-proj
