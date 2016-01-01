@@ -48,7 +48,7 @@ if __name__ == '__main__':
     args = argument_parser.parse_args()
     summary = run(
         args.target_folder or make_enumerated_folder_for(__file__),
-        TableType().load(args.timestamp_table_path),
+        TableType.load(args.timestamp_table_path),
         args.timestamp_column,
         args.source_timezone,
         args.target_timezone,

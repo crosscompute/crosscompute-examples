@@ -98,7 +98,7 @@ if __name__ == '__main__':
         '--target_proj4', metavar='PROJ4', required=True)
     args = argument_parser.parse_args()
     try:
-        coordinate_table = TableType().load(args.coordinate_table_path)
+        coordinate_table = TableType.load(args.coordinate_table_path)
     except TypeError:
         exit(COORDINATE_TABLE_UNSUPPORTED_FILE_FORMAT)
     summary = run(
