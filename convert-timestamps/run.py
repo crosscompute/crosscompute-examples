@@ -4,7 +4,7 @@ from crosscompute_table import TableType
 from dateutil.parser import parse as parse_datetime
 from invisibleroads_macros.disk import make_enumerated_folder_for, make_folder
 from invisibleroads_macros.log import format_summary
-from invisibleroads_macros.table import duplicate_selected_columns
+from invisibleroads_macros.table import duplicate_selected_column_names
 from os.path import join
 from pytz import timezone
 
@@ -19,7 +19,7 @@ def run(
     columns = list(timestamp_table.columns)
     timestamp_column_index = columns.index(timestamp_column)
     csv_writer = csv.writer(open(target_path, 'w'))
-    csv_writer.writerow(duplicate_selected_columns(
+    csv_writer.writerow(duplicate_selected_column_names(
         columns, [timestamp_column]))
     for row in timestamp_table.values:
         row = list(row)
