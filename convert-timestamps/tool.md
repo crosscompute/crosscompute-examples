@@ -8,7 +8,7 @@ Thanks to [Stuart Bishop](https://launchpad.net/~stub) for [pytz](https://pypi.p
 
 First, provide the table and column of timestamps.
 
-{timestamp_table_path}
+{timestamp_table}
 {timestamp_column}
 
 Then, indicate the source and target timezones by location.

@@ -24,7 +24,11 @@ def run(
         return source_tz.localize(timestamp).astimezone(target_tz)
 
     columns = list(timestamp_table.columns)
-    timestamp_column_index = columns.index(timestamp_column)
+    try:
+        timestamp_column_index = columns.index(timestamp_column)
+    except ValueError:
+        exit('%s.error = column not found (%s)' % (
+            'timestamp_column', timestamp_column))
     csv_writer = csv.writer(open(target_path, 'w'))
     csv_writer.writerow(duplicate_selected_column_names(
         [timestamp_column], columns))
