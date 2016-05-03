@@ -6,15 +6,29 @@ Thanks to [Gustavo Niemeyer](https://github.com/niemeyer), [Tomi Pieviläinen](h
 
 Thanks to [Stuart Bishop](https://launchpad.net/~stub) for [pytz](https://pypi.python.org/pypi/pytz).
 
-First, provide the table and column of timestamps.
+## Timestamp Table
+
+Provide a table of timestamps.
 
 {timestamp_table}
+
+## Timestamp Column
+
+Indicate which column contains timestamps.
+
 {timestamp_column}
 
-Then, indicate the source and target timezones by location.
+## Timezones
 
+Indicate the source and target timezones by location.
+
+### Source Address
 {source_address}
+
+### Target Address
 {target_address}
+
+## Timestamp Format
 
 Finally, specify the timestamp format in [strftime syntax](https://docs.python.org/2/library/time.html#time.strftime).
 
