@@ -17,5 +17,7 @@ while integer > 1:
         if integer > 1:
             factors.append(integer)
             break
+
+
 print('factors = %s' % factors)
 print('unique_factor_count = %s' % len(set(factors)))

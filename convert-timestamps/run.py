@@ -44,10 +44,16 @@ def get_timezone_from_address(address):
     geocode = geopy.GoogleV3().geocode
     location = geocode(address)
     timezone_url = 'https://maps.googleapis.com/maps/api/timezone/json'
+    try:
+        google_key = environ['GOOGLE_KEY']
+    except KeyError:
+        exit(
+            'google_key.missing = Please set GOOGLE_KEY '
+            'as an environment variable')
     response = requests.get(timezone_url, {
         'location': '%s,%s' % (location.latitude, location.longitude),
         'timestamp': time.time(),
-        'key': environ['GOOGLE_KEY'],
+        'key': google_key,
     })
     return timezone(response.json()['timeZoneId'])
 
