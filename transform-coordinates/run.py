@@ -1,15 +1,13 @@
 import csv
 from argparse import ArgumentParser
-from crosscompute_table import TableType
 from geometryIO import (
     GeometryError, get_spatialReference, get_transformPoint, proj4LL)
 from invisibleroads_macros.disk import make_enumerated_folder_for, make_folder
 from invisibleroads_macros.log import format_summary, print_error
 from os.path import join
+from pandas import read_csv
 
 
-COORDINATE_TABLE_UNSUPPORTED_FILE_FORMAT = """\
-coordinate_table.error = unsupported file format"""
 COORDINATE_COLUMN_NOT_FOUND = """\
 coordinate_column_%s.error = "%s" not found"""
 COORDINATES_NOT_TRANSFORMED = """
@@ -97,10 +95,7 @@ if __name__ == '__main__':
     argument_parser.add_argument(
         '--target_proj4', metavar='PROJ4', required=True)
     args = argument_parser.parse_args()
-    try:
-        coordinate_table = TableType.load(args.coordinate_table_path)
-    except TypeError:
-        exit(COORDINATE_TABLE_UNSUPPORTED_FILE_FORMAT)
+    coordinate_table = read_csv(args.coordinate_table_path)
     summary = run(
         args.target_folder or make_enumerated_folder_for(__file__),
         coordinate_table,
