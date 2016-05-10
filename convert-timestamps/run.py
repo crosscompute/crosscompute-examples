@@ -3,13 +3,13 @@ import geopy
 import requests
 import time
 from argparse import ArgumentParser
-from crosscompute_table import TableType
 from dateutil.parser import parse as parse_datetime
 from invisibleroads_macros.disk import make_enumerated_folder_for, make_folder
 from invisibleroads_macros.log import format_summary
 from invisibleroads_macros.table import duplicate_selected_column_names
 from os import environ
 from os.path import join
+from pandas import read_csv
 from pytz import timezone
 
 
@@ -75,7 +75,7 @@ if __name__ == '__main__':
     args = argument_parser.parse_args()
     summary = run(
         args.target_folder or make_enumerated_folder_for(__file__),
-        TableType.load(args.timestamp_table_path),
+        read_csv(args.timestamp_table_path),
         args.timestamp_column,
         args.source_address,
         args.target_address,
