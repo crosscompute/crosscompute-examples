@@ -3,7 +3,15 @@ from math import ceil
 from sys import argv
 
 
-a_timestamp, b_timestamp = map(parse_timestamp, argv[1:])
+a_string, b_string = argv[1:]
+try:
+    a_timestamp = parse_timestamp(a_string)
+except ValueError:
+    exit('a_timestamp.error = could not parse timestamp (%s)' % a_string)
+try:
+    b_timestamp = parse_timestamp(b_string)
+except ValueError:
+    exit('b_timestamp.error = could not parse timestamp (%s)' % b_string)
 second_count = (b_timestamp - a_timestamp).total_seconds()
 minute_count = second_count / 60.
 hour_count = minute_count / 60.
