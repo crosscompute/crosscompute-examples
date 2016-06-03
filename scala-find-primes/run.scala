@@ -7,9 +7,21 @@ object FindPrimeNumbers{
 
   def main (args: Array[String]) {
     if(args.length == 0) println(usage)
-    val integerArg = args.toList.head.toInt
-    println(s"Factors = ${factors(integerArg)} ")
-    println(s"unique_factor_count = ${factors(integerArg).length} ")
+
+    try {
+
+      val integerArg  = args.head.toInt
+      val primeFactorsList = factors(integerArg)
+      println(s"prime_factors = ${primeFactorsList}")
+      println(s"unique_factor_count = ${primeFactorsList.length} ")
+
+    }
+    catch {
+      case e: NumberFormatException => println(s"Your argument ${e} is not an Integer")
+      case e: Throwable => println(e.getMessage)
+
+    }
+
   }
 
   // borrowed from http://louisbotterill.blogspot.com/2009/03/prime-factorization-comparison-between.html
