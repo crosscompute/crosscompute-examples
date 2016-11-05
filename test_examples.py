@@ -23,6 +23,6 @@ def test_count_words(tmpdir):
     t = read_csv(r['standard_outputs']['word_count_table_path'])
     assert t['count'].sum() == 113
     args = str(tmpdir), 'count-words', {
-        'document_text-txt': 'curae canitiem inducunt'}
+        'document_text_txt': 'curae canitiem inducunt'}
     s = serve(*args)[0]
     s.find(id='word_count-result').text.strip() == '3'

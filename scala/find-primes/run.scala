@@ -1,4 +1,4 @@
-object FindPrimeNumbers{
+object FindPrimeNumbers {
 
   val usage =
     """
@@ -39,4 +39,3 @@ object FindPrimeNumbers{
     }
   }
 }
-
