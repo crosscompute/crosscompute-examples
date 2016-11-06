@@ -10,7 +10,7 @@ object FindPrimeNumbers {
 
     try {
 
-      val integerArg  = args.head.toInt
+      val integerArg = args.head.toInt
       val primeFactorsList = factors(integerArg)
       println(s"prime_factors = ${primeFactorsList}")
       println(s"unique_factor_count = ${primeFactorsList.length} ")

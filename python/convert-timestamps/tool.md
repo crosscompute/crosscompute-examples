@@ -22,11 +22,11 @@ Indicate which column contains timestamps.
 
 Indicate the source and target timezones by location.
 
-### Source Address
-{source_address}
+### Source Timezone
+{source_timezone}
 
-### Target Address
-{target_address}
+### Target Timezone
+{target_timezone}
 
 ## Timestamp Format
 

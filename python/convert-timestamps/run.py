@@ -1,13 +1,9 @@
 import csv
-import geopy
-import requests
-import time
 from argparse import ArgumentParser
 from dateutil.parser import parse as parse_datetime
 from invisibleroads_macros.disk import make_enumerated_folder_for, make_folder
 from invisibleroads_macros.log import format_summary
 from invisibleroads_macros.table import duplicate_selected_column_names
-from os import environ
 from os.path import join
 from pandas import read_csv
 from pytz import timezone
@@ -15,10 +11,10 @@ from pytz import timezone
 
 def run(
         target_folder, timestamp_table, timestamp_column,
-        source_address, target_address, target_strftime):
+        source_timezone, target_timezone, target_strftime):
     target_path = join(target_folder, 'converted_timestamp_table.csv')
-    target_tz = get_timezone_from_address(target_address)
-    source_tz = get_timezone_from_address(source_address)
+    target_tz = timezone(target_timezone)
+    source_tz = timezone(source_timezone)
 
     def convert_timestamp(timestamp):
         return source_tz.localize(timestamp).astimezone(target_tz)
@@ -40,24 +36,6 @@ def run(
     return {'converted_timestamp_table_path': target_path}
 
 
-def get_timezone_from_address(address):
-    geocode = geopy.GoogleV3().geocode
-    location = geocode(address)
-    timezone_url = 'https://maps.googleapis.com/maps/api/timezone/json'
-    try:
-        google_key = environ['GOOGLE_KEY']
-    except KeyError:
-        exit(
-            'google_key.missing = Please set GOOGLE_KEY '
-            'as an environment variable')
-    response = requests.get(timezone_url, {
-        'location': '%s,%s' % (location.latitude, location.longitude),
-        'timestamp': time.time(),
-        'key': google_key,
-    })
-    return timezone(response.json()['timeZoneId'])
-
-
 if __name__ == '__main__':
     argument_parser = ArgumentParser()
     argument_parser.add_argument(
@@ -67,9 +45,9 @@ if __name__ == '__main__':
     argument_parser.add_argument(
         '--timestamp_column', metavar='COLUMNS', required=True)
     argument_parser.add_argument(
-        '--source_address', metavar='ADDRESS', required=True)
+        '--source_timezone', metavar='TIMEZONE', required=True)
     argument_parser.add_argument(
-        '--target_address', metavar='ADDRESS', required=True)
+        '--target_timezone', metavar='TIMEZONE', required=True)
     argument_parser.add_argument(
         '--target_strftime', metavar='STRFTIME', default='%H:%M')
     args = argument_parser.parse_args()
@@ -77,7 +55,7 @@ if __name__ == '__main__':
         args.target_folder or make_enumerated_folder_for(__file__),
         read_csv(args.timestamp_table_path),
         args.timestamp_column,
-        args.source_address,
-        args.target_address,
+        args.source_timezone,
+        args.target_timezone,
         args.target_strftime)
     print(format_summary(summary))
