@@ -1,10 +1,22 @@
 from argparse import ArgumentParser
 from invisibleroads_macros.disk import make_enumerated_folder_for
 from invisibleroads_macros.geometry import flip_xy, transform_geometries
+from invisibleroads_macros.log import LogDictionary
 from os.path import basename, join
 from pandas import read_csv
 from shapely import wkt
 from shapely.errors import WKTReadingError
+
+
+def run(target_folder, wkt_table_path):
+    d = LogDictionary()
+    t = read_csv(wkt_table_path)
+    for wkt_column in get_wkt_columns(t):
+        t[wkt_column] = flip_geometry_wkts(t[wkt_column])
+    target_path = join(target_folder, basename(wkt_table_path))
+    t.to_csv(target_path, index=False)
+    d['wkt_table_path'] = target_path
+    return d
 
 
 def get_wkt_columns(table):
@@ -16,7 +28,7 @@ def get_wkt_columns(table):
     for column in table.columns:
         try:
             wkt.loads(row[column])
-        except WKTReadingError:
+        except (AttributeError, UnicodeEncodeError, WKTReadingError):
             pass
         else:
             wkt_columns.append(column)
@@ -34,13 +46,6 @@ if __name__ == '__main__':
     p.add_argument('--target_folder', metavar='FOLDER')
     p.add_argument('wkt_table_path')
     args = p.parse_args()
-
-    t = read_csv(args.wkt_table_path)
-    for wkt_column in get_wkt_columns(t):
-        t[wkt_column] = flip_geometry_wkts(t[wkt_column])
-
-    target_path = join(
+    run(
         args.target_folder or make_enumerated_folder_for(__file__),
-        basename(args.wkt_table_path))
-    t.to_csv(target_path, index=False)
-    print('wkt_table_path = %s' % target_path)
+        args.wkt_table_path)
