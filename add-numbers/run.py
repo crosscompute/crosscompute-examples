@@ -1,15 +1,13 @@
-from os import makedirs
 from os.path import join
 from pandas import read_csv
 from sys import argv
 
-source_folder = argv[1]
-target_folder = argv[2]
-makedirs(target_folder)
+input_folder = argv[1]
+output_folder = argv[2]
 
-source_path = join(source_folder, 'numbers.csv')
-target_path = join(target_folder, 'sums.csv')
+input_path = join(input_folder, 'numbers.csv')
+output_path = join(output_folder, 'sums.csv')
 
-target_table = read_csv(source_path)
-target_table['c'] = target_table['a'] + target_table['b']
-target_table.to_csv(target_path, index=False)
+output_table = read_csv(input_path)
+output_table['c'] = output_table['a'] + output_table['b']
+output_table.to_csv(output_path, index=False)
