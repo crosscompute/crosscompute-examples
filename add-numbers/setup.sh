@@ -1,2 +1,2 @@
 #!/bin/bash
-pip install pandas==0.25.1
+pip install pandas==0.25.3
