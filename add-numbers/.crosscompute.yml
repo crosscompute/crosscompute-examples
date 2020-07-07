@@ -1,5 +1,6 @@
 ---
 protocol: 0.8.1
+slug: add-numbers
 name: Add Numbers
 version: 0.1.0
 input:
@@ -29,14 +30,14 @@ output:
     summary:
       name: Summary
       path: templates/output/summary.md
-script:
-  uri: git@github.com:crosscompute/crosscompute-examples
-  folder: add-numbers
-  command: bash run.sh
 environment: 
   image: docker.io/library/python:slim-buster
   processor: cpu
   memory: tiny
+script:
+  uri: git@github.com:crosscompute/crosscompute-examples
+  folder: add-numbers
+  command: bash run.sh
 example:
   - examples/integers
   - examples/floats
