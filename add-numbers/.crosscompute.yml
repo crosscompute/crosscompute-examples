@@ -1,43 +1,45 @@
 ---
-protocol: 0.8.1
-slug: add-numbers
+protocol: 0.8.2
 name: Add Numbers
-version: 0.1.0
+version:
+  name: 0.1.0
 input:
-  variable:
-    a:
+  variables:
+    - id: a
       name: A
       view: number
       path: numbers.json
       key: a
-    b:
+    - id: b
       name: B
       view: number
       path: numbers.json
       key: b
-  template:
-    basic:
+  templates:
+    - id: basic
       name: Basic
       path: templates/input/basic.md
 output:
-  variable:
-    c:
+  variables:
+    - id: c
       name: C
       view: number
       path: sum.json
       key: c
-  template:
-    summary:
+  templates:
+    - id: summary
       name: Summary
       path: templates/output/summary.md
-environment: 
-  image: docker.io/library/python:slim-buster
-  processor: cpu
-  memory: tiny
+tests:
+  - name: Add Integers
+    path: tests/integers
+  - name: Add Floats
+    path: tests/floats
 script:
   uri: git@github.com:crosscompute/crosscompute-examples
   folder: add-numbers
   command: bash run.sh
-example:
-  - examples/integers
-  - examples/floats
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny
