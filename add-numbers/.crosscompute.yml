@@ -16,8 +16,7 @@ input:
       path: numbers.json
       key: b
   templates:
-    - id: basic
-      name: Basic
+    - name: Basic
       path: templates/input/basic.md
 output:
   variables:
@@ -27,8 +26,7 @@ output:
       path: sum.json
       key: c
   templates:
-    - id: summary
-      name: Summary
+    - name: Summary
       path: templates/output/summary.md
 tests:
   - name: Add Integers
