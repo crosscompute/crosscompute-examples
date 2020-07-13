@@ -9,14 +9,13 @@ input:
       name: A
       view: number
       path: numbers.json
-      key: a
     - id: b
       name: B
       view: number
       path: numbers.json
-      key: b
   templates:
-    - name: Basic
+    - id: basic
+      name: Basic
       path: templates/input/basic.md
 output:
   variables:
@@ -24,14 +23,16 @@ output:
       name: C
       view: number
       path: sum.json
-      key: c
   templates:
-    - name: Summary
+    - id: summary
+      name: Summary
       path: templates/output/summary.md
 tests:
-  - name: Add Integers
+  - id: integers
+    name: Add Integers
     path: tests/integers
-  - name: Add Floats
+  - id: floats
+    name: Add Floats
     path: tests/floats
 script:
   uri: git@github.com:crosscompute/crosscompute-examples
