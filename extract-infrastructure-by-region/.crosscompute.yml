@@ -1,0 +1,33 @@
+---
+protocol: 0.8.3
+name: Extract Infrastructure by Region
+version:
+  name: 0.1.0
+input:
+  variables:
+    - id: county-name 
+      name: County Name
+      view: string
+      path: input.json
+  templates:
+    - id: basic
+      name: Basic
+      path: templates/input/basic.md
+output:
+  variables:
+    - id: table
+      name: table
+      view: table 
+      path: output-table.json
+  templates:
+    - id: table
+      name: table
+      path: templates/output/table.md
+script:
+  uri: git@github.com:crosscompute/crosscompute-examples
+  folder: extract-infrastructure-by-region
+  command: bash run.sh
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny
