@@ -7,12 +7,12 @@ input:
   variables:
     - id: text
       name: text
-      view: string
+      view: text
       path: t.txt
   templates:
-    - id: basic
-      name: Basic
-      path: templates/input/basic.md
+    - id: input
+      name: Input
+      path: input.md
 output:
   variables:
     - id: word-count 
@@ -24,9 +24,9 @@ output:
       view: table
       path: word-count.csv
   templates:
-    - id: summary
-      name: Summary
-      path: templates/output/summary.md
+    - id: output
+      name: Output
+      path: output.md
 tests:
 script:
   uri: git@github.com:crosscompute/crosscompute-examples
