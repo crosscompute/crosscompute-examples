@@ -1,8 +1,9 @@
 ---
-protocol: 0.8.3
-name: Add Numbers
+crosscompute: 0.8.4
+kind: tool
+name: Add Two Numbers
 version:
-  name: 0.1.0
+  name: 0.0.1
 input:
   variables:
     - id: a
@@ -14,30 +15,30 @@ input:
       view: number
       path: numbers.json
   templates:
-    - id: basic
-      name: Basic
-      path: templates/input/basic.md
+    - id: standard
+      name: Standard
+      path: templates/input/standard.md
 output:
   variables:
     - id: c
       name: C
       view: number
-      path: sum.json
+      path: properties.json
   templates:
-    - id: summary
-      name: Summary
-      path: templates/output/summary.md
+    - id: standard
+      name: Standard
+      path: templates/output/standard.md
 tests:
   - id: integers
-    name: Add Integers
+    name: Integers
     path: tests/integers
   - id: floats
-    name: Add Floats
+    name: Floats
     path: tests/floats
 script:
   uri: git@github.com:crosscompute/crosscompute-examples
   folder: add-numbers
-  command: bash run.sh
+  command: jupyter nbconvert run.ipynb --to notebook --execute --stdout
 environment: 
   image: docker.io/library/python:slim-buster
   processor: cpu

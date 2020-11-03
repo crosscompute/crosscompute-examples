@@ -1,21 +1,19 @@
-# SQLite
-*.db
-*.db-journal
-# Python
+# vim
+*.sw[op]
+*~
+# python
 *.egg*
 *.py[co]
 .cache
 .coverage
 .ipynb_checkpoints
+.pytest_cache
 __pycache__
-build
-dist
-# Transient
+build/
+dist/
+.tox
+# transient
 *.log
-*.map
 *.tmp
-.sass-cache
-data_*
-# Vim
-*.sw[op]
-*~
+*_data
+.DS_Store
