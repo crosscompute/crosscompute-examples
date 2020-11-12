@@ -7,7 +7,7 @@ input:
   variables:
     - id: a
       data:
-        value: 100
+        value: 1
     - id: b
       data:
         value: 1
