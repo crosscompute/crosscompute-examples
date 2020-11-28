@@ -1,0 +1,49 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Convert Timestamps
+version:
+  name: 0.1.0
+input:
+  variables:
+    - id: timestamps
+      name: Timestamps
+      view: table
+      path: timestamps.csv
+    - id: source_timezone
+      name: Source Timezone
+      # view: selection
+      view: text
+      path: settings.json
+    - id: target_timezone
+      name: Target Timezone
+      # view: selection
+      view: text
+      path: settings.json
+  templates:
+    - id: standard
+      name: standard
+      path: tool.md
+output:
+  variables:
+    - id: converted_timestamps
+      name: Converted Timestamps
+      view: table
+      path: converted_timestamps.csv
+  templates:
+    - id: standard
+      name: standard
+      path: result.md
+tests:
+  - folder: tests/est-pst
+  - folder: tests/nyc-seoul
+script:
+  folder: .
+  command: jupyter nbconvert run.ipynb --to notebook --execute --stdout
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: convert-timestamps
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny
