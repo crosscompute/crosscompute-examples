@@ -1,0 +1,31 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Find Primes
+version:
+  name: 0.1.0
+input:
+  variables:
+    - id: x
+      view: number
+      path: variables.json
+output:
+  variables:
+    - id: factors
+      view: table
+      path: factors.csv
+    - id: unique_factor_count
+      view: number
+      path: variables.json
+tests:
+  - folder: tests/6542
+script:
+  folder: .
+  command: python -u run.py {input_folder} {output_folder}
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: count-words
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny
