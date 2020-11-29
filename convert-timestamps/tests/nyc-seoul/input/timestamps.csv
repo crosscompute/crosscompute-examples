@@ -1,10 +1,10 @@
 Activity,Time
-Eat,7am
-Work,8am
-Exercise,12pm
-Eat,1pm
-Work,2pm
-Eat,7pm
-Talk,9pm
-Turn off electronics,10pm
-Read and write,11pm
+Eat,20000101-0700
+Work,20000101-0800
+Exercise,20000101-1200
+Eat,20000101-1300
+Work,20000101-1400
+Eat,20000101-1900
+Talk,20000101-2100
+Turn off electronics,20000101-2200
+Read and write,20000101-2300

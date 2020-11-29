@@ -1,0 +1,35 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Add Columns
+version:
+  name: 0.1.0
+input:
+  variables:
+    - id: numbers
+      name: Numbers
+      view: table
+      path: numbers.csv
+  templates:
+    - id: standard
+      name: Standard
+      path: templates/input/standard.md
+output:
+  variables:
+    - id: sums
+      name: Sums
+      view: table
+      path: sums.csv
+tests:
+  - folder: tests/integers
+  - folder: tests/floats
+script:
+  folder: .
+  command: bash run.sh
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: add-columns
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny
