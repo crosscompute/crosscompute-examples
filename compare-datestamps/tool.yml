@@ -1,30 +1,31 @@
 ---
 crosscompute: 0.8.4
 kind: tool
-name: Find Primes
+name: Compare Datestamps
 version:
   name: 0.1.0
 input:
   variables:
-    - id: x
-      view: number
+    - id: source_datestamp
+      path: variables.json
+    - id: target_datestamp
       path: variables.json
 output:
   variables:
-    - id: factors
-      view: table
-      path: factors.csv
-    - id: unique_factor_count
+    - id: count
       view: number
       path: variables.json
+    - id: unit
+      view: text
+      path: variables.json
 tests:
-  - folder: tests/6542
+  - folder: tests/standard
 script:
   folder: .
-  command: python -u run.py {input_folder} {output_folder}
+  command: python -u run.py {input_folder} {output_folder} {log_folder} {debug_folder}
 repository:
   uri: https://github.com/crosscompute/crosscompute-examples
-  folder: find-primes
+  folder: compare-datestamps
 environment: 
   image: docker.io/library/python:slim-buster
   processor: cpu

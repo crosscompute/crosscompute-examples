@@ -1,7 +1,7 @@
 ---
 crosscompute: 0.8.4
 kind: tool
-name: Add Two Numbers
+name: Add Numbers
 version:
   name: 0.1.0
 input:
