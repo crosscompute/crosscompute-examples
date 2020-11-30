@@ -1,0 +1,28 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Flip XY Coordinates in WKT Geometries
+version:
+  name: 0.1.0
+input:
+  variables:
+    - id: geometries
+      view: table
+      path: geometries.csv
+output:
+  variables:
+    - id: geometries
+      view: table
+      path: geometries.csv
+tests:
+  - folder: tests/standard
+script:
+  folder: .
+  command: bash run.sh
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: flip-wkt
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny

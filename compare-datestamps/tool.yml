@@ -18,6 +18,12 @@ output:
     - id: unit
       view: text
       path: variables.json
+    - id: description
+      view: markdown
+      path: description.md
+  templates:
+    - id: standard
+      path: templates/output/standard.md
 tests:
   - folder: tests/standard
 script:
