@@ -1,11 +1,26 @@
-CrossCompute Examples
-=====================
-Here are example automations made using the CrossCompute framework.
+# CrossCompute Examples
 
-    pip install -U crosscompute
+Here are example automations and tools made using the CrossCompute framework.
 
-    git clone https://github.com/crosscompute/crosscompute-examples
-    cd crosscompute-examples/add-numbers
+```
+pip install -U crosscompute
 
-    export CROSSCOMPUTE_TOKEN=YOUR-TOKEN
-    crosscompute automations run
+cd ~/Documents
+git clone https://github.com/crosscompute/crosscompute-examples
+```
+
+## Add Numbers
+
+This example illustrates a result automation.
+
+```
+cd ~/Documents/crosscompute-examples/add-numbers
+crosscompute tools add . --mock
+
+export CROSSCOMPUTE_TOKEN=YOUR-TOKEN
+crosscompute automations run
+```
+
+## Compare Datestamps
+
+This example generates markdown as one of its output variables, where the text of the markdown varies depending on the result.
