@@ -1,0 +1,21 @@
+---
+crosscompute: 0.8.4.1
+kind: report
+variables:
+  - id: assets
+    data:
+      result:
+        path: result.yml
+  - id: counter
+    data:
+      result:
+        path: result.yml
+
+templates:
+  - id: page1
+    name: Page 1
+    path: templates/output/standard.md
+print:
+  style:
+    path: report.css
+  format: pdf

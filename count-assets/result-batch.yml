@@ -1,0 +1,6 @@
+---
+crosscompute: 0.8.4.1
+kind: result
+path: result.yml
+input:
+  variables:
