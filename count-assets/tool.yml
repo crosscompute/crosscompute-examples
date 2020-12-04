@@ -1,14 +1,13 @@
 ---
-crosscompute: 0.8.4.1
+crosscompute: 0.8.4
 kind: tool
 name: Count Assets of Electricity Network
 version:
-  name: 0.1.0
+  name: 0.0.1
 input:
   variables:
     - id: assets
-      name: Assets
-      view: text
+      view: electricity-network
       path: assets.json
   templates:
     - id: standard
@@ -16,8 +15,8 @@ input:
       path: templates/input/standard.md
 output:
   variables:
-    - id: counter
-      name: Total Assets
+    - id: asset_count
+      name: Asset Count
       view: number
       path: properties.json
   templates:
@@ -25,7 +24,7 @@ output:
       name: Standard
       path: templates/output/standard.md
 tests:
-  - folder: tests/electricity-network
+  - folder: tests/standard
 script:
   folder: .
   command: jupyter nbconvert run.ipynb --to notebook --execute --stdout

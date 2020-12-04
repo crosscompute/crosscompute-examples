@@ -1,5 +1,5 @@
 # Count Assets
 
-Get the number of assets of the following Assets
+Count the number of assets in the electricity network.
 
 { assets }
