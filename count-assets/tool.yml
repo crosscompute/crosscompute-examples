@@ -1,0 +1,38 @@
+---
+crosscompute: 0.8.4.1
+kind: tool
+name: Count Assets of Electricity Network
+version:
+  name: 0.1.0
+input:
+  variables:
+    - id: assets
+      name: Assets
+      view: text
+      path: assets.json
+  templates:
+    - id: standard
+      name: Standard
+      path: templates/input/standard.md
+output:
+  variables:
+    - id: counter
+      name: Total Assets
+      view: number
+      path: properties.json
+  templates:
+    - id: standard
+      name: Standard
+      path: templates/output/standard.md
+tests:
+  - folder: tests/electricity-network
+script:
+  folder: .
+  command: jupyter nbconvert run.ipynb --to notebook --execute --stdout
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: count-assets
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny

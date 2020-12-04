@@ -1,0 +1,1950 @@
+{
+  "assets": {
+    "assetTypeByCode": {
+      "p": {
+        "name": "Pole"
+      },
+      "l": {
+        "name": "Line",
+        "assetAttributes": [
+          [
+            "phaseCount",
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          [
+            "lineType",
+            "lineType"
+          ],
+          [
+            "lineLength",
+            "number"
+          ],
+          [
+            "lengthUnit",
+            [
+              "ft",
+              "mi",
+              "m",
+              "km"
+            ]
+          ]
+        ],
+        "connectionAttributes": [
+          [
+            "busNodes",
+            [
+              "1",
+              "2",
+              "3",
+              "1.2",
+              "1.3",
+              "2.3",
+              "1.2.3",
+              "3.1"
+            ]
+          ]
+        ]
+      },
+      "m": {
+        "name": "Meter",
+        "assetAttributes": [
+          [
+            "meterType",
+            [
+              "residential",
+              "commercial",
+              "industrial"
+            ]
+          ],
+          [
+            "phaseCount",
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          [
+            "loadModel",
+            "number"
+          ],
+          [
+            "vendorName",
+            "vendorName"
+          ],
+          [
+            "productName",
+            "productName"
+          ],
+          [
+            "productVersion",
+            "productVersion"
+          ]
+        ],
+        "connectionAttributes": [
+          [
+            "connectionType",
+            [
+              "delta",
+              "wye"
+            ]
+          ],
+          [
+            "baseVoltage",
+            "number"
+          ],
+          [
+            "baseVoltageUnit",
+            [
+              "kV"
+            ]
+          ],
+          [
+            "activePower",
+            "number"
+          ],
+          [
+            "activePowerUnit",
+            [
+              "kW"
+            ]
+          ],
+          [
+            "reactivePower",
+            "number"
+          ],
+          [
+            "reactivePowerUnit",
+            [
+              "kVAR"
+            ]
+          ],
+          [
+            "busNodes",
+            [
+              "1",
+              "2",
+              "3",
+              "1.2",
+              "1.3",
+              "2.3",
+              "1.2.3",
+              "3.1"
+            ]
+          ]
+        ]
+      },
+      "t": {
+        "name": "Transformer",
+        "assetAttributes": [
+          [
+            "phaseCount",
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          [
+            "windingCount",
+            "number"
+          ],
+          [
+            "winding1Winding2PercentReactance",
+            "number"
+          ],
+          [
+            "vendorName",
+            "vendorName"
+          ],
+          [
+            "productName",
+            "productName"
+          ],
+          [
+            "productVersion",
+            "productVersion"
+          ]
+        ],
+        "connectionAttributes": [
+          [
+            "connectionType",
+            [
+              "delta",
+              "wye"
+            ]
+          ],
+          [
+            "baseVoltage",
+            "number"
+          ],
+          [
+            "baseVoltageUnit",
+            [
+              "kV"
+            ]
+          ],
+          [
+            "power",
+            "number"
+          ],
+          [
+            "powerUnit",
+            [
+              "kVA"
+            ]
+          ],
+          [
+            "powerPercentResistance",
+            "number"
+          ]
+        ]
+      },
+      "x": {
+        "name": "Switch",
+        "assetAttributes": [
+          [
+            "switchType",
+            [
+              "fuse",
+              "breaker",
+              "recloser",
+              "interrupter",
+              "sectionalizer",
+              "relay"
+            ]
+          ],
+          [
+            "phaseCount",
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          [
+            "positiveSequenceResistance",
+            "number"
+          ],
+          [
+            "positiveSequenceResistanceUnit",
+            [
+              "ohms/mi"
+            ]
+          ],
+          [
+            "zeroSequenceResistance",
+            "number"
+          ],
+          [
+            "zeroSequenceResistanceUnit",
+            [
+              "ohms/mi"
+            ]
+          ],
+          [
+            "positiveSequenceReactance",
+            "number"
+          ],
+          [
+            "positiveSequenceReactanceUnit",
+            [
+              "ohms/mi"
+            ]
+          ],
+          [
+            "zeroSequenceReactance",
+            "number"
+          ],
+          [
+            "zeroSequenceReactanceUnit",
+            [
+              "ohms/mi"
+            ]
+          ],
+          [
+            "positiveSequenceCapacitance",
+            "number"
+          ],
+          [
+            "positiveSequenceCapacitanceUnit",
+            [
+              "nF/mi"
+            ]
+          ],
+          [
+            "zeroSequenceCapacitance",
+            "number"
+          ],
+          [
+            "zeroSequenceCapacitanceUnit",
+            [
+              "nF/mi"
+            ]
+          ],
+          [
+            "vendorName",
+            "vendorName"
+          ],
+          [
+            "productName",
+            "productName"
+          ],
+          [
+            "productVersion",
+            "productVersion"
+          ]
+        ],
+        "connectionAttributes": [
+          [
+            "busNodes",
+            [
+              "1",
+              "2",
+              "3",
+              "1.2",
+              "1.3",
+              "2.3",
+              "1.2.3",
+              "3.1"
+            ]
+          ]
+        ]
+      },
+      "q": {
+        "name": "Power Quality",
+        "assetAttributes": [
+          [
+            "qualityType",
+            [
+              "capacitor",
+              "regulator",
+              "booster"
+            ]
+          ],
+          [
+            "phaseCount",
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          [
+            "windingCount",
+            "number"
+          ],
+          [
+            "winding1Winding2PercentReactance",
+            "number"
+          ],
+          [
+            "percentLoadLoss",
+            "number"
+          ],
+          [
+            "regulatedVoltage",
+            "number"
+          ],
+          [
+            "regulatedVoltageUnit",
+            [
+              "V"
+            ]
+          ],
+          [
+            "bandwidthVoltage",
+            "number"
+          ],
+          [
+            "bandwidthVoltageUnit",
+            [
+              "V"
+            ]
+          ],
+          [
+            "potentialTransformerRatio",
+            "number"
+          ],
+          [
+            "currentTransformerRating",
+            "number"
+          ],
+          [
+            "currentTransformerRatingUnit",
+            [
+              "A"
+            ]
+          ],
+          [
+            "rSettingVoltage",
+            "number"
+          ],
+          [
+            "rSettingVoltageUnit",
+            [
+              "V"
+            ]
+          ],
+          [
+            "xSettingVoltage",
+            "number"
+          ],
+          [
+            "xSettingVoltageUnit",
+            [
+              "V"
+            ]
+          ],
+          [
+            "vendorName",
+            "vendorName"
+          ],
+          [
+            "productName",
+            "productName"
+          ],
+          [
+            "productVersion",
+            "productVersion"
+          ]
+        ],
+        "connectionAttributes": [
+          [
+            "baseVoltage",
+            "number"
+          ],
+          [
+            "baseVoltageUnit",
+            [
+              "kV"
+            ]
+          ],
+          [
+            "power",
+            "number"
+          ],
+          [
+            "powerUnit",
+            [
+              "kVA"
+            ]
+          ],
+          [
+            "busNodes",
+            [
+              "1",
+              "2",
+              "3",
+              "1.2",
+              "1.3",
+              "2.3",
+              "1.2.3"
+            ]
+          ]
+        ]
+      },
+      "c": {
+        "name": "Control"
+      },
+      "o": {
+        "name": "Storage",
+        "assetAttributes": [
+          [
+            "vendorName",
+            "vendorName"
+          ],
+          [
+            "productName",
+            "productName"
+          ],
+          [
+            "productVersion",
+            "productVersion"
+          ]
+        ]
+      },
+      "g": {
+        "name": "Generator",
+        "assetAttributes": [
+          [
+            "baseFrequency",
+            "number"
+          ],
+          [
+            "baseVoltage",
+            "number"
+          ],
+          [
+            "baseVoltageUnit",
+            [
+              "kV"
+            ]
+          ],
+          [
+            "perUnitVoltage",
+            "number"
+          ],
+          [
+            "phaseCount",
+            [
+              1,
+              2,
+              3
+            ]
+          ],
+          [
+            "phaseAngle",
+            "number"
+          ],
+          [
+            "shortCircuit3PhasePower",
+            "number"
+          ],
+          [
+            "shortCircuit3PhasePowerUnit",
+            [
+              "MVA"
+            ]
+          ],
+          [
+            "shortCircuit1PhasePower",
+            "number"
+          ],
+          [
+            "shortCircuit1PhasePowerUnit",
+            [
+              "MVA"
+            ]
+          ],
+          [
+            "vendorName",
+            "vendorName"
+          ],
+          [
+            "productName",
+            "productName"
+          ],
+          [
+            "productVersion",
+            "productVersion"
+          ]
+        ]
+      },
+      "s": {
+        "name": "Substation"
+      },
+      "S": {
+        "name": "Station"
+      },
+      "X": {
+        "name": "Asset",
+        "assetAttributes": [
+          [
+            "vendorName",
+            "vendorName"
+          ],
+          [
+            "productName",
+            "productName"
+          ],
+          [
+            "productVersion",
+            "productVersion"
+          ]
+        ]
+      }
+    },
+    "assetById": {
+      "Example Utility ID.SoWXH9cM": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "g",
+        "name": "voltageSource",
+        "attributes": {
+          "baseFrequency": 60,
+          "baseVoltage": 115,
+          "perUnitVoltage": 1,
+          "phaseAngle": 30,
+          "phaseCount": 3,
+          "shortCircuit1PhasePower": 10500,
+          "shortCircuit3PhasePower": 10000
+        }
+      },
+      "Example Utility ID.3iIAGVcv": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "t",
+        "name": "substationTransformer",
+        "attributes": {
+          "phaseCount": 3,
+          "winding1Winding2PercentReactance": 0.008,
+          "windingCount": 2
+        }
+      },
+      "Example Utility ID.8NebbMBe": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "q",
+        "name": "voltageRegulator1",
+        "attributes": {
+          "bandwidthVoltage": 2,
+          "currentTransformerRating": 700,
+          "percentLoadLoss": 0.01,
+          "phaseCount": 1,
+          "potentialTransformerRatio": 20,
+          "qualityType": "regulator",
+          "rSettingVoltage": 3,
+          "regulatedVoltage": 122,
+          "winding1Winding2PercentReactance": 0.01,
+          "windingCount": 2,
+          "xSettingVoltage": 9
+        }
+      },
+      "Example Utility ID.nVVEyeog": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "q",
+        "name": "voltageRegulator2",
+        "attributes": {
+          "bandwidthVoltage": 2,
+          "currentTransformerRating": 700,
+          "percentLoadLoss": 0.01,
+          "phaseCount": 1,
+          "potentialTransformerRatio": 20,
+          "qualityType": "regulator",
+          "rSettingVoltage": 3,
+          "regulatedVoltage": 122,
+          "winding1Winding2PercentReactance": 0.01,
+          "windingCount": 2,
+          "xSettingVoltage": 9
+        }
+      },
+      "Example Utility ID.Z4zUBz5a": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "q",
+        "name": "voltageRegulator3",
+        "attributes": {
+          "bandwidthVoltage": 2,
+          "currentTransformerRating": 700,
+          "percentLoadLoss": 0.01,
+          "phaseCount": 1,
+          "potentialTransformerRatio": 20,
+          "qualityType": "regulator",
+          "rSettingVoltage": 3,
+          "regulatedVoltage": 122,
+          "winding1Winding2PercentReactance": 0.01,
+          "windingCount": 2,
+          "xSettingVoltage": 9
+        }
+      },
+      "Example Utility ID.EFtYFLdR": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "t",
+        "name": "XFM1",
+        "attributes": {
+          "phaseCount": 3,
+          "winding1Winding2PercentReactance": 1,
+          "windingCount": 2
+        }
+      },
+      "Example Utility ID.1F0bXv82": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "m",
+        "name": "load_671",
+        "attributes": {
+          "loadModel": 1,
+          "phaseCount": 3
+        }
+      },
+      "Example Utility ID.AUZvOQbO": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "m",
+        "name": "634_1",
+        "attributes": {
+          "loadModel": 1,
+          "phaseCount": 1
+        }
+      },
+      "Example Utility ID.AYKphAyK": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "m",
+        "name": "634_2",
+        "attributes": {
+          "loadModel": 1,
+          "phaseCount": 1
+        }
+      },
+      "Example Utility ID.OF7MnxWP": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "m",
+        "name": "634_3",
+        "attributes": {
+          "loadModel": 1,
+          "phaseCount": 1
+        }
+      },
+      "Example Utility ID.s2JVp4BJ": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "m",
+        "name": "645_2",
+        "attributes": {
+          "loadModel": 1,
+          "phaseCount": 1
+        }
+      },
+      "Example Utility ID.hImKAbZ1": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "m",
+        "name": "646_2",
+        "attributes": {
+          "loadModel": 1,
+          "phaseCount": 1
+        }
+      },
+      "Example Utility ID.swzwI8Qn": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "m",
+        "name": "652_1",
+        "attributes": {
+          "loadModel": 2,
+          "phaseCount": 1
+        }
+      },
+      "Example Utility ID.as9VbFpf": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "m",
+        "name": "675_1",
+        "attributes": {
+          "loadModel": 1,
+          "phaseCount": 1
+        }
+      },
+      "Example Utility ID.tiyEM8SP": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "m",
+        "name": "675_2",
+        "attributes": {
+          "loadModel": 1,
+          "phaseCount": 1
+        }
+      },
+      "Example Utility ID.CiEQLinb": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "m",
+        "name": "675_3",
+        "attributes": {
+          "loadModel": 1,
+          "phaseCount": 1
+        }
+      },
+      "Example Utility ID.5r6cX2qZ": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "m",
+        "name": "692_3",
+        "attributes": {
+          "loadModel": 5,
+          "phaseCount": 1
+        }
+      },
+      "Example Utility ID.mxOp1mpO": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "m",
+        "name": "611_3",
+        "attributes": {
+          "loadModel": 5,
+          "phaseCount": 1
+        }
+      },
+      "Example Utility ID.SQoZOUds": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "m",
+        "name": "670_1",
+        "attributes": {
+          "loadModel": 1,
+          "phaseCount": 1
+        }
+      },
+      "Example Utility ID.TmlZV6CT": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "m",
+        "name": "670_2",
+        "attributes": {
+          "loadModel": 1,
+          "phaseCount": 1
+        }
+      },
+      "Example Utility ID.RrXqAAW0": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "m",
+        "name": "670_3",
+        "attributes": {
+          "loadModel": 1,
+          "phaseCount": 1
+        }
+      },
+      "Example Utility ID.J4PWKWlE": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "q",
+        "name": "cap1",
+        "attributes": {
+          "phaseCount": 3,
+          "qualityType": "capacitor"
+        }
+      },
+      "Example Utility ID.Q69F3w8B": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "q",
+        "name": "cap2",
+        "attributes": {
+          "phaseCount": 1,
+          "qualityType": "capacitor"
+        }
+      },
+      "Example Utility ID.l6TqNDcv": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "XZSShGe3yfdby6eF1595484596878",
+        "attributes": {}
+      },
+      "Example Utility ID.A4kupFOU": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "plS9kjskDDggIobB1595484687137",
+        "attributes": {}
+      },
+      "Example Utility ID.e5zgDIH0": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "0aDLhVSUOb85y15E1595484754542",
+        "attributes": {}
+      },
+      "Example Utility ID.yIuYGDCr": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "810FFO7xqQQqrHtU1595484765224",
+        "attributes": {}
+      },
+      "Example Utility ID.p13GC6mE": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "a8wvNUVutTmV74H71595486803473",
+        "attributes": {}
+      },
+      "Example Utility ID.zkmQ0MsS": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "TYMOV7a6QhxcQJeU1595486816611",
+        "attributes": {}
+      },
+      "Example Utility ID.HfTFYYhI": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "lRbAEHmCErw64m4q1595486824327",
+        "attributes": {}
+      },
+      "Example Utility ID.gcQzZGlt": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "3B11HXqpvDsJaj2f1595487157579",
+        "attributes": {}
+      },
+      "Example Utility ID.QLZ4pcf2": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "6noUvRlevAVZEQ2c1595487162864",
+        "attributes": {}
+      },
+      "Example Utility ID.sGsQ3xve": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "F4opxpLertDz8isc1595487181308",
+        "attributes": {}
+      },
+      "Example Utility ID.ePxaJzTE": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "qJyzt7o227L7KaqL1595487617478",
+        "attributes": {}
+      },
+      "Example Utility ID.8XnqcznM": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "q9GVtNn4u37qNbxM1595487627339",
+        "attributes": {}
+      },
+      "Example Utility ID.RbkZwwCG": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "MyNsTGBCF4i7cRAV1595487641139",
+        "attributes": {}
+      },
+      "Example Utility ID.PpTOJCNc": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "s02NOI4Ppc0bytri1595487740665",
+        "attributes": {}
+      },
+      "Example Utility ID.kKJXCjqy": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "645-646",
+        "attributes": {
+          "lengthUnit": "mi",
+          "lineLength": 0.6,
+          "lineType": "mtx603",
+          "phaseCount": 2
+        }
+      },
+      "Example Utility ID.ptDTDG2w": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "rg60-632",
+        "attributes": {
+          "lengthUnit": "mi",
+          "lineLength": 0.38,
+          "lineType": "mtx601",
+          "phaseCount": 3
+        }
+      },
+      "Example Utility ID.y2AcZhCR": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "632-645",
+        "attributes": {
+          "lengthUnit": "mi",
+          "lineLength": 0.09,
+          "lineType": "mtx603",
+          "phaseCount": 2
+        }
+      },
+      "Example Utility ID.Y627PcuU": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "632-633",
+        "attributes": {
+          "lengthUnit": "mi",
+          "lineLength": 0.09,
+          "lineType": "mtx602",
+          "phaseCount": 3
+        }
+      },
+      "Example Utility ID.vEq0Q19T": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "684-652",
+        "attributes": {
+          "lengthUnit": "mi",
+          "lineLength": 0.15,
+          "lineType": "mtx607",
+          "phaseCount": 1
+        }
+      },
+      "Example Utility ID.5NdLbtGN": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "632-671",
+        "attributes": {
+          "lengthUnit": "mi",
+          "lineLength": 0.38,
+          "lineType": "mtx601",
+          "phaseCount": 3
+        }
+      },
+      "Example Utility ID.4SJC1VqH": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "671-684",
+        "attributes": {
+          "lengthUnit": "mi",
+          "lineLength": 0.06,
+          "lineType": "mtx604",
+          "phaseCount": 2
+        }
+      },
+      "Example Utility ID.TW1vEGWE": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "671-680",
+        "attributes": {
+          "lengthUnit": "mi",
+          "lineLength": 0.19,
+          "lineType": "mtx601",
+          "phaseCount": 3
+        }
+      },
+      "Example Utility ID.l3xsYeHE": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "684-611",
+        "attributes": {
+          "lengthUnit": "mi",
+          "lineLength": 0.06,
+          "lineType": "mtx605",
+          "phaseCount": 1
+        }
+      },
+      "Example Utility ID.xMxw87jC": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "692-675",
+        "attributes": {
+          "lengthUnit": "mi",
+          "lineLength": 0.09,
+          "lineType": "mtx606",
+          "phaseCount": 3
+        }
+      },
+      "Example Utility ID.CuWmUVD7": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "x",
+        "name": "671-692",
+        "attributes": {
+          "phaseCount": 3,
+          "positiveSequenceCapacitance": 0,
+          "positiveSequenceReactance": 0,
+          "positiveSequenceResistance": 0.0001,
+          "zeroSequenceCapacitance": 0,
+          "zeroSequenceReactance": 0,
+          "zeroSequenceResistance": 0.0001
+        }
+      },
+      "Example Utility ID.mhOwZlYZ": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "5f6XLA143Vnn4vP11595490167603",
+        "attributes": {}
+      },
+      "Example Utility ID.kJbSDpYJ": {
+        "utilityId": "Example Utility ID",
+        "typeCode": "l",
+        "name": "HDgOPCcDNi2dsTo11595490182488",
+        "attributes": {}
+      }
+    },
+    "assetsGeoJson": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.29904473192732,
+              37.17610696258396
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.SoWXH9cM",
+            "typeCode": "g"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.29906519080676,
+              37.17703108919773
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.3iIAGVcv",
+            "typeCode": "t"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.30014368807002,
+              37.1779541026792
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.8NebbMBe",
+            "typeCode": "q"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.29739370979146,
+              37.17786803267116
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.nVVEyeog",
+            "typeCode": "q"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.29851118280496,
+              37.17801212712715
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.Z4zUBz5a",
+            "typeCode": "q"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.29815210414549,
+              37.18023678952002
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.EFtYFLdR",
+            "typeCode": "t"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.29906647526371,
+              37.17962163305423
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.1F0bXv82",
+            "typeCode": "m"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.29866635321982,
+              37.18084349077432
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.AUZvOQbO",
+            "typeCode": "m"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.29802848654941,
+              37.18100107474147
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.AYKphAyK",
+            "typeCode": "m"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.29711371625969,
+              37.18093016200668
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.OF7MnxWP",
+            "typeCode": "m"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.2978303517917,
+              37.17951125221496
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.s2JVp4BJ",
+            "typeCode": "m"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.29673692797954,
+              37.17948414880612
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.hImKAbZ1",
+            "typeCode": "m"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.30012401645929,
+              37.17982102471083
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.swzwI8Qn",
+            "typeCode": "m"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.30225242764189,
+              37.17959415777587
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.as9VbFpf",
+            "typeCode": "m"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.30151238077899,
+              37.17957252003801
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.tiyEM8SP",
+            "typeCode": "m"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.30086059614125,
+              37.17955629170386
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.CiEQLinb",
+            "typeCode": "m"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.30068467355719,
+              37.17984548403994
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.5r6cX2qZ",
+            "typeCode": "m"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.29951039133765,
+              37.18024569725138
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.mxOp1mpO",
+            "typeCode": "m"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.300164008069,
+              37.17907520048063
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.SQoZOUds",
+            "typeCode": "m"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.29954181660517,
+              37.1791041482654
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.TmlZV6CT",
+            "typeCode": "m"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.29891054192943,
+              37.1791041482654
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.RrXqAAW0",
+            "typeCode": "m"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.30148522298467,
+              37.18012428100766
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.J4PWKWlE",
+            "typeCode": "q"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.29951559657435,
+              37.18047890905264
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.Q69F3w8B",
+            "typeCode": "q"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.29908164964738,
+                37.17692415838638
+              ],
+              [
+                -93.29903309912416,
+                37.17629071155236
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.l6TqNDcv",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.29907476509818,
+                37.17713788506217
+              ],
+              [
+                -93.3001610790232,
+                37.1778196786515
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.A4kupFOU",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.29908083385348,
+                37.17712821405204
+              ],
+              [
+                -93.2985103674925,
+                37.17785836194629
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.e5zgDIH0",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.299068696343,
+                37.17713304965305
+              ],
+              [
+                -93.29739370979146,
+                37.17771329996813
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.yIuYGDCr",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.3001347391886,
+                37.17810691722772
+              ],
+              [
+                -93.29821623583645,
+                37.17895003521517
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.p13GC6mE",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.29851734577191,
+                37.17816175440071
+              ],
+              [
+                -93.29821574383017,
+                37.17894782367734
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.zkmQ0MsS",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.2974075387868,
+                37.17801780663444
+              ],
+              [
+                -93.29821378551489,
+                37.17894626350955
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.HfTFYYhI",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.29866460222463,
+                37.18093367251913
+              ],
+              [
+                -93.2981535621617,
+                37.1803439476006
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.gcQzZGlt",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.29803349065635,
+                37.18109104536106
+              ],
+              [
+                -93.29815874944669,
+                37.18034639981427
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.QLZ4pcf2",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.29711856444311,
+                37.18102778892253
+              ],
+              [
+                -93.29814557762184,
+                37.18034114046146
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.sGsQ3xve",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.30223884887951,
+                37.17968611817314
+              ],
+              [
+                -93.30151238077899,
+                37.17997281772175
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.ePxaJzTE",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.30150871872081,
+                37.17966008326555
+              ],
+              [
+                -93.30149250533758,
+                37.17998303052336
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.8XnqcznM",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.30088180162912,
+                37.17964716534043
+              ],
+              [
+                -93.30148169637972,
+                37.17998518350844
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.RbkZwwCG",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.30019125734476,
+                37.17916566232498
+              ],
+              [
+                -93.29955998266891,
+                37.17919461021859
+              ],
+              [
+                -93.29892870835336,
+                37.1791909916965
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.PpTOJCNc",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.2978254921594,
+                37.17960417812484
+              ],
+              [
+                -93.29673692797954,
+                37.17956545900319
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.kKJXCjqy",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.29821378551489,
+                37.17894782367734
+              ],
+              [
+                -93.29819024588349,
+                37.17931075496567
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.ptDTDG2w",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.29819968615645,
+                37.17930604038384
+              ],
+              [
+                -93.2981705283629,
+                37.17962353779362
+              ],
+              [
+                -93.29783521142389,
+                37.17960805008972
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.y2AcZhCR",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.2982084142365,
+                37.17930972567328
+              ],
+              [
+                -93.29814736808625,
+                37.18012513109922
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.Y627PcuU",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.30012760694173,
+                37.17991256733649
+              ],
+              [
+                -93.29950704526796,
+                37.17990427133048
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.vEq0Q19T",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.29821087340952,
+                37.17929493860495
+              ],
+              [
+                -93.29869200090737,
+                37.17931210298245
+              ],
+              [
+                -93.29868841042492,
+                37.17970974305436
+              ],
+              [
+                -93.29907618480928,
+                37.17972118594817
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.5NdLbtGN",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.29908336577414,
+                37.17970402166362
+              ],
+              [
+                -93.29951063603527,
+                37.17970402166362
+              ],
+              [
+                -93.29951063603527,
+                37.17990427133048
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.4SJC1VqH",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.29906182287944,
+                37.17970402166362
+              ],
+              [
+                -93.29902950825243,
+                37.18019034133791
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.TW1vEGWE",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.29950672216289,
+                37.17990073646285
+              ],
+              [
+                -93.29950672216289,
+                37.18033632237144
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.l3xsYeHE",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.3014918969543,
+                37.17998288406179
+              ],
+              [
+                -93.30069935025624,
+                37.17993026281377
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.xMxw87jC",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -93.30018630121187,
+              37.17954174176318
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.CuWmUVD7",
+            "typeCode": "x"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.30068016730519,
+                37.17991973858616
+              ],
+              [
+                -93.30019216400486,
+                37.17966540206005
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.mhOwZlYZ",
+            "typeCode": "l"
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -93.30019216400486,
+                37.17941398831388
+              ],
+              [
+                -93.29927853395732,
+                37.17941983512233
+              ],
+              [
+                -93.29908406653044,
+                37.17970340641224
+              ]
+            ]
+          },
+          "properties": {
+            "id": "Example Utility ID.kJbSDpYJ",
+            "typeCode": "l"
+          }
+        }
+      ]
+    }
+  },
+  "risks": {},
+  "tasks": {
+    "taskPriorityTypes": [
+      {
+        "code": 10,
+        "name": "Normal"
+      }
+    ],
+    "taskStatusTypes": [
+      {
+        "code": 0,
+        "name": "TODO"
+      },
+      {
+        "name": "In progress",
+        "code": "10"
+      }
+    ],
+    "tasks": [
+      {
+        "assetId": "Example Utility ID.EFtYFLdR",
+        "name": "Add risks",
+        "description": "",
+        "priority": 10,
+        "id": "c8cb996a-fd22-481a-a792-ae737eef4f80",
+        "status": 0
+      }
+    ]
+  },
+  "comments": {
+    "c8cb996a-fd22-481a-a792-ae737eef4f80": [
+      {
+        "taskId": "c8cb996a-fd22-481a-a792-ae737eef4f80",
+        "text": "Impement risks is pending",
+        "creationUserId": "ahofmann@example.org",
+        "creationTimestamp": 1603980950
+      }
+    ]
+  }
+}
