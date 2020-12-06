@@ -1,0 +1,33 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Map Addresses
+version:
+  name: 0.0.1
+input:
+  variables:
+    - id: addresses
+      view: table
+      path: addresses.csv
+output:
+  variables:
+    - id: mapped_addresses
+      view: map
+      path: addresses.geojson
+    - id: geocoded_addresses
+      view: table
+      path: addresses.csv
+tests:
+  - folder: tests/standard
+script:
+  folder: .
+  command: bash run.sh
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: map-addresses
+environment: 
+  variables:
+    - id: GOOGLE_KEY
+  image: osgeo/gdal
+  processor: cpu
+  memory: tiny
