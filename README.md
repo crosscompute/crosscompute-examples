@@ -42,3 +42,22 @@ This example generates markdown as one of its output variables, where the text o
 ## Map Addresses
 
 Convert an address table into a map.
+
+- Input Variable Views: table
+- Output Variable Views: map, table
+- Script Command: bash
+- Operating System: linux
+- Environment Variables
+- Python Dependencies
+- Geospatial Environment Image
+
+## Measure Geometries
+
+Compute geometric statistics.
+
+- Input Variable Views: map
+- Output Variable Views: number
+- Script Command: jupyter
+- Operating System: linux
+- Python Dependencies
+- Geospatial Environment Image

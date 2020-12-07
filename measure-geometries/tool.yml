@@ -1,0 +1,46 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Measure Geometries
+version:
+  name: 0.0.1
+input:
+  variables:
+    - id: geometries
+      view: map
+      path: geometries.geojson
+output:
+  variables:
+    - id: geometry_count
+      view: number
+      path: statistics.json
+#   - id: point_count
+#     view: number
+#     path: statistics.json
+#   - id: line_count
+#     view: number
+#     path: statistics.json
+#   - id: line_length
+#     view: number
+#     path: statistics.json
+#   - id: polygon_count
+#     view: number
+#     path: statistics.json
+#   - id: polygon_perimeter
+#     view: number
+#     path: statistics.json
+#   - id: polygon_area
+#     view: number
+#     path: statistics.json
+tests:
+  - folder: tests/standard
+script:
+  folder: .
+  command: jupyter nbconvert run.ipynb --to notebook --execute --stdout
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: measure-geometries
+environment: 
+  image: osgeo/gdal
+  processor: cpu
+  memory: tiny
