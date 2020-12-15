@@ -6,4 +6,8 @@
 
 ## Calibrated GIS data.
 
-{ specs }
+{ scenario-info }
+
+{ scenario-parameters }
+
+{ specs-data }
