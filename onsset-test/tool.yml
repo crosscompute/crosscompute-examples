@@ -1,0 +1,44 @@
+---
+crosscompute: 0.8.4.1
+kind: tool
+name: Test ONSSET tool
+version:
+  name: 0.0.1
+input:
+  variables:
+    - id: separated-countries
+      view: table
+      path: test.csv
+    - id: specs
+      view: table
+      path: specs.xlsx
+  templates:
+    - id: standard
+      name: Standard
+      path: templates/input/standard.md
+output:
+  variables:
+    - id: settlements
+      name: Settlements
+      view: table
+      path: dj-1-1_1_1_1_0_0.csv
+    - id: summary
+      name: Summary
+      view: table
+      path: dj-1-1_1_1_1_0_0_summary.csv
+  templates:
+    - id: standard
+      name: Standard
+      path: templates/output/standard.md
+tests:
+  - folder: tests/standard
+script:
+  folder: .
+  command: bash run.sh
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: onsset-test
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny
