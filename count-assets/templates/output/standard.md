@@ -1,6 +1,5 @@
-## Electricity Network by ID
-{ assets }
----
+# Electricity Network
 
-## Total
-{ counter }
+{ assets }
+
+{ asset_count }
