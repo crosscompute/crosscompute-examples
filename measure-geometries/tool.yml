@@ -11,7 +11,7 @@ input:
       path: geometries.geojson
 output:
   variables:
-    - id: geometry_count
+    - id: feature_count
       view: number
       path: statistics.json
 #   - id: point_count
