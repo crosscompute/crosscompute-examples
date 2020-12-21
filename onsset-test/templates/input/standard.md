@@ -1,13 +1,9 @@
-# Count Assets
+# Draft Electrification Strategy using ONSSET
 
-## File containing separated countries.
-
-{ separated-countries }
-
-## Calibrated GIS data.
+{ cities }
 
 { scenario-info }
 
 { scenario-parameters }
 
-{ specs-data }
+{ specifications }

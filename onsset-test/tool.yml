@@ -1,21 +1,21 @@
 ---
-crosscompute: 0.8.4.1
+crosscompute: 0.8.4
 kind: tool
 name: Test ONSSET tool
 version:
   name: 0.0.1
 input:
   variables:
-    - id: separated-countries
+    - id: cities
       view: table
-      path: test.csv
-    - id:   scenario-info
+      path: cities.csv
+    - id: scenario-info
       view: table
       path: scenario_info.csv
-    - id:   scenario-parameters
+    - id: scenario-parameters
       view: table
       path: scenario_parameters.csv
-    - id: specs-data
+    - id: specifications
       view: table
       path: specs_data.csv
   templates:
@@ -24,12 +24,10 @@ input:
       path: templates/input/standard.md
 output:
   variables:
-    - id: settlements
-      name: Settlements
+    - id: details
       view: table
-      path: summaries.csv
+      path: details.csv
     - id: summary
-      name: Summary
       view: table
       path: summaries.csv
   templates:
@@ -40,7 +38,7 @@ tests:
   - folder: tests/standard
 script:
   folder: .
-  command: bash run.sh
+  command: jupyter nbconvert run.ipynb --to notebook --execute --stdout
 repository:
   uri: https://github.com/crosscompute/crosscompute-examples
   folder: onsset-test

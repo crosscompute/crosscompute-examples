@@ -1,7 +1,5 @@
-## ONSSET tool reporting
+# Electrification Strategy using ONSSET
 
-## Settlements
-{ settlements }
+{ details }
 
-## Summery
 { summary }
