@@ -1,0 +1,34 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Extract Pdf Pages
+version:
+  name: 0.0.1
+input:
+  variables:
+    - id: file-input
+      name: Pdf File
+      view: file
+      path: input.pdf
+    - id: pages
+      name: PDF pages
+      view: text
+      path: pages.json
+output:
+  variables:
+    - id: output-pdf
+      name: PDF Pages
+      view: file
+      path: output.pdf
+tests:
+  - folder: tests/standard
+script:
+  folder: .
+  command: bash run.sh
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: extract-pdf-pages 
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny
