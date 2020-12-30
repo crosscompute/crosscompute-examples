@@ -23,6 +23,6 @@ if __name__ == '__main__':
     output_folder = argv[2]
     password_dictionary = json.load(open(join(input_folder, 'password.json')))
     password = password_dictionary['password']
-    input_path = join(input_folder, pdf_file_name)
-    output_path = join(output_folder, 'output_' + pdf_file_name)
-    encrypt_pages_pdf(path, output_path, password)
+    input_path = join(input_folder, 'input.pdf')
+    output_path = join(output_folder, 'output.pdf')
+    encrypt_pages_pdf(input_path, output_path, password)
