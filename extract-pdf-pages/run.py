@@ -53,7 +53,6 @@ def get_pages_from_text(pages_text):
 
 
 if __name__ == '__main__':
-    print(argv, len(argv))
     input_folder = argv[1]
     output_folder = argv[2]
     pages_dictionary = json.load(open(join(input_folder, 'pages.json')))
