@@ -1,0 +1,30 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Extract Pdf Images
+version:
+  name: 0.0.1
+input:
+  variables:
+    - id: file-input
+      name: Pdf File
+      view: file
+      path: input.pdf
+output:
+  variables:
+    - id: output zip
+      name: Images Zip
+      view: file
+      path: images.zip
+tests:
+  - folder: tests/standard
+script:
+  folder: .
+  command: bash run.sh
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: extract-images-pdf
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny
