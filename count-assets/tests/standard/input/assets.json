@@ -1,1025 +1,1097 @@
 {
+  "risks": {},
+  "tasks": {},
+  "comments": {},
   "assets": {
-    "assetTypeByCode": {
-      "p": {
-        "name": "Pole"
-      },
-      "l": {
-        "name": "Line",
-        "assetAttributes": [
-          [
-            "phaseCount",
-            [
-              1,
-              2,
-              3
-            ]
-          ],
-          [
-            "lineType",
-            "lineType"
-          ],
-          [
-            "lineLength",
-            "number"
-          ],
-          [
-            "lengthUnit",
-            [
-              "ft",
-              "mi",
-              "m",
-              "km"
-            ]
-          ]
-        ],
-        "connectionAttributes": [
-          [
-            "busNodes",
-            [
-              "1",
-              "2",
-              "3",
-              "1.2",
-              "1.3",
-              "2.3",
-              "1.2.3",
-              "3.1"
-            ]
-          ]
-        ]
-      },
-      "m": {
-        "name": "Meter",
-        "assetAttributes": [
-          [
-            "meterType",
-            [
-              "residential",
-              "commercial",
-              "industrial"
-            ]
-          ],
-          [
-            "phaseCount",
-            [
-              1,
-              2,
-              3
-            ]
-          ],
-          [
-            "loadModel",
-            "number"
-          ],
-          [
-            "vendorName",
-            "vendorName"
-          ],
-          [
-            "productName",
-            "productName"
-          ],
-          [
-            "productVersion",
-            "productVersion"
-          ]
-        ],
-        "connectionAttributes": [
-          [
-            "connectionType",
-            [
-              "delta",
-              "wye"
-            ]
-          ],
-          [
-            "baseVoltage",
-            "number"
-          ],
-          [
-            "baseVoltageUnit",
-            [
-              "kV"
-            ]
-          ],
-          [
-            "activePower",
-            "number"
-          ],
-          [
-            "activePowerUnit",
-            [
-              "kW"
-            ]
-          ],
-          [
-            "reactivePower",
-            "number"
-          ],
-          [
-            "reactivePowerUnit",
-            [
-              "kVAR"
-            ]
-          ],
-          [
-            "busNodes",
-            [
-              "1",
-              "2",
-              "3",
-              "1.2",
-              "1.3",
-              "2.3",
-              "1.2.3",
-              "3.1"
-            ]
-          ]
-        ]
-      },
-      "t": {
-        "name": "Transformer",
-        "assetAttributes": [
-          [
-            "phaseCount",
-            [
-              1,
-              2,
-              3
-            ]
-          ],
-          [
-            "windingCount",
-            "number"
-          ],
-          [
-            "winding1Winding2PercentReactance",
-            "number"
-          ],
-          [
-            "vendorName",
-            "vendorName"
-          ],
-          [
-            "productName",
-            "productName"
-          ],
-          [
-            "productVersion",
-            "productVersion"
-          ]
-        ],
-        "connectionAttributes": [
-          [
-            "connectionType",
-            [
-              "delta",
-              "wye"
-            ]
-          ],
-          [
-            "baseVoltage",
-            "number"
-          ],
-          [
-            "baseVoltageUnit",
-            [
-              "kV"
-            ]
-          ],
-          [
-            "power",
-            "number"
-          ],
-          [
-            "powerUnit",
-            [
-              "kVA"
-            ]
-          ],
-          [
-            "powerPercentResistance",
-            "number"
-          ]
-        ]
-      },
-      "x": {
-        "name": "Switch",
-        "assetAttributes": [
-          [
-            "switchType",
-            [
-              "fuse",
-              "breaker",
-              "recloser",
-              "interrupter",
-              "sectionalizer",
-              "relay"
-            ]
-          ],
-          [
-            "phaseCount",
-            [
-              1,
-              2,
-              3
-            ]
-          ],
-          [
-            "positiveSequenceResistance",
-            "number"
-          ],
-          [
-            "positiveSequenceResistanceUnit",
-            [
-              "ohms/mi"
-            ]
-          ],
-          [
-            "zeroSequenceResistance",
-            "number"
-          ],
-          [
-            "zeroSequenceResistanceUnit",
-            [
-              "ohms/mi"
-            ]
-          ],
-          [
-            "positiveSequenceReactance",
-            "number"
-          ],
-          [
-            "positiveSequenceReactanceUnit",
-            [
-              "ohms/mi"
-            ]
-          ],
-          [
-            "zeroSequenceReactance",
-            "number"
-          ],
-          [
-            "zeroSequenceReactanceUnit",
-            [
-              "ohms/mi"
-            ]
-          ],
-          [
-            "positiveSequenceCapacitance",
-            "number"
-          ],
-          [
-            "positiveSequenceCapacitanceUnit",
-            [
-              "nF/mi"
-            ]
-          ],
-          [
-            "zeroSequenceCapacitance",
-            "number"
-          ],
-          [
-            "zeroSequenceCapacitanceUnit",
-            [
-              "nF/mi"
-            ]
-          ],
-          [
-            "vendorName",
-            "vendorName"
-          ],
-          [
-            "productName",
-            "productName"
-          ],
-          [
-            "productVersion",
-            "productVersion"
-          ]
-        ],
-        "connectionAttributes": [
-          [
-            "busNodes",
-            [
-              "1",
-              "2",
-              "3",
-              "1.2",
-              "1.3",
-              "2.3",
-              "1.2.3",
-              "3.1"
-            ]
-          ]
-        ]
-      },
-      "q": {
-        "name": "Power Quality",
-        "assetAttributes": [
-          [
-            "qualityType",
-            [
-              "capacitor",
-              "regulator",
-              "booster"
-            ]
-          ],
-          [
-            "phaseCount",
-            [
-              1,
-              2,
-              3
-            ]
-          ],
-          [
-            "windingCount",
-            "number"
-          ],
-          [
-            "winding1Winding2PercentReactance",
-            "number"
-          ],
-          [
-            "percentLoadLoss",
-            "number"
-          ],
-          [
-            "regulatedVoltage",
-            "number"
-          ],
-          [
-            "regulatedVoltageUnit",
-            [
-              "V"
-            ]
-          ],
-          [
-            "bandwidthVoltage",
-            "number"
-          ],
-          [
-            "bandwidthVoltageUnit",
-            [
-              "V"
-            ]
-          ],
-          [
-            "potentialTransformerRatio",
-            "number"
-          ],
-          [
-            "currentTransformerRating",
-            "number"
-          ],
-          [
-            "currentTransformerRatingUnit",
-            [
-              "A"
-            ]
-          ],
-          [
-            "rSettingVoltage",
-            "number"
-          ],
-          [
-            "rSettingVoltageUnit",
-            [
-              "V"
-            ]
-          ],
-          [
-            "xSettingVoltage",
-            "number"
-          ],
-          [
-            "xSettingVoltageUnit",
-            [
-              "V"
-            ]
-          ],
-          [
-            "vendorName",
-            "vendorName"
-          ],
-          [
-            "productName",
-            "productName"
-          ],
-          [
-            "productVersion",
-            "productVersion"
-          ]
-        ],
-        "connectionAttributes": [
-          [
-            "baseVoltage",
-            "number"
-          ],
-          [
-            "baseVoltageUnit",
-            [
-              "kV"
-            ]
-          ],
-          [
-            "power",
-            "number"
-          ],
-          [
-            "powerUnit",
-            [
-              "kVA"
-            ]
-          ],
-          [
-            "busNodes",
-            [
-              "1",
-              "2",
-              "3",
-              "1.2",
-              "1.3",
-              "2.3",
-              "1.2.3"
-            ]
-          ]
-        ]
-      },
-      "c": {
-        "name": "Control"
-      },
-      "o": {
-        "name": "Storage",
-        "assetAttributes": [
-          [
-            "vendorName",
-            "vendorName"
-          ],
-          [
-            "productName",
-            "productName"
-          ],
-          [
-            "productVersion",
-            "productVersion"
-          ]
-        ]
-      },
-      "g": {
-        "name": "Generator",
-        "assetAttributes": [
-          [
-            "baseFrequency",
-            "number"
-          ],
-          [
-            "baseVoltage",
-            "number"
-          ],
-          [
-            "baseVoltageUnit",
-            [
-              "kV"
-            ]
-          ],
-          [
-            "perUnitVoltage",
-            "number"
-          ],
-          [
-            "phaseCount",
-            [
-              1,
-              2,
-              3
-            ]
-          ],
-          [
-            "phaseAngle",
-            "number"
-          ],
-          [
-            "shortCircuit3PhasePower",
-            "number"
-          ],
-          [
-            "shortCircuit3PhasePowerUnit",
-            [
-              "MVA"
-            ]
-          ],
-          [
-            "shortCircuit1PhasePower",
-            "number"
-          ],
-          [
-            "shortCircuit1PhasePowerUnit",
-            [
-              "MVA"
-            ]
-          ],
-          [
-            "vendorName",
-            "vendorName"
-          ],
-          [
-            "productName",
-            "productName"
-          ],
-          [
-            "productVersion",
-            "productVersion"
-          ]
-        ]
-      },
-      "s": {
-        "name": "Substation"
-      },
-      "S": {
-        "name": "Station"
-      },
-      "X": {
-        "name": "Asset",
-        "assetAttributes": [
-          [
-            "vendorName",
-            "vendorName"
-          ],
-          [
-            "productName",
-            "productName"
-          ],
-          [
-            "productVersion",
-            "productVersion"
-          ]
-        ]
-      }
-    },
     "assetById": {
-      "Example Utility ID.SoWXH9cM": {
-        "utilityId": "Example Utility ID",
-        "typeCode": "g",
+      "SoWXH9cM": {
+        "attributes": {
+          "baseFrequency": "60",
+          "baseVoltage": "115",
+          "perUnitVoltage": "1",
+          "phaseAngle": "30",
+          "phaseCount": 3,
+          "shortCircuit1PhasePower": "10500",
+          "shortCircuit3PhasePower": "10000"
+        },
         "name": "voltageSource",
-        "attributes": {
-          "baseFrequency": 60,
-          "baseVoltage": 115,
-          "perUnitVoltage": 1,
-          "phaseAngle": 30,
-          "phaseCount": 3,
-          "shortCircuit1PhasePower": 10500,
-          "shortCircuit3PhasePower": 10000
-        }
+        "typeCode": "g",
+        "connections": {
+          "0": {
+            "busId": "MWr4GiU5",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
       },
-      "Example Utility ID.3iIAGVcv": {
-        "utilityId": "Example Utility ID",
-        "typeCode": "t",
+      "3iIAGVcv": {
+        "attributes": {
+          "phaseCount": 3,
+          "winding1Winding2PercentReactance": "0.008",
+          "windingCount": "2",
+          "vendorName": "selinc",
+          "productName": "sel-3530"
+        },
         "name": "substationTransformer",
-        "attributes": {
-          "phaseCount": 3,
-          "winding1Winding2PercentReactance": 0.008,
-          "windingCount": 2
-        }
-      },
-      "Example Utility ID.8NebbMBe": {
-        "utilityId": "Example Utility ID",
-        "typeCode": "q",
-        "name": "voltageRegulator1",
-        "attributes": {
-          "bandwidthVoltage": 2,
-          "currentTransformerRating": 700,
-          "percentLoadLoss": 0.01,
-          "phaseCount": 1,
-          "potentialTransformerRatio": 20,
-          "qualityType": "regulator",
-          "rSettingVoltage": 3,
-          "regulatedVoltage": 122,
-          "winding1Winding2PercentReactance": 0.01,
-          "windingCount": 2,
-          "xSettingVoltage": 9
-        }
-      },
-      "Example Utility ID.nVVEyeog": {
-        "utilityId": "Example Utility ID",
-        "typeCode": "q",
-        "name": "voltageRegulator2",
-        "attributes": {
-          "bandwidthVoltage": 2,
-          "currentTransformerRating": 700,
-          "percentLoadLoss": 0.01,
-          "phaseCount": 1,
-          "potentialTransformerRatio": 20,
-          "qualityType": "regulator",
-          "rSettingVoltage": 3,
-          "regulatedVoltage": 122,
-          "winding1Winding2PercentReactance": 0.01,
-          "windingCount": 2,
-          "xSettingVoltage": 9
-        }
-      },
-      "Example Utility ID.Z4zUBz5a": {
-        "utilityId": "Example Utility ID",
-        "typeCode": "q",
-        "name": "voltageRegulator3",
-        "attributes": {
-          "bandwidthVoltage": 2,
-          "currentTransformerRating": 700,
-          "percentLoadLoss": 0.01,
-          "phaseCount": 1,
-          "potentialTransformerRatio": 20,
-          "qualityType": "regulator",
-          "rSettingVoltage": 3,
-          "regulatedVoltage": 122,
-          "winding1Winding2PercentReactance": 0.01,
-          "windingCount": 2,
-          "xSettingVoltage": 9
-        }
-      },
-      "Example Utility ID.EFtYFLdR": {
-        "utilityId": "Example Utility ID",
         "typeCode": "t",
-        "name": "XFM1",
+        "connections": {
+          "1": {
+            "busId": "89WNEXnL",
+            "attributes": {
+              "baseVoltage": "115",
+              "connectionType": "delta",
+              "power": "5000",
+              "powerPercentResistance": "0.0005"
+            }
+          },
+          "0": {
+            "busId": "V06E77W3",
+            "attributes": {
+              "baseVoltage": "4.16",
+              "connectionType": "wye",
+              "power": "5000",
+              "powerPercentResistance": "0.0005"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "8NebbMBe": {
+        "attributes": {
+          "bandwidthVoltage": "2",
+          "currentTransformerRating": "700",
+          "percentLoadLoss": "0.01",
+          "phaseCount": 1,
+          "potentialTransformerRatio": "20",
+          "qualityType": "regulator",
+          "rSettingVoltage": "3",
+          "regulatedVoltage": "122",
+          "winding1Winding2PercentReactance": "0.01",
+          "windingCount": "2",
+          "xSettingVoltage": "9"
+        },
+        "name": "voltageRegulator1",
+        "typeCode": "q",
+        "connections": {
+          "1": {
+            "busId": "UcJ7T1PM",
+            "attributes": {
+              "baseVoltage": "2.4",
+              "busNodes": "1",
+              "power": "1666"
+            }
+          },
+          "0": {
+            "busId": "6ySzP7TV",
+            "attributes": {
+              "baseVoltage": "2.4",
+              "busNodes": "1",
+              "power": "1666"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "nVVEyeog": {
+        "attributes": {
+          "bandwidthVoltage": "2",
+          "currentTransformerRating": "700",
+          "percentLoadLoss": "0.01",
+          "phaseCount": 1,
+          "potentialTransformerRatio": "20",
+          "qualityType": "regulator",
+          "rSettingVoltage": "3",
+          "regulatedVoltage": "122",
+          "winding1Winding2PercentReactance": "0.01",
+          "windingCount": "2",
+          "xSettingVoltage": "9"
+        },
+        "name": "voltageRegulator2",
+        "typeCode": "q",
+        "connections": {
+          "1": {
+            "busId": "3jhrTQCx",
+            "attributes": {
+              "baseVoltage": "2.4",
+              "busNodes": "2",
+              "power": "1666"
+            }
+          },
+          "0": {
+            "busId": "JOp19cqh",
+            "attributes": {
+              "baseVoltage": "2.4",
+              "busNodes": "2",
+              "power": "1666"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "Z4zUBz5a": {
+        "attributes": {
+          "bandwidthVoltage": "2",
+          "currentTransformerRating": "700",
+          "percentLoadLoss": "0.01",
+          "phaseCount": 1,
+          "potentialTransformerRatio": "20",
+          "qualityType": "regulator",
+          "rSettingVoltage": "3",
+          "regulatedVoltage": "122",
+          "winding1Winding2PercentReactance": "0.01",
+          "windingCount": "2",
+          "xSettingVoltage": "9"
+        },
+        "name": "voltageRegulator3",
+        "typeCode": "q",
+        "connections": {
+          "1": {
+            "busId": "jBHpEZUs",
+            "attributes": {
+              "baseVoltage": "2.4",
+              "busNodes": "3",
+              "power": "1666"
+            }
+          },
+          "0": {
+            "busId": "ko0p0YAw",
+            "attributes": {
+              "baseVoltage": "2.4",
+              "busNodes": "3",
+              "power": "1666"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "EFtYFLdR": {
         "attributes": {
           "phaseCount": 3,
-          "winding1Winding2PercentReactance": 1,
-          "windingCount": 2
-        }
+          "winding1Winding2PercentReactance": "1.0",
+          "windingCount": "2",
+          "vendorName": "selinc",
+          "productName": "sel-2241"
+        },
+        "name": "XFM1",
+        "typeCode": "t",
+        "connections": {
+          "1": {
+            "busId": "VpaTLb0p",
+            "attributes": {
+              "baseVoltage": "4.16",
+              "connectionType": "wye",
+              "power": "500",
+              "powerPercentResistance": "0.55"
+            }
+          },
+          "0": {
+            "busId": "fExpBqF6",
+            "attributes": {
+              "baseVoltage": "0.48",
+              "connectionType": "wye",
+              "power": "500",
+              "powerPercentResistance": "0.55"
+            }
+          }
+        },
+        "utilityId": ""
       },
-      "Example Utility ID.1F0bXv82": {
-        "utilityId": "Example Utility ID",
-        "typeCode": "m",
-        "name": "load_671",
+      "1F0bXv82": {
         "attributes": {
-          "loadModel": 1,
+          "loadModel": "1",
           "phaseCount": 3
-        }
-      },
-      "Example Utility ID.AUZvOQbO": {
-        "utilityId": "Example Utility ID",
+        },
+        "name": "load_671",
         "typeCode": "m",
+        "connections": {
+          "0": {
+            "busId": "UiYP3zu0",
+            "attributes": {
+              "activePower": "1155",
+              "baseVoltage": "4.16",
+              "busNodes": "1.2.3",
+              "connectionType": "delta",
+              "reactivePower": "660"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "AUZvOQbO": {
+        "attributes": {
+          "loadModel": "1",
+          "phaseCount": 1
+        },
         "name": "634_1",
-        "attributes": {
-          "loadModel": 1,
-          "phaseCount": 1
-        }
-      },
-      "Example Utility ID.AYKphAyK": {
-        "utilityId": "Example Utility ID",
         "typeCode": "m",
+        "connections": {
+          "0": {
+            "busId": "rQDcPAhS",
+            "attributes": {
+              "activePower": "160",
+              "baseVoltage": "0.277",
+              "busNodes": "1",
+              "connectionType": "wye",
+              "reactivePower": "110"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "AYKphAyK": {
+        "attributes": {
+          "loadModel": "1",
+          "phaseCount": 1
+        },
         "name": "634_2",
-        "attributes": {
-          "loadModel": 1,
-          "phaseCount": 1
-        }
-      },
-      "Example Utility ID.OF7MnxWP": {
-        "utilityId": "Example Utility ID",
         "typeCode": "m",
+        "connections": {
+          "0": {
+            "busId": "BLbyv4Ko",
+            "attributes": {
+              "activePower": "120",
+              "baseVoltage": "0.277",
+              "busNodes": "2",
+              "connectionType": "wye",
+              "reactivePower": "90"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "OF7MnxWP": {
+        "attributes": {
+          "loadModel": "1",
+          "phaseCount": 1
+        },
         "name": "634_3",
-        "attributes": {
-          "loadModel": 1,
-          "phaseCount": 1
-        }
-      },
-      "Example Utility ID.s2JVp4BJ": {
-        "utilityId": "Example Utility ID",
         "typeCode": "m",
+        "connections": {
+          "0": {
+            "busId": "mFskIAT1",
+            "attributes": {
+              "activePower": "120",
+              "baseVoltage": "0.277",
+              "busNodes": "3",
+              "connectionType": "wye",
+              "reactivePower": "90"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "s2JVp4BJ": {
+        "attributes": {
+          "loadModel": "1",
+          "phaseCount": 1
+        },
         "name": "645_2",
-        "attributes": {
-          "loadModel": 1,
-          "phaseCount": 1
-        }
-      },
-      "Example Utility ID.hImKAbZ1": {
-        "utilityId": "Example Utility ID",
         "typeCode": "m",
+        "connections": {
+          "0": {
+            "busId": "wWsBlCAa",
+            "attributes": {
+              "activePower": "170",
+              "baseVoltage": "2.4",
+              "busNodes": "2",
+              "connectionType": "wye",
+              "reactivePower": "125"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "hImKAbZ1": {
+        "attributes": {
+          "loadModel": "1",
+          "phaseCount": 1
+        },
         "name": "646_2",
-        "attributes": {
-          "loadModel": 1,
-          "phaseCount": 1
-        }
-      },
-      "Example Utility ID.swzwI8Qn": {
-        "utilityId": "Example Utility ID",
         "typeCode": "m",
+        "connections": {
+          "0": {
+            "busId": "BvbvrfWm",
+            "attributes": {
+              "activePower": "230",
+              "baseVoltage": "4.16",
+              "busNodes": "2.3",
+              "connectionType": "delta",
+              "reactivePower": "132"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "swzwI8Qn": {
+        "attributes": {
+          "loadModel": "2",
+          "phaseCount": 1
+        },
         "name": "652_1",
-        "attributes": {
-          "loadModel": 2,
-          "phaseCount": 1
-        }
-      },
-      "Example Utility ID.as9VbFpf": {
-        "utilityId": "Example Utility ID",
         "typeCode": "m",
+        "connections": {
+          "0": {
+            "busId": "KA7yUZO0",
+            "attributes": {
+              "activePower": "128",
+              "baseVoltage": "2.4",
+              "busNodes": "1",
+              "connectionType": "wye",
+              "reactivePower": "86"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "as9VbFpf": {
+        "attributes": {
+          "loadModel": "1",
+          "phaseCount": 1
+        },
         "name": "675_1",
-        "attributes": {
-          "loadModel": 1,
-          "phaseCount": 1
-        }
-      },
-      "Example Utility ID.tiyEM8SP": {
-        "utilityId": "Example Utility ID",
         "typeCode": "m",
+        "connections": {
+          "0": {
+            "busId": "PyO8J5Fj",
+            "attributes": {
+              "activePower": "485",
+              "baseVoltage": "2.4",
+              "busNodes": "1",
+              "connectionType": "wye",
+              "reactivePower": "190"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "tiyEM8SP": {
+        "attributes": {
+          "loadModel": "1",
+          "phaseCount": 1
+        },
         "name": "675_2",
-        "attributes": {
-          "loadModel": 1,
-          "phaseCount": 1
-        }
-      },
-      "Example Utility ID.CiEQLinb": {
-        "utilityId": "Example Utility ID",
         "typeCode": "m",
+        "connections": {
+          "0": {
+            "busId": "vRSPdDHw",
+            "attributes": {
+              "activePower": "68",
+              "baseVoltage": "2.4",
+              "busNodes": "2",
+              "connectionType": "wye",
+              "reactivePower": "60"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "CiEQLinb": {
+        "attributes": {
+          "loadModel": "1",
+          "phaseCount": 1
+        },
         "name": "675_3",
-        "attributes": {
-          "loadModel": 1,
-          "phaseCount": 1
-        }
-      },
-      "Example Utility ID.5r6cX2qZ": {
-        "utilityId": "Example Utility ID",
         "typeCode": "m",
+        "connections": {
+          "0": {
+            "busId": "Wo0ESh8x",
+            "attributes": {
+              "activePower": "290",
+              "baseVoltage": "2.4",
+              "busNodes": "3",
+              "connectionType": "wye",
+              "reactivePower": "212"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "5r6cX2qZ": {
+        "attributes": {
+          "loadModel": "5",
+          "phaseCount": 1
+        },
         "name": "692_3",
-        "attributes": {
-          "loadModel": 5,
-          "phaseCount": 1
-        }
-      },
-      "Example Utility ID.mxOp1mpO": {
-        "utilityId": "Example Utility ID",
         "typeCode": "m",
+        "connections": {
+          "0": {
+            "busId": "j4pyCAd5",
+            "attributes": {
+              "activePower": "170",
+              "baseVoltage": "4.16",
+              "busNodes": "3.1",
+              "connectionType": "delta",
+              "reactivePower": "151"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "mxOp1mpO": {
+        "attributes": {
+          "loadModel": "5",
+          "phaseCount": 1
+        },
         "name": "611_3",
-        "attributes": {
-          "loadModel": 5,
-          "phaseCount": 1
-        }
-      },
-      "Example Utility ID.SQoZOUds": {
-        "utilityId": "Example Utility ID",
         "typeCode": "m",
+        "connections": {
+          "0": {
+            "busId": "oEUBsY0z",
+            "attributes": {
+              "activePower": "170",
+              "baseVoltage": "2.4",
+              "busNodes": "3",
+              "connectionType": "wye",
+              "reactivePower": "80"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "SQoZOUds": {
+        "attributes": {
+          "loadModel": "1",
+          "phaseCount": 1
+        },
         "name": "670_1",
-        "attributes": {
-          "loadModel": 1,
-          "phaseCount": 1
-        }
-      },
-      "Example Utility ID.TmlZV6CT": {
-        "utilityId": "Example Utility ID",
         "typeCode": "m",
+        "connections": {
+          "0": {
+            "busId": "C6vrE7Ul",
+            "attributes": {
+              "activePower": "17",
+              "baseVoltage": "2.4",
+              "busNodes": "1",
+              "connectionType": "wye",
+              "reactivePower": "10"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "TmlZV6CT": {
+        "attributes": {
+          "loadModel": "1",
+          "phaseCount": 1
+        },
         "name": "670_2",
-        "attributes": {
-          "loadModel": 1,
-          "phaseCount": 1
-        }
-      },
-      "Example Utility ID.RrXqAAW0": {
-        "utilityId": "Example Utility ID",
         "typeCode": "m",
-        "name": "670_3",
-        "attributes": {
-          "loadModel": 1,
-          "phaseCount": 1
-        }
+        "connections": {
+          "0": {
+            "busId": "aDNkcj16",
+            "attributes": {
+              "activePower": "66",
+              "baseVoltage": "2.4",
+              "busNodes": "2",
+              "connectionType": "wye",
+              "reactivePower": "38"
+            }
+          }
+        },
+        "utilityId": ""
       },
-      "Example Utility ID.J4PWKWlE": {
-        "utilityId": "Example Utility ID",
-        "typeCode": "q",
-        "name": "cap1",
+      "RrXqAAW0": {
+        "attributes": {
+          "loadModel": "1",
+          "phaseCount": 1
+        },
+        "name": "670_3",
+        "typeCode": "m",
+        "connections": {
+          "0": {
+            "busId": "HBSQBvOh",
+            "attributes": {
+              "activePower": "117",
+              "baseVoltage": "2.4",
+              "busNodes": "3",
+              "connectionType": "wye",
+              "reactivePower": "68"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "J4PWKWlE": {
         "attributes": {
           "phaseCount": 3,
           "qualityType": "capacitor"
-        }
-      },
-      "Example Utility ID.Q69F3w8B": {
-        "utilityId": "Example Utility ID",
+        },
+        "name": "cap1",
         "typeCode": "q",
-        "name": "cap2",
+        "connections": {
+          "1": {
+            "busId": "RhC2fElM",
+            "attributes": {
+              "baseVoltage": "4.16",
+              "busNodes": "1.2.3",
+              "power": "600"
+            }
+          },
+          "0": {
+            "busId": "3T9nFiu6",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
+      },
+      "Q69F3w8B": {
         "attributes": {
           "phaseCount": 1,
           "qualityType": "capacitor"
-        }
+        },
+        "name": "cap2",
+        "typeCode": "q",
+        "connections": {
+          "1": {
+            "busId": "oEUBsY0z",
+            "attributes": {
+              "baseVoltage": "2.4",
+              "busNodes": "3",
+              "power": "100"
+            }
+          },
+          "0": {
+            "busId": "Yltz8WtP",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
       },
-      "Example Utility ID.l6TqNDcv": {
-        "utilityId": "Example Utility ID",
-        "typeCode": "l",
+      "l6TqNDcv": {
+        "attributes": {},
         "name": "XZSShGe3yfdby6eF1595484596878",
-        "attributes": {}
-      },
-      "Example Utility ID.A4kupFOU": {
-        "utilityId": "Example Utility ID",
         "typeCode": "l",
+        "connections": {
+          "1": {
+            "busId": "MWr4GiU5",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "89WNEXnL",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
+      },
+      "A4kupFOU": {
+        "attributes": {},
         "name": "plS9kjskDDggIobB1595484687137",
-        "attributes": {}
-      },
-      "Example Utility ID.e5zgDIH0": {
-        "utilityId": "Example Utility ID",
         "typeCode": "l",
+        "connections": {
+          "1": {
+            "busId": "UcJ7T1PM",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "V06E77W3",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
+      },
+      "e5zgDIH0": {
+        "attributes": {},
         "name": "0aDLhVSUOb85y15E1595484754542",
-        "attributes": {}
-      },
-      "Example Utility ID.yIuYGDCr": {
-        "utilityId": "Example Utility ID",
         "typeCode": "l",
+        "connections": {
+          "1": {
+            "busId": "jBHpEZUs",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "V06E77W3",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
+      },
+      "yIuYGDCr": {
+        "attributes": {},
         "name": "810FFO7xqQQqrHtU1595484765224",
-        "attributes": {}
-      },
-      "Example Utility ID.p13GC6mE": {
-        "utilityId": "Example Utility ID",
         "typeCode": "l",
+        "connections": {
+          "1": {
+            "busId": "3jhrTQCx",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "V06E77W3",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
+      },
+      "p13GC6mE": {
+        "attributes": {},
         "name": "a8wvNUVutTmV74H71595486803473",
-        "attributes": {}
-      },
-      "Example Utility ID.zkmQ0MsS": {
-        "utilityId": "Example Utility ID",
         "typeCode": "l",
+        "connections": {
+          "1": {
+            "busId": "ftxW0P7W",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "6ySzP7TV",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
+      },
+      "zkmQ0MsS": {
+        "attributes": {},
         "name": "TYMOV7a6QhxcQJeU1595486816611",
-        "attributes": {}
-      },
-      "Example Utility ID.HfTFYYhI": {
-        "utilityId": "Example Utility ID",
         "typeCode": "l",
+        "connections": {
+          "1": {
+            "busId": "ftxW0P7W",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "ko0p0YAw",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
+      },
+      "HfTFYYhI": {
+        "attributes": {},
         "name": "lRbAEHmCErw64m4q1595486824327",
-        "attributes": {}
-      },
-      "Example Utility ID.gcQzZGlt": {
-        "utilityId": "Example Utility ID",
         "typeCode": "l",
+        "connections": {
+          "1": {
+            "busId": "ftxW0P7W",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "JOp19cqh",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
+      },
+      "gcQzZGlt": {
+        "attributes": {},
         "name": "3B11HXqpvDsJaj2f1595487157579",
-        "attributes": {}
-      },
-      "Example Utility ID.QLZ4pcf2": {
-        "utilityId": "Example Utility ID",
         "typeCode": "l",
+        "connections": {
+          "1": {
+            "busId": "fExpBqF6",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "rQDcPAhS",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
+      },
+      "QLZ4pcf2": {
+        "attributes": {},
         "name": "6noUvRlevAVZEQ2c1595487162864",
-        "attributes": {}
-      },
-      "Example Utility ID.sGsQ3xve": {
-        "utilityId": "Example Utility ID",
         "typeCode": "l",
+        "connections": {
+          "1": {
+            "busId": "fExpBqF6",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "BLbyv4Ko",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
+      },
+      "sGsQ3xve": {
+        "attributes": {},
         "name": "F4opxpLertDz8isc1595487181308",
-        "attributes": {}
-      },
-      "Example Utility ID.ePxaJzTE": {
-        "utilityId": "Example Utility ID",
         "typeCode": "l",
+        "connections": {
+          "1": {
+            "busId": "fExpBqF6",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "mFskIAT1",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
+      },
+      "ePxaJzTE": {
+        "attributes": {},
         "name": "qJyzt7o227L7KaqL1595487617478",
-        "attributes": {}
-      },
-      "Example Utility ID.8XnqcznM": {
-        "utilityId": "Example Utility ID",
         "typeCode": "l",
+        "connections": {
+          "1": {
+            "busId": "RhC2fElM",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "PyO8J5Fj",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
+      },
+      "8XnqcznM": {
+        "attributes": {},
         "name": "q9GVtNn4u37qNbxM1595487627339",
-        "attributes": {}
-      },
-      "Example Utility ID.RbkZwwCG": {
-        "utilityId": "Example Utility ID",
         "typeCode": "l",
+        "connections": {
+          "1": {
+            "busId": "RhC2fElM",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "vRSPdDHw",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
+      },
+      "RbkZwwCG": {
+        "attributes": {},
         "name": "MyNsTGBCF4i7cRAV1595487641139",
-        "attributes": {}
-      },
-      "Example Utility ID.PpTOJCNc": {
-        "utilityId": "Example Utility ID",
         "typeCode": "l",
+        "connections": {
+          "1": {
+            "busId": "RhC2fElM",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "Wo0ESh8x",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
+      },
+      "PpTOJCNc": {
+        "attributes": {},
         "name": "s02NOI4Ppc0bytri1595487740665",
-        "attributes": {}
-      },
-      "Example Utility ID.kKJXCjqy": {
-        "utilityId": "Example Utility ID",
         "typeCode": "l",
-        "name": "645-646",
+        "connections": {
+          "2": {
+            "busId": "HBSQBvOh",
+            "attributes": {}
+          },
+          "1": {
+            "busId": "aDNkcj16",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "C6vrE7Ul",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
+      },
+      "kKJXCjqy": {
         "attributes": {
           "lengthUnit": "mi",
-          "lineLength": 0.6,
+          "lineLength": "0.6",
           "lineType": "mtx603",
           "phaseCount": 2
-        }
-      },
-      "Example Utility ID.ptDTDG2w": {
-        "utilityId": "Example Utility ID",
+        },
+        "name": "645-646",
         "typeCode": "l",
-        "name": "rg60-632",
+        "connections": {
+          "1": {
+            "busId": "BvbvrfWm",
+            "attributes": {
+              "busNodes": "2.3"
+            }
+          },
+          "0": {
+            "busId": "wWsBlCAa",
+            "attributes": {
+              "busNodes": "2.3"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "ptDTDG2w": {
         "attributes": {
           "lengthUnit": "mi",
-          "lineLength": 0.38,
+          "lineLength": "0.38",
           "lineType": "mtx601",
           "phaseCount": 3
-        }
-      },
-      "Example Utility ID.y2AcZhCR": {
-        "utilityId": "Example Utility ID",
+        },
+        "name": "rg60-632",
         "typeCode": "l",
-        "name": "632-645",
+        "connections": {
+          "0": {
+            "busId": "ftxW0P7W",
+            "attributes": {
+              "busNodes": "1.2.3"
+            }
+          },
+          "1": {
+            "busId": "lyPxB3G8",
+            "attributes": {
+              "busNodes": "1.2.3"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "y2AcZhCR": {
         "attributes": {
           "lengthUnit": "mi",
-          "lineLength": 0.09,
+          "lineLength": "0.09",
           "lineType": "mtx603",
           "phaseCount": 2
-        }
-      },
-      "Example Utility ID.Y627PcuU": {
-        "utilityId": "Example Utility ID",
+        },
+        "name": "632-645",
         "typeCode": "l",
-        "name": "632-633",
+        "connections": {
+          "2": {
+            "busId": "wWsBlCAa",
+            "attributes": {
+              "busNodes": "2.3"
+            }
+          },
+          "0": {
+            "busId": "lyPxB3G8",
+            "attributes": {
+              "busNodes": "2.3"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "Y627PcuU": {
         "attributes": {
           "lengthUnit": "mi",
-          "lineLength": 0.09,
+          "lineLength": "0.09",
           "lineType": "mtx602",
           "phaseCount": 3
-        }
-      },
-      "Example Utility ID.vEq0Q19T": {
-        "utilityId": "Example Utility ID",
+        },
+        "name": "632-633",
         "typeCode": "l",
-        "name": "684-652",
+        "connections": {
+          "1": {
+            "busId": "VpaTLb0p",
+            "attributes": {
+              "busNodes": "1.2.3"
+            }
+          },
+          "0": {
+            "busId": "lyPxB3G8",
+            "attributes": {
+              "busNodes": "1.2.3"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "vEq0Q19T": {
         "attributes": {
           "lengthUnit": "mi",
-          "lineLength": 0.15,
+          "lineLength": "0.15",
           "lineType": "mtx607",
           "phaseCount": 1
-        }
-      },
-      "Example Utility ID.5NdLbtGN": {
-        "utilityId": "Example Utility ID",
+        },
+        "name": "684-652",
         "typeCode": "l",
-        "name": "632-671",
+        "connections": {
+          "1": {
+            "busId": "70dUnUd6",
+            "attributes": {
+              "busNodes": "1"
+            }
+          },
+          "0": {
+            "busId": "KA7yUZO0",
+            "attributes": {
+              "busNodes": "1"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "5NdLbtGN": {
         "attributes": {
           "lengthUnit": "mi",
-          "lineLength": 0.38,
+          "lineLength": "0.38",
           "lineType": "mtx601",
           "phaseCount": 3
-        }
-      },
-      "Example Utility ID.4SJC1VqH": {
-        "utilityId": "Example Utility ID",
+        },
+        "name": "632-671",
         "typeCode": "l",
-        "name": "671-684",
+        "connections": {
+          "3": {
+            "busId": "UiYP3zu0",
+            "attributes": {
+              "busNodes": "1.2.3"
+            }
+          },
+          "0": {
+            "busId": "lyPxB3G8",
+            "attributes": {
+              "busNodes": "1.2.3"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "4SJC1VqH": {
         "attributes": {
           "lengthUnit": "mi",
-          "lineLength": 0.06,
+          "lineLength": "0.06",
           "lineType": "mtx604",
           "phaseCount": 2
-        }
-      },
-      "Example Utility ID.TW1vEGWE": {
-        "utilityId": "Example Utility ID",
+        },
+        "name": "671-684",
         "typeCode": "l",
-        "name": "671-680",
+        "connections": {
+          "2": {
+            "busId": "70dUnUd6",
+            "attributes": {
+              "busNodes": "1.3"
+            }
+          },
+          "0": {
+            "busId": "UiYP3zu0",
+            "attributes": {
+              "busNodes": "1.3"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "TW1vEGWE": {
         "attributes": {
           "lengthUnit": "mi",
-          "lineLength": 0.19,
+          "lineLength": "0.19",
           "lineType": "mtx601",
           "phaseCount": 3
-        }
-      },
-      "Example Utility ID.l3xsYeHE": {
-        "utilityId": "Example Utility ID",
+        },
+        "name": "671-680",
         "typeCode": "l",
-        "name": "684-611",
+        "connections": {
+          "1": {
+            "busId": "XT5pnFbD",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "UiYP3zu0",
+            "attributes": {
+              "busNodes": "1.2.3"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "l3xsYeHE": {
         "attributes": {
           "lengthUnit": "mi",
-          "lineLength": 0.06,
+          "lineLength": "0.06",
           "lineType": "mtx605",
           "phaseCount": 1
-        }
-      },
-      "Example Utility ID.xMxw87jC": {
-        "utilityId": "Example Utility ID",
+        },
+        "name": "684-611",
         "typeCode": "l",
-        "name": "692-675",
+        "connections": {
+          "1": {
+            "busId": "oEUBsY0z",
+            "attributes": {
+              "busNodes": "3"
+            }
+          },
+          "0": {
+            "busId": "70dUnUd6",
+            "attributes": {
+              "busNodes": "3"
+            }
+          }
+        },
+        "utilityId": ""
+      },
+      "xMxw87jC": {
         "attributes": {
           "lengthUnit": "mi",
-          "lineLength": 0.09,
+          "lineLength": "0.09",
           "lineType": "mtx606",
           "phaseCount": 3
-        }
+        },
+        "name": "692-675",
+        "typeCode": "l",
+        "connections": {
+          "1": {
+            "busId": "j4pyCAd5",
+            "attributes": {
+              "busNodes": "1.2.3"
+            }
+          },
+          "0": {
+            "busId": "RhC2fElM",
+            "attributes": {
+              "busNodes": "1.2.3"
+            }
+          }
+        },
+        "utilityId": ""
       },
-      "Example Utility ID.CuWmUVD7": {
-        "utilityId": "Example Utility ID",
-        "typeCode": "x",
-        "name": "671-692",
+      "CuWmUVD7": {
         "attributes": {
           "phaseCount": 3,
-          "positiveSequenceCapacitance": 0,
-          "positiveSequenceReactance": 0,
-          "positiveSequenceResistance": 0.0001,
-          "zeroSequenceCapacitance": 0,
-          "zeroSequenceReactance": 0,
-          "zeroSequenceResistance": 0.0001
-        }
+          "positiveSequenceCapacitance": "0",
+          "positiveSequenceReactance": "0",
+          "positiveSequenceResistance": "1e-4",
+          "zeroSequenceCapacitance": "0",
+          "zeroSequenceReactance": "0",
+          "zeroSequenceResistance": "1e-4"
+        },
+        "name": "671-692",
+        "typeCode": "x",
+        "connections": {
+          "1": {
+            "busId": "kD5Jqish",
+            "attributes": {
+              "busNodes": "1.2.3"
+            }
+          },
+          "0": {
+            "busId": "c6rrWDkd",
+            "attributes": {
+              "busNodes": "1.2.3"
+            }
+          }
+        },
+        "utilityId": ""
       },
-      "Example Utility ID.mhOwZlYZ": {
-        "utilityId": "Example Utility ID",
-        "typeCode": "l",
+      "mhOwZlYZ": {
+        "attributes": {},
         "name": "5f6XLA143Vnn4vP11595490167603",
-        "attributes": {}
-      },
-      "Example Utility ID.kJbSDpYJ": {
-        "utilityId": "Example Utility ID",
         "typeCode": "l",
+        "connections": {
+          "1": {
+            "busId": "c6rrWDkd",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "j4pyCAd5",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
+      },
+      "kJbSDpYJ": {
+        "attributes": {},
         "name": "HDgOPCcDNi2dsTo11595490182488",
-        "attributes": {}
+        "typeCode": "l",
+        "connections": {
+          "2": {
+            "busId": "UiYP3zu0",
+            "attributes": {}
+          },
+          "0": {
+            "busId": "kD5Jqish",
+            "attributes": {}
+          }
+        },
+        "utilityId": ""
       }
     },
     "assetsGeoJson": {
@@ -1035,7 +1107,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.SoWXH9cM",
+            "id": "SoWXH9cM",
             "typeCode": "g"
           }
         },
@@ -1049,7 +1121,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.3iIAGVcv",
+            "id": "3iIAGVcv",
             "typeCode": "t"
           }
         },
@@ -1063,7 +1135,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.8NebbMBe",
+            "id": "8NebbMBe",
             "typeCode": "q"
           }
         },
@@ -1077,7 +1149,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.nVVEyeog",
+            "id": "nVVEyeog",
             "typeCode": "q"
           }
         },
@@ -1091,7 +1163,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.Z4zUBz5a",
+            "id": "Z4zUBz5a",
             "typeCode": "q"
           }
         },
@@ -1105,7 +1177,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.EFtYFLdR",
+            "id": "EFtYFLdR",
             "typeCode": "t"
           }
         },
@@ -1119,7 +1191,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.1F0bXv82",
+            "id": "1F0bXv82",
             "typeCode": "m"
           }
         },
@@ -1133,7 +1205,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.AUZvOQbO",
+            "id": "AUZvOQbO",
             "typeCode": "m"
           }
         },
@@ -1147,7 +1219,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.AYKphAyK",
+            "id": "AYKphAyK",
             "typeCode": "m"
           }
         },
@@ -1161,7 +1233,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.OF7MnxWP",
+            "id": "OF7MnxWP",
             "typeCode": "m"
           }
         },
@@ -1175,7 +1247,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.s2JVp4BJ",
+            "id": "s2JVp4BJ",
             "typeCode": "m"
           }
         },
@@ -1189,7 +1261,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.hImKAbZ1",
+            "id": "hImKAbZ1",
             "typeCode": "m"
           }
         },
@@ -1203,7 +1275,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.swzwI8Qn",
+            "id": "swzwI8Qn",
             "typeCode": "m"
           }
         },
@@ -1217,7 +1289,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.as9VbFpf",
+            "id": "as9VbFpf",
             "typeCode": "m"
           }
         },
@@ -1231,7 +1303,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.tiyEM8SP",
+            "id": "tiyEM8SP",
             "typeCode": "m"
           }
         },
@@ -1245,7 +1317,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.CiEQLinb",
+            "id": "CiEQLinb",
             "typeCode": "m"
           }
         },
@@ -1259,7 +1331,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.5r6cX2qZ",
+            "id": "5r6cX2qZ",
             "typeCode": "m"
           }
         },
@@ -1273,7 +1345,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.mxOp1mpO",
+            "id": "mxOp1mpO",
             "typeCode": "m"
           }
         },
@@ -1287,7 +1359,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.SQoZOUds",
+            "id": "SQoZOUds",
             "typeCode": "m"
           }
         },
@@ -1301,7 +1373,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.TmlZV6CT",
+            "id": "TmlZV6CT",
             "typeCode": "m"
           }
         },
@@ -1315,7 +1387,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.RrXqAAW0",
+            "id": "RrXqAAW0",
             "typeCode": "m"
           }
         },
@@ -1329,7 +1401,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.J4PWKWlE",
+            "id": "J4PWKWlE",
             "typeCode": "q"
           }
         },
@@ -1343,7 +1415,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.Q69F3w8B",
+            "id": "Q69F3w8B",
             "typeCode": "q"
           }
         },
@@ -1363,7 +1435,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.l6TqNDcv",
+            "id": "l6TqNDcv",
             "typeCode": "l"
           }
         },
@@ -1383,7 +1455,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.A4kupFOU",
+            "id": "A4kupFOU",
             "typeCode": "l"
           }
         },
@@ -1403,7 +1475,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.e5zgDIH0",
+            "id": "e5zgDIH0",
             "typeCode": "l"
           }
         },
@@ -1423,7 +1495,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.yIuYGDCr",
+            "id": "yIuYGDCr",
             "typeCode": "l"
           }
         },
@@ -1443,7 +1515,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.p13GC6mE",
+            "id": "p13GC6mE",
             "typeCode": "l"
           }
         },
@@ -1463,7 +1535,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.zkmQ0MsS",
+            "id": "zkmQ0MsS",
             "typeCode": "l"
           }
         },
@@ -1483,7 +1555,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.HfTFYYhI",
+            "id": "HfTFYYhI",
             "typeCode": "l"
           }
         },
@@ -1503,7 +1575,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.gcQzZGlt",
+            "id": "gcQzZGlt",
             "typeCode": "l"
           }
         },
@@ -1523,7 +1595,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.QLZ4pcf2",
+            "id": "QLZ4pcf2",
             "typeCode": "l"
           }
         },
@@ -1543,7 +1615,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.sGsQ3xve",
+            "id": "sGsQ3xve",
             "typeCode": "l"
           }
         },
@@ -1563,7 +1635,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.ePxaJzTE",
+            "id": "ePxaJzTE",
             "typeCode": "l"
           }
         },
@@ -1583,7 +1655,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.8XnqcznM",
+            "id": "8XnqcznM",
             "typeCode": "l"
           }
         },
@@ -1603,7 +1675,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.RbkZwwCG",
+            "id": "RbkZwwCG",
             "typeCode": "l"
           }
         },
@@ -1627,7 +1699,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.PpTOJCNc",
+            "id": "PpTOJCNc",
             "typeCode": "l"
           }
         },
@@ -1647,7 +1719,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.kKJXCjqy",
+            "id": "kKJXCjqy",
             "typeCode": "l"
           }
         },
@@ -1667,7 +1739,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.ptDTDG2w",
+            "id": "ptDTDG2w",
             "typeCode": "l"
           }
         },
@@ -1691,7 +1763,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.y2AcZhCR",
+            "id": "y2AcZhCR",
             "typeCode": "l"
           }
         },
@@ -1711,7 +1783,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.Y627PcuU",
+            "id": "Y627PcuU",
             "typeCode": "l"
           }
         },
@@ -1731,7 +1803,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.vEq0Q19T",
+            "id": "vEq0Q19T",
             "typeCode": "l"
           }
         },
@@ -1759,7 +1831,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.5NdLbtGN",
+            "id": "5NdLbtGN",
             "typeCode": "l"
           }
         },
@@ -1783,7 +1855,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.4SJC1VqH",
+            "id": "4SJC1VqH",
             "typeCode": "l"
           }
         },
@@ -1803,7 +1875,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.TW1vEGWE",
+            "id": "TW1vEGWE",
             "typeCode": "l"
           }
         },
@@ -1823,7 +1895,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.l3xsYeHE",
+            "id": "l3xsYeHE",
             "typeCode": "l"
           }
         },
@@ -1843,7 +1915,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.xMxw87jC",
+            "id": "xMxw87jC",
             "typeCode": "l"
           }
         },
@@ -1857,7 +1929,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.CuWmUVD7",
+            "id": "CuWmUVD7",
             "typeCode": "x"
           }
         },
@@ -1877,7 +1949,7 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.mhOwZlYZ",
+            "id": "mhOwZlYZ",
             "typeCode": "l"
           }
         },
@@ -1901,50 +1973,11 @@
             ]
           },
           "properties": {
-            "id": "Example Utility ID.kJbSDpYJ",
+            "id": "kJbSDpYJ",
             "typeCode": "l"
           }
         }
       ]
     }
-  },
-  "risks": {},
-  "tasks": {
-    "taskPriorityTypes": [
-      {
-        "code": 10,
-        "name": "Normal"
-      }
-    ],
-    "taskStatusTypes": [
-      {
-        "code": 0,
-        "name": "TODO"
-      },
-      {
-        "name": "In progress",
-        "code": "10"
-      }
-    ],
-    "tasks": [
-      {
-        "assetId": "Example Utility ID.EFtYFLdR",
-        "name": "Add risks",
-        "description": "",
-        "priority": 10,
-        "id": "c8cb996a-fd22-481a-a792-ae737eef4f80",
-        "status": 0
-      }
-    ]
-  },
-  "comments": {
-    "c8cb996a-fd22-481a-a792-ae737eef4f80": [
-      {
-        "taskId": "c8cb996a-fd22-481a-a792-ae737eef4f80",
-        "text": "Awaiting confirmation",
-        "creationUserId": "user@example.org",
-        "creationTimestamp": 1603980950
-      }
-    ]
   }
 }
