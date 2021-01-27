@@ -6,6 +6,8 @@ input:
   variables:
     - id: b
       data:
-        - value: 1
-        - value: 2
-        - value: 3
+        batch:
+          path: result-batch.txt
+        # - value: 1
+        # - value: 2
+        # - value: 3
