@@ -1,3 +1,8 @@
 body {
     background-color: powderblue;
 }
+
+.box {
+    background-color: salmon;
+    transform: rotate(20deg);
+}
