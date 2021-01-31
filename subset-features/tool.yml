@@ -1,0 +1,31 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Generate a Random Contiguous Subset of Features
+version:
+  name: 0.2.0
+input:
+  variables:
+    - id: features
+      view: map
+      path: features.geojson
+    - id: count
+      view: number
+      path: settings.json
+output:
+  variables:
+    - id: features
+      view: map
+      path: features.geojson
+tests:
+  - folder: tests/standard
+script:
+  folder: .
+  command: jupyter nbconvert run.ipynb --to notebook --execute --stdout
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: subset-features
+environment:
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny
