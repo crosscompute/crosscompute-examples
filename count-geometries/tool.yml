@@ -1,7 +1,7 @@
 ---
 crosscompute: 0.8.4
 kind: tool
-name: Measure Geometries
+name: Count Geometries
 version:
   name: 0.0.1
 input:
