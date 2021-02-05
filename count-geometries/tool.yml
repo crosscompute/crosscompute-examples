@@ -33,13 +33,14 @@ output:
 #     view: number
 #     path: statistics.json
 tests:
+  - folder: tests/single
   - folder: tests/standard
 script:
   folder: .
   command: jupyter nbconvert run.ipynb --to notebook --execute --stdout
 repository:
   uri: https://github.com/crosscompute/crosscompute-examples
-  folder: measure-geometries
+  folder: count-geometries
 environment: 
   image: osgeo/gdal
   processor: cpu
