@@ -1,0 +1,7 @@
+,0
+lineType,default
+power flow p0,100.52985065358615
+power flow p1,-99.99999999456968
+power flow q0,105.29850658117857
+power flow q1,-99.99999999101387
+outage risk hasElectricity,1

@@ -1,0 +1,44 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Review Electricity Infrastructure Analysis
+version:
+  name: 0.0.1
+input:
+  variables:
+    - id: name
+      view: text
+      path: settings.json
+output:
+  variables:
+    - id: name
+      view: text
+      path: settings.json
+    - id: type
+      view: text
+      path: settings.json
+    - id: settings
+      view: table
+      path: settings.csv
+    - id: electricity-network
+      view: map
+      path: electricity-network.json
+    - id: plot
+      view: image
+      path: plot.png
+  templates:
+    - id: standard
+      name: Standard
+      path: result.md
+tests:
+  - folder: tests/standard
+script:
+  folder: .
+  command: jupyter nbconvert run.ipynb --to notebook --execute --stdout
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: survey-infrastructure/3 review
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny
