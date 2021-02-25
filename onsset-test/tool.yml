@@ -24,6 +24,9 @@ input:
       path: templates/input/standard.md
 output:
   variables:
+    - id: onsset-map
+      view: electricity-network
+      path: assets.json
     - id: details
       view: table
       path: details.csv
