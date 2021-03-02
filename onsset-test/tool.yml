@@ -3,7 +3,7 @@ crosscompute: 0.8.4
 kind: tool
 name: Test ONSSET tool
 version:
-  name: 0.0.1
+  name: 0.0.4
 input:
   variables:
     - id: cities
