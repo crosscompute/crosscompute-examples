@@ -20,8 +20,9 @@ variables:
 #         id: VARIABLE-ID
 templates:
   - id: page1
-    name: Page 1
     path: templates/output/standard.md
+# - id: page2
+#   path: result.yml
 print:
   style:
     path: report.css
