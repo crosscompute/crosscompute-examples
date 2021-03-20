@@ -1,20 +1,23 @@
 ---
 crosscompute: 0.8.4
 kind: tool
-name: Collect Electricity Infrastructure Surveys
+name: Survey Electricity Infrastructure
 version:
-  name: 0.0.4
+  name: 0.0.2
 input:
   variables:
-    - id: survey-codes
+    - id: survey-code
       view: text
       path: settings.json
+    - id: electricity-infrastructure
+      view: electricity-network
+      path: electricity-network.json
   templates:
     - id: standard
       path: input.md
 output:
   variables:
-    - id: electricity-network
+    - id: electricity-infrastructure
       view: electricity-network
       path: electricity-network.json
     - id: statistics
@@ -23,15 +26,12 @@ output:
     - id: electricity-generators
       view: map
       path: electricity-generators.geojson
-    - id: electricity-lines
-      view: map
-      path: electricity-lines.geojson
     - id: electricity-meters
       view: map
       path: electricity-meters.geojson
-    - id: electricity-meters-table
-      view: table
-      path: electricity-meters.csv
+    - id: electricity-lines
+      view: map
+      path: electricity-lines.geojson
   templates:
     - id: standard
       path: output.md
@@ -39,10 +39,10 @@ tests:
   - folder: tests/standard
 script:
   folder: .
-  command: jupyter nbconvert run.ipynb --to notebook --execute --stdout
+  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
 repository:
   uri: https://github.com/crosscompute/crosscompute-examples
-  folder: survey-infrastructure/2 collect
+  folder: survey-infrastructure/1 survey
 environment: 
   image: docker.io/library/python:slim-buster
   processor: cpu
