@@ -1,0 +1,78 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Test Errors
+version:
+  name: 0.0.1
+input:
+  variables:
+    - id: a
+      name: A
+      view: number
+      path: numbers.json
+    - id: b
+      name: B
+      view: number
+      path: numbers.json
+  templates:
+    - id: standard
+      name: Standard
+      path: templates/input/standard.md
+output:
+  variables:
+    - id: c
+      name: C
+      view: number
+      path: properties.json
+    - id: d
+      name: D
+      view: number
+      path: properties.json
+  templates:
+    - id: standard
+      name: Standard
+      path: templates/output/standard.md
+log:
+  variables:
+    - id: e
+      name: E
+      view: number
+      path: properties.json
+    - id: f
+      name: F
+      view: number
+      path: properties.json
+  templates:
+    - id: standard
+      name: Standard
+      path: templates/log/standard.md
+debug:
+  variables:
+    - id: g
+      name: G
+      view: number
+      path: properties.json
+    - id: h
+      name: H
+      view: number
+      path: properties.json
+  templates:
+    - id: standard
+      name: Standard
+      path: templates/debug/standard.md
+tests:
+  - folder: tests/full-output
+  - folder: tests/partial-output
+  - folder: tests/user-error
+  - folder: tests/script-error
+  - folder: tests/system-error
+script:
+  folder: .
+  command: python run.py {input_folder} {output_folder} {log_folder} {debug_folder}
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: test-errors
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny
