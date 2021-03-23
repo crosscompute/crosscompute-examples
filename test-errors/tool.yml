@@ -25,21 +25,24 @@ output:
       path: templates/output/standard.md
 log:
   variables:
-    - id: c
-      view: number
-      path: properties.json
-    - id: d
-      view: number
-      path: properties.json
+    - id: messages
+      view: text
+      path: messages.txt
+    - id: errors
+      view: table
+      path: errors.txt
+    - id: errors
+      view: map
+      path: errors.txt
   templates:
     - id: standard
       path: templates/log/standard.md
 debug:
   variables:
-    - id: e
+    - id: y
       view: number
       path: properties.json
-    - id: f
+    - id: z
       view: number
       path: properties.json
   templates:

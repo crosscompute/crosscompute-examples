@@ -14,17 +14,31 @@ debug_dictionary = {}
 
 
 if x < 10:
-    output_dictionary['c'] = a + b
-    log_dictionary['e'] = a + b
-    debug_dictionary['g'] = a + b
-if x < 100:
-    output_dictionary['d'] = a * b
-    log_dictionary['f'] = a * b
-    debug_dictionary['h'] = a * b
+    output_dictionary['a'] = 1
+    output_dictionary['b'] = 2
+    log_dictionary['c'] = 3
+    log_dictionary['d'] = 4
+    debug_dictionary['e'] = 5
+    debug_dictionary['f'] = 6
+elif x < 20:
+    output_dictionary['a'] = 10
+    log_dictionary['c'] = 30
+    debug_dictionary['e'] = 50
+elif x < 30:
+    output_dictionary['a'] = 100
+    log_dictionary['c'] = 
+elif x < 40:
+    output_dictionary['a'] = 1000
+    raise Exception('script')
+else:
+    output_dictionary['a'] = 10000
+    raise MemoryError('memory')
 
 
 json.dump(output_dictionary, open(join(
     output_folder, 'properties.json'), 'wt'))
+json.dump(log_dictionary, open(join(
+    log_folder, 'properties.json'), 'wt'))
 json.dump(log_dictionary, open(join(
     log_folder, 'properties.json'), 'wt'))
 json.dump(debug_dictionary, open(join(

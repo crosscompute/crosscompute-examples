@@ -6,6 +6,6 @@ tool:
   path: tool.yml
 input:
   variables:
-    - id: a
+    - id: x
       data:
         value: 1
