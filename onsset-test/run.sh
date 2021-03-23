@@ -5,4 +5,4 @@ pip install \
     onsset \
     pandas \
     xlrd==1.2.0
-jupyter nbconvert run.ipynb --to notebook --execute --stdout
+python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"

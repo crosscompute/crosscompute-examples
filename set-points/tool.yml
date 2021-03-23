@@ -21,7 +21,7 @@ tests:
   - folder: tests/standard
 script:
   folder: .
-  command: jupyter nbconvert run.ipynb --to notebook --execute --stdout
+  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
 repository:
   uri: https://github.com/crosscompute/crosscompute-examples
   folder: set-points
