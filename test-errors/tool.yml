@@ -6,59 +6,44 @@ version:
   name: 0.0.1
 input:
   variables:
-    - id: a
-      name: A
-      view: number
-      path: numbers.json
-    - id: b
-      name: B
+    - id: x
       view: number
       path: numbers.json
   templates:
     - id: standard
-      name: Standard
       path: templates/input/standard.md
 output:
   variables:
-    - id: c
-      name: C
+    - id: a
       view: number
       path: properties.json
-    - id: d
-      name: D
+    - id: b
       view: number
       path: properties.json
   templates:
     - id: standard
-      name: Standard
       path: templates/output/standard.md
 log:
   variables:
-    - id: e
-      name: E
+    - id: c
       view: number
       path: properties.json
-    - id: f
-      name: F
+    - id: d
       view: number
       path: properties.json
   templates:
     - id: standard
-      name: Standard
       path: templates/log/standard.md
 debug:
   variables:
-    - id: g
-      name: G
+    - id: e
       view: number
       path: properties.json
-    - id: h
-      name: H
+    - id: f
       view: number
       path: properties.json
   templates:
     - id: standard
-      name: Standard
       path: templates/debug/standard.md
 tests:
   - folder: tests/full-output

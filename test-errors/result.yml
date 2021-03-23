@@ -1,14 +1,11 @@
 ---
 crosscompute: 0.8.4
 kind: result
-name: '{a} {b} {c} {d}'
+name: '{x} {a} {b}'
 tool:
   path: tool.yml
 input:
   variables:
     - id: a
-      data:
-        value: 1
-    - id: b
       data:
         value: 1
