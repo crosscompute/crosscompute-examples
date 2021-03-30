@@ -1,0 +1,49 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Show Search Trends
+version:
+  name: 0.0.1
+input:
+  variables:
+    - id: country_name
+      view: text
+      path: settings.json
+    - id: year_count
+      view: number
+      path: settings.json
+output:
+  variables:
+#   - id: trends_now_description
+#     view: markdown
+#     path: now-description.md
+    - id: trends_now
+      view: markdown
+      path: now.md
+#   - id: trends_today_description
+#     view: markdown
+#     path: today-description.md
+    - id: trends_today
+      view: markdown
+      path: today.md
+    - id: trends_before_description
+      view: markdown
+      path: before-description.md
+    - id: trends_before
+      view: table
+      path: before.csv
+  templates:
+    - id: standard
+      path: result.md
+tests:
+  - folder: tests/standard
+script:
+  folder: .
+  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
+repository:
+  uri: git@github.com:crosscompute/crosscompute-examples
+  folder: search-trends/sections/02-search-trends
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny

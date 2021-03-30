@@ -1,0 +1,43 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Check Search Terms
+version:
+  name: 0.0.1
+input:
+  variables:
+    - id: search_terms
+      view: text
+      path: search-terms.txt
+output:
+  variables:
+    - id: interest_over_time
+      view: image
+      path: interest-over-time.png
+    - id: interest_by_region
+      view: table
+      path: interest-by-region.csv
+    - id: related_top
+      view: table
+      path: related-top.csv
+    - id: related_rising
+      view: table
+      path: related-rising.csv
+    - id: suggestions
+      view: table
+      path: suggestions.csv
+  templates:
+    - id: standard
+      path: result.md
+tests:
+  - folder: tests/standard
+script:
+  folder: .
+  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
+repository:
+  uri: git@github.com:crosscompute/crosscompute-examples
+  folder: search-trends/sections/01-search-terms
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny

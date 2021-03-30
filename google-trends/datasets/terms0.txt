@@ -1,0 +1,4 @@
+mortgage
+rent
+student loan
+mattress

@@ -1,0 +1,20 @@
+- Kelvin Sampson
+- Rami Malek
+- Volkswagen
+- Rochelle Walensky
+- Nyc vaccine
+- Evan Fournier
+- BAYLOR university
+- SpaceX
+- Baylor basketball
+- Suez Canal crisis
+- Derek Chauvin
+- Satan Shoes
+- Pansexual
+- NLE Choppa
+- Archegos
+- Russell Westbrook
+- Kelsea Ballerini
+- Petr Kellner
+- Ghislaine Maxwell
+- Captain Underpants

@@ -1,0 +1,15 @@
+---
+crosscompute: 0.8.4
+kind: result
+name: '{search_terms}'
+tool:
+  path: tool.yml
+input:
+  variables:
+    - id: search_terms
+      data:
+        path: datasets/terms0.txt
+print:
+  style:
+    path: report.css
+  format: pdf

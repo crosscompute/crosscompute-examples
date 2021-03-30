@@ -1,0 +1,1 @@
+Here are global search trends for the past 7 years.

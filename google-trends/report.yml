@@ -1,0 +1,23 @@
+---
+crosscompute: 0.8.4
+name: '{search_terms}'
+kind: report
+input:
+  variables:
+    - id: search_terms
+      view: text
+      data:
+        - path: datasets/terms0.txt
+        - path: datasets/terms1.txt
+output:
+  templates:
+    - path: sections/01-search-terms/result.yml
+    - path: sections/02-search-trends/result.yml
+print:
+  style:
+    path: report.css
+  header:
+    path: header.md
+  footer:
+    path: footer.md
+  format: pdf
