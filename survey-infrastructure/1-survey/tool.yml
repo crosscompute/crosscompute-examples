@@ -3,7 +3,7 @@ crosscompute: 0.8.4
 kind: tool
 name: Survey Electricity Infrastructure
 version:
-  name: 0.0.2
+  name: 0.0.1
 input:
   variables:
     - id: survey-code
