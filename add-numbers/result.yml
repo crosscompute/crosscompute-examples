@@ -11,7 +11,3 @@ input:
     - id: b
       data:
         value: 1
-print:
-  style:
-    path: result.css
-  format: pdf
