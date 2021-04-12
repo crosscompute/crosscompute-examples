@@ -7,26 +7,21 @@ version:
 input:
   variables:
     - id: a
-      name: A
       view: number
       path: numbers.json
     - id: b
-      name: B
       view: number
       path: numbers.json
   templates:
     - id: standard
-      name: Standard
       path: templates/input/standard.md
 output:
   variables:
     - id: c
-      name: C
       view: number
       path: properties.json
   templates:
     - id: standard
-      name: Standard
       path: templates/output/standard.md
 tests:
   - folder: tests/integers
