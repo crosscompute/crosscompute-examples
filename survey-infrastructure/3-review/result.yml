@@ -4,6 +4,12 @@ kind: result
 name: '{name} - Electricity Infrastructure Analysis'
 tool:
   path: tool.yml
+input:
+  variables:
+    - id: name
+      data:
+        batch:
+          path: result-batch.txt
 print:
   style:
     path: result.css
