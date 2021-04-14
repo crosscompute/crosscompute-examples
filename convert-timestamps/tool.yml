@@ -1,0 +1,31 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Convert Timestamps
+version:
+  name: 0.0.1
+input:
+  variables:
+    - id: table
+      view: table
+      path: table.csv
+    - id: timestamp_format
+      view: text
+      path: settings.json
+output:
+  variables:
+    - id: table
+      view: table
+      path: table.csv
+tests:
+  - folder: tests/standard
+script:
+  folder: .
+  command: python run.py {input_folder} {output_folder} {log_folder} {debug_folder}
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: convert-timestamps
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny
