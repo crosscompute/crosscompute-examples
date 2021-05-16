@@ -1,0 +1,23 @@
+---
+crosscompute: 0.8.4
+kind: report
+name: '{customer_name} - Energy Use Report'
+input:
+  variables:
+    - id: customer_name
+      view: text
+      data:
+        batch:
+          path: datasets/customers-some.txt
+output:
+  templates:
+    - path: sections/001-load-profile/result.yml
+    - path: sections/002-cost-savings/result.yml
+print:
+  style:
+    path: report.css
+  header:
+    path: header.md
+  footer:
+    path: footer.md
+  format: pdf
