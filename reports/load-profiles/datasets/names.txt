@@ -1,0 +1,5 @@
+USA_AR_Fayetteville-Drake.Field.*
+USA_FL_Tampa.Intl.AP.*
+USA_MI_Grand.Rapids-Kent.County.Intl.AP.*
+USA_MO_Springfield.Rgnl.AP.*
+USA_SD_Rapid.City.Rgnl.AP.*
