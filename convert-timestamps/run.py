@@ -17,7 +17,7 @@ for old_column_name in old_column_names:
     for raw_value in table[old_column_name]:
         try:
             value = pendulum.parse(raw_value)
-        except pendulum.exceptions.ParserError:
+        except (pendulum.exceptions.ParserError, TypeError):
             value = ''
         if value != '':
             value = value.format(timestamp_format)
