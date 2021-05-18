@@ -1,18 +1,18 @@
 ---
 crosscompute: 0.8.4
 kind: report
-name: '{customer_name} - Energy Use Report'
+name: '{name} - Load Profiles'
 input:
   variables:
-    - id: customer_name
+    - id: name
       view: text
       data:
         batch:
-          path: datasets/customers-some.txt
+          path: datasets/names.txt
 output:
   templates:
-    - path: sections/001-load-profile/result.yml
-    - path: sections/002-cost-savings/result.yml
+    - path: sections/residential/result.yml
+    - path: sections/commercial/result.yml
 print:
   style:
     path: report.css

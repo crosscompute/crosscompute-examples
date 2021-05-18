@@ -1,0 +1,46 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Explore Residential Load Profiles
+version:
+  name: 0.0.1
+input:
+  variables:
+    - id: name
+      view: text
+      path: settings.json
+output:
+  variables:
+    - id: residential-base-description
+      view: table
+      path: residential-base-description.csv
+    - id: residential-base
+      view: image
+      path: residential-base.png
+    - id: residential-low-description
+      view: table
+      path: residential-low-description.csv
+    - id: residential-low
+      view: image
+      path: residential-low.png
+    - id: residential-high-description
+      view: table
+      path: residential-high-description.csv
+    - id: residential-high
+      view: image
+      path: residential-high.png
+  templates:
+    - id: standard
+      path: result.md
+tests:
+  - folder: tests/standard
+script:
+  folder: .
+  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: reports/load-profiles/residential
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny

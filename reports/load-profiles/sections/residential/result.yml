@@ -1,0 +1,12 @@
+---
+crosscompute: 0.8.4
+kind: result
+name: '{ name } - Residential Load Profiles'
+tool:
+  path: tool.yml
+input:
+  variables:
+    - id: name
+      data:
+        batch:
+          path: ../../datasets/names.txt
