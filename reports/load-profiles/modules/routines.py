@@ -4,6 +4,9 @@ import numpy as np
 import pandas as pd
 from os.path import join
 
+from macros import (
+    get_title_case_from_camel_case)
+
 
 def load_table(path):
     t = pd.read_csv(
@@ -27,6 +30,7 @@ def split_table(table):
         column_name = column_name.replace('Electricity:', '')
         column_name = column_name.replace('General:', '')
         column_name = column_name.replace(':InteriorEquipment', '')
+        column_name = column_name.replace('Equipment', ' Equipment')
         column_name = column_name.replace('Lights', ' Lights')
         column_name = column_name.replace(':WaterSystems', '')
         return column_name
@@ -43,6 +47,9 @@ def split_table(table):
     def rename_gas_column(column_name):
         column_name = column_name.replace(':Gas', '')
         column_name = column_name.replace('Gas:', '')
+        column_name = column_name.replace(
+            'InteriorEquipment', 'Interior Equipment')
+        column_name = column_name.replace(':WaterSystems', '')
         return column_name
 
     gas_column_names = [_ for _ in column_names if 'Gas' in _]
@@ -72,7 +79,8 @@ def save_table_plot(
     x_labels = [_.strftime('%m/%d %H:%M') for _ in x_values]
     ax = table.plot.area(figsize=(6, 4))
     ax.set_title(
-        f'{place_name} {customer_type} {energy_type} {category_name}',
+        f'{place_name} {customer_type} {energy_type} '
+        f'{get_title_case_from_camel_case(category_name)}',
         loc='left')
     ax.legend(bbox_to_anchor=(1, 1))
     plt.xticks(x_values, x_labels, rotation=30)
@@ -96,7 +104,8 @@ def save_date_plot(
         (table.index < b_datestamp)]
     ax = t.plot.area(figsize=(7, 3))
     ax.set_title(
-        f'{place_name} {customer_type} {energy_type} {category_name} '
+        f'{place_name} {customer_type} {energy_type} '
+        f'{get_title_case_from_camel_case(category_name)} '
         f'{a_datestamp}',
         loc='left')
     ax.legend(bbox_to_anchor=(1, 1))

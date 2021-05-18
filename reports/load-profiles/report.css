@@ -14,8 +14,8 @@ body {
 
 #front-cover-title {
   position: absolute;
-  top: 9in;  /* Depends on page and image dimensions */
-  font-size: 32pt;
+  top: 7in;  /* Depends on page and image dimensions */
+  font-size: 28pt;
   line-height: 130%;
   transform: translate(0, -50%);
 }
