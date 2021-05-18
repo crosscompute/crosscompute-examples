@@ -23,7 +23,5 @@
 
   <div>
     <span class='pageNumber' />
-    /
-    <span class='totalPages' />
   </div>
 </div>

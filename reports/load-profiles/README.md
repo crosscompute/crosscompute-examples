@@ -41,15 +41,33 @@ jupyter lab
 
 ## How to output tables and images
 
+1. Save the table with extension `.csv` or image with extension `.png` as a file in the `output_folder` (see `run.ipynb`)
+2. Define the output variable with `view: table` or `view: image` (see `tool.yml`)
+3. Reference the variable by its id in the template (see `result.md`)
+
 ## How to output conditional markdown
+
+1. Save the text with extension `.md` as a file in the `output_folder` (see `run.ipynb`)
+2. Define the output variable with `view: markdown` (see `tool.yml`)
+3. Reference the variable by its id in the template (see `result.md`)
 
 ## How to add page breaks
 
+1. Paste `<div style='page-break-after: always;'></div>` in the template (see `result.md`)
+
 ## How to style individual tables
+
+1. Note that each variable id is an HTML class that you can reference in the CSS stylesheet
+2. Use a CSS regular expression for efficient pattern matching (see `report.css`)
 
 ## How to show page numbers
 
+1. Add `<span class='pageNumber' />` and relevant styles to the footer template (see `footer.md`)
+2. Adjust the styles in the footer template to skip page numbering on the first page (see `footer.md`)
+
 ## How to render pages in landscape orientation
+
+1. Specify `@page { size: landscape; }` (see `report.css`)
 
 ## How to separate common code into modules
 
@@ -57,14 +75,36 @@ We have placed common code into `routines.py` and then imported common routines 
 
 ```
 import sys
-if '..' not in sys.path:
-    sys.path.append('..')
-    
+
+def add_modules_folder(folder):
+    if folder not in sys.path:
+        sys.path.append(folder)
+
+add_modules_folder('../../modules')
+
 from routines import (
     load_table,
-    parse_timestamp)
+    parse_timestamp,
+    save_date_plot,
+    save_table_description,
+    save_table_plot,
+    split_table)
 ```
 
 After updating `routines.py`, be sure to restart your kernel in JupyterLab by pressing zero twice in command mode, i.e. ESC 0 0.
 
 ## How to debug notebooks
+
+Thanks to [Xeus Python](https://github.com/jupyter-xeus) team, you can now debug JupyterLab notebooks directly in the browser.
+
+1. Install `xeus-python` using `pip`
+2. Select the `XPython` kernel
+3. Activate the debugger
+4. Set breakpoints
+5. Run and step through your code
+
+For command-line scripts and modules such as `routines.py`, we still recommend using `pudb`.
+
+1. Install `pudb` using `pip`
+2. Save your notebook to a script `jupyter nbconvert run.ipynb --to script --stdout > run.py`
+3. Debug your script `python -m pudb run.py`
