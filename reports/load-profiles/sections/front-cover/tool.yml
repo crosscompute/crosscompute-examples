@@ -1,0 +1,31 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Render Front Cover
+version:
+  name: 0.0.1
+input:
+  variables:
+    - id: name
+      view: text
+      path: settings.json
+output:
+  variables:
+    - id: background
+      view: image
+      path: background.png
+    - id: title
+      view: markdown
+      path: title.md    
+tests:
+  - folder: tests/standard
+script:
+  folder: .
+  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: reports/load-profiles/sections/front-cover
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny

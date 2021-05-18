@@ -11,24 +11,90 @@ input:
       path: settings.json
 output:
   variables:
-    - id: residential-base-description
+    - id: place_name
+      view: text
+      path: settings.json
+    - id: data_description
+      view: markdown
+      path: description.md
+
+    - id: Residential-Electricity-Base-Description
       view: table
-      path: residential-base-description.csv
-    - id: residential-base
+      path: Residential-Electricity-Base-Description.csv 
+    - id: Residential-Electricity-Base
       view: image
-      path: residential-base.png
-    - id: residential-low-description
+      path: Residential-Electricity-Base.png
+    - id: Residential-Electricity-Base-2000-01-01-2000-01-02
+      view: image
+      path: Residential-Electricity-Base-2000-01-01-2000-01-02.png
+    - id: Residential-Electricity-Base-2000-06-01-2000-06-02
+      view: image
+      path: Residential-Electricity-Base-2000-06-01-2000-06-02.png
+
+    - id: Residential-Electricity-Low-Description
       view: table
-      path: residential-low-description.csv
-    - id: residential-low
+      path: Residential-Electricity-Low-Description.csv 
+    - id: Residential-Electricity-Low
       view: image
-      path: residential-low.png
-    - id: residential-high-description
+      path: Residential-Electricity-Low.png
+    - id: Residential-Electricity-Low-2000-01-01-2000-01-02
+      view: image
+      path: Residential-Electricity-Low-2000-01-01-2000-01-02.png
+    - id: Residential-Electricity-Low-2000-06-01-2000-06-02
+      view: image
+      path: Residential-Electricity-Low-2000-06-01-2000-06-02.png
+
+    - id: Residential-Electricity-High-Description
       view: table
-      path: residential-high-description.csv
-    - id: residential-high
+      path: Residential-Electricity-High-Description.csv 
+    - id: Residential-Electricity-High
       view: image
-      path: residential-high.png
+      path: Residential-Electricity-High.png
+    - id: Residential-Electricity-High-2000-01-01-2000-01-02
+      view: image
+      path: Residential-Electricity-High-2000-01-01-2000-01-02.png
+    - id: Residential-Electricity-High-2000-06-01-2000-06-02
+      view: image
+      path: Residential-Electricity-High-2000-06-01-2000-06-02.png
+
+    - id: Residential-Gas-Base-Description
+      view: table
+      path: Residential-Gas-Base-Description.csv 
+    - id: Residential-Gas-Base
+      view: image
+      path: Residential-Gas-Base.png
+    - id: Residential-Gas-Base-2000-01-01-2000-01-02
+      view: image
+      path: Residential-Gas-Base-2000-01-01-2000-01-02.png
+    - id: Residential-Gas-Base-2000-06-01-2000-06-02
+      view: image
+      path: Residential-Gas-Base-2000-06-01-2000-06-02.png
+
+    - id: Residential-Gas-Low-Description
+      view: table
+      path: Residential-Gas-Low-Description.csv 
+    - id: Residential-Gas-Low
+      view: image
+      path: Residential-Gas-Low.png
+    - id: Residential-Gas-Low-2000-01-01-2000-01-02
+      view: image
+      path: Residential-Gas-Low-2000-01-01-2000-01-02.png
+    - id: Residential-Gas-Low-2000-06-01-2000-06-02
+      view: image
+      path: Residential-Gas-Low-2000-06-01-2000-06-02.png
+
+    - id: Residential-Gas-High-Description
+      view: table
+      path: Residential-Gas-High-Description.csv 
+    - id: Residential-Gas-High
+      view: image
+      path: Residential-Gas-High.png
+    - id: Residential-Gas-High-2000-01-01-2000-01-02
+      view: image
+      path: Residential-Gas-High-2000-01-01-2000-01-02.png
+    - id: Residential-Gas-High-2000-06-01-2000-06-02
+      view: image
+      path: Residential-Gas-High-2000-06-01-2000-06-02.png
   templates:
     - id: standard
       path: result.md

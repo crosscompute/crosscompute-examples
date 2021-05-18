@@ -5,10 +5,34 @@ body {
 }
 
 @page {
-  margin-left: 0.5in;
-  margin-right: 0.5in;
-  margin-top: 0.5in;
-  margin-bottom: 0.5in;
+  /* size: landscape; */
+  margin-left: 1in;
+  margin-right: 1in;
+  margin-top: 1in;
+  margin-bottom: 1in;
+}
+
+#front-cover-title {
+  position: absolute;
+  top: 9in;  /* Depends on page and image dimensions */
+  font-size: 32pt;
+  line-height: 130%;
+  transform: translate(0, -50%);
+}
+
+/* Right align cells that are not in the first column */
+td:not(:first-child) {
+  text-align: right;
+}
+
+/* Set color for first row cells that are not in the first column */
+[class*="Electricity"] tbody :nth-child(2) td:not(:first-child) {
+  color: red;
+}
+
+/* Set color for first row cells that are not in the first column */
+[class*="Gas"] tbody :nth-child(2) td:not(:first-child) {
+  color: blue;
 }
 
 /* Footnotes */

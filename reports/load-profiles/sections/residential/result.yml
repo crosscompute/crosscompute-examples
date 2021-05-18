@@ -1,7 +1,7 @@
 ---
 crosscompute: 0.8.4
 kind: result
-name: '{ name } - Residential Load Profiles'
+name: '{name} - Residential Load Profiles'
 tool:
   path: tool.yml
 input:
@@ -9,4 +9,8 @@ input:
     - id: name
       data:
         batch:
-          path: ../../datasets/names.txt
+          path: datasets/names-some.txt
+print:
+  style:
+    path: report.css
+  format: pdf

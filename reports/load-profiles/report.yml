@@ -8,9 +8,10 @@ input:
       view: text
       data:
         batch:
-          path: datasets/names.txt
+          path: datasets/names-some.txt
 output:
   templates:
+    - path: sections/front-cover/result.yml  
     - path: sections/residential/result.yml
     - path: sections/commercial/result.yml
 print:

@@ -1,3 +1,4 @@
 pip install --upgrade \
     h5pyd
-hsconfigure  # https://developer.nrel.gov/signup
+echo https://developer.nrel.gov/signup
+hsconfigure
