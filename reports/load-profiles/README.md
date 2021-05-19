@@ -109,7 +109,7 @@ Thanks to [Xeus Python](https://github.com/jupyter-xeus) team, you can now debug
 4. Set breakpoints
 5. Run and step through your code
 
-For command-line scripts and modules such as `routines.py`, we recommend using `pudb`.
+For command-line scripts and modules such as `routines.py`, use `pudb`.
 
 1. Install `pudb` using `pip`
 2. Save your notebook to a script `jupyter nbconvert run.ipynb --to script --stdout > run.py`
@@ -119,4 +119,4 @@ For command-line scripts and modules such as `routines.py`, we recommend using `
 
 1. Replace `names-some.txt` with `names-all.txt` (see `report.yml`)
 
-To speed iteration, we recommend keeping the batch small while prototyping and polishing your report.
+To speed iteration, keep the batch small while prototyping and polishing your report.
