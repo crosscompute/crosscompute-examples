@@ -11,6 +11,11 @@ This example report demonstrates the following:
 7. How to separate common code into modules
 8. How to debug notebooks
 
+You can see what the reports look like by opening the `examples` subfolder. Here are the steps you can take to recreate those examples.
+
+- To download the datasets, run `Download Load Profiles 20210505.ipynb` first.
+- To generate the report, install [crosscompute-jupyterlab-extensions](https://pypi.org/project/crosscompute-jupyterlab-extensions) from PyPI and obtain a token from [crosscompute.com](https://crosscompute.com), then open `run.ipynb` in the root folder and click the CrossCompute icon.
+
 ```bash
 # Prepare environment
 virtualenv -p $(which python3) ~/.virtualenvs/crosscompute
@@ -35,9 +40,6 @@ jupyter lab
 # OR
 # Open sections/commercial/run.ipynb and click the CrossCompute icon to run a section
 ```
-
-- To download the datasets, please run `Download Load Profiles 20210505.ipynb` first.
-- To generate the report, you will need to install [crosscompute-jupyterlab-extensions](https://pypi.org/project/crosscompute-jupyterlab-extensions) from PyPI and obtain a token from [crosscompute.com](https://crosscompute.com).
 
 ## How to output tables and images
 
