@@ -20,6 +20,14 @@ body {
   transform: translate(0, -50%);
 }
 
+#front-cover-note {
+  position: absolute;
+  top: 10in;  /* Depends on page and image dimensions */
+  font-size: 12pt;
+  line-height: 130%;
+  transform: translate(0, -50%);    
+}
+
 /* Right align cells that are not in the first column */
 td:not(:first-child) {
   text-align: right;

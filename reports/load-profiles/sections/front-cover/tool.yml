@@ -16,7 +16,10 @@ output:
       path: background.png
     - id: title
       view: markdown
-      path: title.md    
+      path: title.md
+    - id: note
+      view: markdown
+      path: note.md
 tests:
   - folder: tests/standard
 script:
