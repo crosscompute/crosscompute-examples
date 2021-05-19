@@ -109,7 +109,7 @@ Thanks to [Xeus Python](https://github.com/jupyter-xeus) team, you can now debug
 4. Set breakpoints
 5. Run and step through your code
 
-For command-line scripts and modules such as `routines.py`, use `pudb`.
+For command-line scripts and modules such as `routines.py`, use [pudb](https://pypi.org/project/pudb).
 
 1. Install `pudb` using `pip`
 2. Save your notebook to a script `jupyter nbconvert run.ipynb --to script --stdout > run.py`
