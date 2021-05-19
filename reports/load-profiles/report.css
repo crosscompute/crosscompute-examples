@@ -5,7 +5,7 @@ body {
 }
 
 @page {
-  /* size: landscape; */
+  size: letter landscape;
   margin-left: 1in;
   margin-right: 1in;
   margin-top: 1in;
@@ -14,7 +14,7 @@ body {
 
 #front-cover-title {
   position: absolute;
-  top: 8.5in;  /* Depends on page and image dimensions */
+  top: 4.25in;  /* Depends on page and image dimensions */
   font-size: 28pt;
   line-height: 130%;
   transform: translate(0, -50%);
@@ -22,7 +22,7 @@ body {
 
 #front-cover-note {
   position: absolute;
-  top: 10in;  /* Depends on page and image dimensions */
+  top: 6in;  /* Depends on page and image dimensions */
   font-size: 12pt;
   line-height: 130%;
   transform: translate(0, -50%);    

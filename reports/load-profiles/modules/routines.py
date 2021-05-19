@@ -64,7 +64,11 @@ def save_table_description(
     target_path = join(
         target_folder,
         f'{customer_type}-{energy_type}-{category_name}-Description.csv')
-    table.describe().round(2).to_csv(target_path)
+    table.describe(
+        percentiles=[],
+    ).drop([
+        'count', 'std', '50%',
+    ]).round(2).to_csv(target_path)
     return target_path
 
 
@@ -77,16 +81,17 @@ def save_table_plot(
     datetime_series = pd.Series(table.index)
     x_values = datetime_series.quantile(np.linspace(0, 1, num=10))
     x_labels = [_.strftime('%m/%d %H:%M') for _ in x_values]
-    ax = table.plot.area(figsize=(6, 4))
+    ax = table.plot.area(figsize=(9, 2.5))
     ax.set_title(
         f'{place_name} {customer_type} {energy_type} '
         f'{get_title_case_from_camel_case(category_name)}',
         loc='left')
-    ax.legend(bbox_to_anchor=(1, 1))
+    ax.legend(bbox_to_anchor=(1, 1), loc='upper left')
     plt.xticks(x_values, x_labels, rotation=30)
     plt.xlabel('')
     plt.ylabel('kW')
     ax.plot()
+    plt.tight_layout()
     plt.savefig(target_path, bbox_inches='tight')
     plt.close()
     return target_path
@@ -102,16 +107,17 @@ def save_date_plot(
     t = table[
         (table.index > a_datestamp) &
         (table.index < b_datestamp)]
-    ax = t.plot.area(figsize=(7, 3))
+    ax = t.plot.area(figsize=(9, 2.5))
     ax.set_title(
         f'{place_name} {customer_type} {energy_type} '
         f'{get_title_case_from_camel_case(category_name)} '
         f'{a_datestamp}',
         loc='left')
-    ax.legend(bbox_to_anchor=(1, 1))
+    ax.legend(bbox_to_anchor=(1, 1), loc='upper left')
     plt.xlabel('Time')
     plt.ylabel('kW')
     ax.plot()
+    plt.tight_layout()
     plt.savefig(target_path, bbox_inches='tight')
     plt.close()
     return target_path

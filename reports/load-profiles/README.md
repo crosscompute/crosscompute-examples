@@ -10,6 +10,7 @@ This example report demonstrates the following:
 6. How to render pages in landscape orientation
 7. How to separate common code into modules
 8. How to debug notebooks
+9. How to generate reports over more places
 
 You can see what the reports look like by opening the `examples` subfolder. Here are the steps you can take to recreate those examples.
 
@@ -41,6 +42,8 @@ jupyter lab
 # Open sections/commercial/run.ipynb and click the CrossCompute icon to run a section
 ```
 
+Visit [crosscompute.com](https://crosscompute.com) for Training + Support on how to automate your own reports.
+
 ## How to output tables and images
 
 1. Save the table with extension `.csv` or image with extension `.png` as a file in the `output_folder` (see `run.ipynb`)
@@ -70,6 +73,7 @@ jupyter lab
 ## How to render pages in landscape orientation
 
 1. Specify `@page { size: landscape; }` (see `report.css`)
+2. Note that if your pages seem to be differently sized from report to report, your tables might be too wide. Try using a larger page size such as `@page { size: legal landscape; }`
 
 ## How to separate common code into modules
 
@@ -110,3 +114,9 @@ For command-line scripts and modules such as `routines.py`, we still recommend u
 1. Install `pudb` using `pip`
 2. Save your notebook to a script `jupyter nbconvert run.ipynb --to script --stdout > run.py`
 3. Debug your script `python -m pudb run.py`
+
+##. How to generate reports over more places
+
+1. Replace `names-some.txt` with `names-all.txt` (see `report.yml`)
+
+To speed iteration, we recommend keeping the batch small while prototyping and polishing your report.
