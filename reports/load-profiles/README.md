@@ -115,7 +115,7 @@ For command-line scripts and modules such as `routines.py`, we still recommend u
 2. Save your notebook to a script `jupyter nbconvert run.ipynb --to script --stdout > run.py`
 3. Debug your script `python -m pudb run.py`
 
-##. How to generate reports over more places
+## How to generate reports over more places
 
 1. Replace `names-some.txt` with `names-all.txt` (see `report.yml`)
 
