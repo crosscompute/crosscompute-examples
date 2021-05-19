@@ -1,0 +1,450 @@
+---
+crosscompute: 0.8.4
+kind: tool
+name: Explore Commercial Load Profiles
+version:
+  name: 0.0.1
+input:
+  variables:
+    - id: name
+      view: text
+      path: settings.json
+output:
+  variables:
+    - id: place_name
+      view: text
+      path: settings.json
+    - id: data_description
+      view: markdown
+      path: description.md
+
+    - id: Commercial-Electricity-FullServiceRestaurant-Description
+      view: table
+      path: Commercial-Electricity-FullServiceRestaurant-Description.csv
+    - id: Commercial-Electricity-FullServiceRestaurant
+      view: image
+      path: Commercial-Electricity-FullServiceRestaurant.png
+    - id: Commercial-Electricity-FullServiceRestaurant-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Electricity-FullServiceRestaurant-2000-01-01-2000-01-02.png
+    - id: Commercial-Electricity-FullServiceRestaurant-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Electricity-FullServiceRestaurant-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Electricity-Hospital-Description
+      view: table
+      path: Commercial-Electricity-Hospital-Description.csv
+    - id: Commercial-Electricity-Hospital
+      view: image
+      path: Commercial-Electricity-Hospital.png
+    - id: Commercial-Electricity-Hospital-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Electricity-Hospital-2000-01-01-2000-01-02.png
+    - id: Commercial-Electricity-Hospital-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Electricity-Hospital-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Electricity-LargeHotel-Description
+      view: table
+      path: Commercial-Electricity-LargeHotel-Description.csv
+    - id: Commercial-Electricity-LargeHotel
+      view: image
+      path: Commercial-Electricity-LargeHotel.png
+    - id: Commercial-Electricity-LargeHotel-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Electricity-LargeHotel-2000-01-01-2000-01-02.png
+    - id: Commercial-Electricity-LargeHotel-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Electricity-LargeHotel-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Electricity-LargeOffice-Description
+      view: table
+      path: Commercial-Electricity-LargeOffice-Description.csv
+    - id: Commercial-Electricity-LargeOffice
+      view: image
+      path: Commercial-Electricity-LargeOffice.png
+    - id: Commercial-Electricity-LargeOffice-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Electricity-LargeOffice-2000-01-01-2000-01-02.png
+    - id: Commercial-Electricity-LargeOffice-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Electricity-LargeOffice-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Electricity-MediumOffice-Description
+      view: table
+      path: Commercial-Electricity-MediumOffice-Description.csv
+    - id: Commercial-Electricity-MediumOffice
+      view: image
+      path: Commercial-Electricity-MediumOffice.png
+    - id: Commercial-Electricity-MediumOffice-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Electricity-MediumOffice-2000-01-01-2000-01-02.png
+    - id: Commercial-Electricity-MediumOffice-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Electricity-MediumOffice-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Electricity-MidriseApartment-Description
+      view: table
+      path: Commercial-Electricity-MidriseApartment-Description.csv
+    - id: Commercial-Electricity-MidriseApartment
+      view: image
+      path: Commercial-Electricity-MidriseApartment.png
+    - id: Commercial-Electricity-MidriseApartment-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Electricity-MidriseApartment-2000-01-01-2000-01-02.png
+    - id: Commercial-Electricity-MidriseApartment-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Electricity-MidriseApartment-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Electricity-OutPatient-Description
+      view: table
+      path: Commercial-Electricity-OutPatient-Description.csv
+    - id: Commercial-Electricity-OutPatient
+      view: image
+      path: Commercial-Electricity-OutPatient.png
+    - id: Commercial-Electricity-OutPatient-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Electricity-OutPatient-2000-01-01-2000-01-02.png
+    - id: Commercial-Electricity-OutPatient-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Electricity-OutPatient-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Electricity-PrimarySchool-Description
+      view: table
+      path: Commercial-Electricity-PrimarySchool-Description.csv
+    - id: Commercial-Electricity-PrimarySchool
+      view: image
+      path: Commercial-Electricity-PrimarySchool.png
+    - id: Commercial-Electricity-PrimarySchool-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Electricity-PrimarySchool-2000-01-01-2000-01-02.png
+    - id: Commercial-Electricity-PrimarySchool-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Electricity-PrimarySchool-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Electricity-QuickServiceRestaurant-Description
+      view: table
+      path: Commercial-Electricity-QuickServiceRestaurant-Description.csv
+    - id: Commercial-Electricity-QuickServiceRestaurant
+      view: image
+      path: Commercial-Electricity-QuickServiceRestaurant.png
+    - id: Commercial-Electricity-QuickServiceRestaurant-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Electricity-QuickServiceRestaurant-2000-01-01-2000-01-02.png
+    - id: Commercial-Electricity-QuickServiceRestaurant-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Electricity-QuickServiceRestaurant-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Electricity-SecondarySchool-Description
+      view: table
+      path: Commercial-Electricity-SecondarySchool-Description.csv
+    - id: Commercial-Electricity-SecondarySchool
+      view: image
+      path: Commercial-Electricity-SecondarySchool.png
+    - id: Commercial-Electricity-SecondarySchool-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Electricity-SecondarySchool-2000-01-01-2000-01-02.png
+    - id: Commercial-Electricity-SecondarySchool-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Electricity-SecondarySchool-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Electricity-SmallHotel-Description
+      view: table
+      path: Commercial-Electricity-SmallHotel-Description.csv
+    - id: Commercial-Electricity-SmallHotel
+      view: image
+      path: Commercial-Electricity-SmallHotel.png
+    - id: Commercial-Electricity-SmallHotel-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Electricity-SmallHotel-2000-01-01-2000-01-02.png
+    - id: Commercial-Electricity-SmallHotel-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Electricity-SmallHotel-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Electricity-SmallOffice-Description
+      view: table
+      path: Commercial-Electricity-SmallOffice-Description.csv
+    - id: Commercial-Electricity-SmallOffice
+      view: image
+      path: Commercial-Electricity-SmallOffice.png
+    - id: Commercial-Electricity-SmallOffice-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Electricity-SmallOffice-2000-01-01-2000-01-02.png
+    - id: Commercial-Electricity-SmallOffice-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Electricity-SmallOffice-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Electricity-StandaloneRetail-Description
+      view: table
+      path: Commercial-Electricity-StandaloneRetail-Description.csv
+    - id: Commercial-Electricity-StandaloneRetail
+      view: image
+      path: Commercial-Electricity-StandaloneRetail.png
+    - id: Commercial-Electricity-StandaloneRetail-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Electricity-StandaloneRetail-2000-01-01-2000-01-02.png
+    - id: Commercial-Electricity-StandaloneRetail-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Electricity-StandaloneRetail-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Electricity-StripMall-Description
+      view: table
+      path: Commercial-Electricity-StripMall-Description.csv
+    - id: Commercial-Electricity-StripMall
+      view: image
+      path: Commercial-Electricity-StripMall.png
+    - id: Commercial-Electricity-StripMall-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Electricity-StripMall-2000-01-01-2000-01-02.png
+    - id: Commercial-Electricity-StripMall-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Electricity-StripMall-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Electricity-SuperMarket-Description
+      view: table
+      path: Commercial-Electricity-SuperMarket-Description.csv
+    - id: Commercial-Electricity-SuperMarket
+      view: image
+      path: Commercial-Electricity-SuperMarket.png
+    - id: Commercial-Electricity-SuperMarket-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Electricity-SuperMarket-2000-01-01-2000-01-02.png
+    - id: Commercial-Electricity-SuperMarket-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Electricity-SuperMarket-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Electricity-Warehouse-Description
+      view: table
+      path: Commercial-Electricity-Warehouse-Description.csv
+    - id: Commercial-Electricity-Warehouse
+      view: image
+      path: Commercial-Electricity-Warehouse.png
+    - id: Commercial-Electricity-Warehouse-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Electricity-Warehouse-2000-01-01-2000-01-02.png
+    - id: Commercial-Electricity-Warehouse-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Electricity-Warehouse-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Gas-FullServiceRestaurant-Description
+      view: table
+      path: Commercial-Gas-FullServiceRestaurant-Description.csv
+    - id: Commercial-Gas-FullServiceRestaurant
+      view: image
+      path: Commercial-Gas-FullServiceRestaurant.png
+    - id: Commercial-Gas-FullServiceRestaurant-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Gas-FullServiceRestaurant-2000-01-01-2000-01-02.png
+    - id: Commercial-Gas-FullServiceRestaurant-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Gas-FullServiceRestaurant-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Gas-Hospital-Description
+      view: table
+      path: Commercial-Gas-Hospital-Description.csv
+    - id: Commercial-Gas-Hospital
+      view: image
+      path: Commercial-Gas-Hospital.png
+    - id: Commercial-Gas-Hospital-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Gas-Hospital-2000-01-01-2000-01-02.png
+    - id: Commercial-Gas-Hospital-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Gas-Hospital-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Gas-LargeHotel-Description
+      view: table
+      path: Commercial-Gas-LargeHotel-Description.csv
+    - id: Commercial-Gas-LargeHotel
+      view: image
+      path: Commercial-Gas-LargeHotel.png
+    - id: Commercial-Gas-LargeHotel-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Gas-LargeHotel-2000-01-01-2000-01-02.png
+    - id: Commercial-Gas-LargeHotel-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Gas-LargeHotel-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Gas-LargeOffice-Description
+      view: table
+      path: Commercial-Gas-LargeOffice-Description.csv
+    - id: Commercial-Gas-LargeOffice
+      view: image
+      path: Commercial-Gas-LargeOffice.png
+    - id: Commercial-Gas-LargeOffice-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Gas-LargeOffice-2000-01-01-2000-01-02.png
+    - id: Commercial-Gas-LargeOffice-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Gas-LargeOffice-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Gas-MediumOffice-Description
+      view: table
+      path: Commercial-Gas-MediumOffice-Description.csv
+    - id: Commercial-Gas-MediumOffice
+      view: image
+      path: Commercial-Gas-MediumOffice.png
+    - id: Commercial-Gas-MediumOffice-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Gas-MediumOffice-2000-01-01-2000-01-02.png
+    - id: Commercial-Gas-MediumOffice-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Gas-MediumOffice-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Gas-MidriseApartment-Description
+      view: table
+      path: Commercial-Gas-MidriseApartment-Description.csv
+    - id: Commercial-Gas-MidriseApartment
+      view: image
+      path: Commercial-Gas-MidriseApartment.png
+    - id: Commercial-Gas-MidriseApartment-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Gas-MidriseApartment-2000-01-01-2000-01-02.png
+    - id: Commercial-Gas-MidriseApartment-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Gas-MidriseApartment-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Gas-OutPatient-Description
+      view: table
+      path: Commercial-Gas-OutPatient-Description.csv
+    - id: Commercial-Gas-OutPatient
+      view: image
+      path: Commercial-Gas-OutPatient.png
+    - id: Commercial-Gas-OutPatient-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Gas-OutPatient-2000-01-01-2000-01-02.png
+    - id: Commercial-Gas-OutPatient-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Gas-OutPatient-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Gas-PrimarySchool-Description
+      view: table
+      path: Commercial-Gas-PrimarySchool-Description.csv
+    - id: Commercial-Gas-PrimarySchool
+      view: image
+      path: Commercial-Gas-PrimarySchool.png
+    - id: Commercial-Gas-PrimarySchool-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Gas-PrimarySchool-2000-01-01-2000-01-02.png
+    - id: Commercial-Gas-PrimarySchool-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Gas-PrimarySchool-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Gas-QuickServiceRestaurant-Description
+      view: table
+      path: Commercial-Gas-QuickServiceRestaurant-Description.csv
+    - id: Commercial-Gas-QuickServiceRestaurant
+      view: image
+      path: Commercial-Gas-QuickServiceRestaurant.png
+    - id: Commercial-Gas-QuickServiceRestaurant-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Gas-QuickServiceRestaurant-2000-01-01-2000-01-02.png
+    - id: Commercial-Gas-QuickServiceRestaurant-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Gas-QuickServiceRestaurant-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Gas-SecondarySchool-Description
+      view: table
+      path: Commercial-Gas-SecondarySchool-Description.csv
+    - id: Commercial-Gas-SecondarySchool
+      view: image
+      path: Commercial-Gas-SecondarySchool.png
+    - id: Commercial-Gas-SecondarySchool-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Gas-SecondarySchool-2000-01-01-2000-01-02.png
+    - id: Commercial-Gas-SecondarySchool-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Gas-SecondarySchool-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Gas-SmallHotel-Description
+      view: table
+      path: Commercial-Gas-SmallHotel-Description.csv
+    - id: Commercial-Gas-SmallHotel
+      view: image
+      path: Commercial-Gas-SmallHotel.png
+    - id: Commercial-Gas-SmallHotel-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Gas-SmallHotel-2000-01-01-2000-01-02.png
+    - id: Commercial-Gas-SmallHotel-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Gas-SmallHotel-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Gas-SmallOffice-Description
+      view: table
+      path: Commercial-Gas-SmallOffice-Description.csv
+    - id: Commercial-Gas-SmallOffice
+      view: image
+      path: Commercial-Gas-SmallOffice.png
+    - id: Commercial-Gas-SmallOffice-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Gas-SmallOffice-2000-01-01-2000-01-02.png
+    - id: Commercial-Gas-SmallOffice-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Gas-SmallOffice-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Gas-StandaloneRetail-Description
+      view: table
+      path: Commercial-Gas-StandaloneRetail-Description.csv
+    - id: Commercial-Gas-StandaloneRetail
+      view: image
+      path: Commercial-Gas-StandaloneRetail.png
+    - id: Commercial-Gas-StandaloneRetail-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Gas-StandaloneRetail-2000-01-01-2000-01-02.png
+    - id: Commercial-Gas-StandaloneRetail-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Gas-StandaloneRetail-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Gas-StripMall-Description
+      view: table
+      path: Commercial-Gas-StripMall-Description.csv
+    - id: Commercial-Gas-StripMall
+      view: image
+      path: Commercial-Gas-StripMall.png
+    - id: Commercial-Gas-StripMall-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Gas-StripMall-2000-01-01-2000-01-02.png
+    - id: Commercial-Gas-StripMall-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Gas-StripMall-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Gas-SuperMarket-Description
+      view: table
+      path: Commercial-Gas-SuperMarket-Description.csv
+    - id: Commercial-Gas-SuperMarket
+      view: image
+      path: Commercial-Gas-SuperMarket.png
+    - id: Commercial-Gas-SuperMarket-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Gas-SuperMarket-2000-01-01-2000-01-02.png
+    - id: Commercial-Gas-SuperMarket-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Gas-SuperMarket-2000-06-01-2000-06-02.png
+
+    - id: Commercial-Gas-Warehouse-Description
+      view: table
+      path: Commercial-Gas-Warehouse-Description.csv
+    - id: Commercial-Gas-Warehouse
+      view: image
+      path: Commercial-Gas-Warehouse.png
+    - id: Commercial-Gas-Warehouse-2000-01-01-2000-01-02
+      view: image
+      path: Commercial-Gas-Warehouse-2000-01-01-2000-01-02.png
+    - id: Commercial-Gas-Warehouse-2000-06-01-2000-06-02
+      view: image
+      path: Commercial-Gas-Warehouse-2000-06-01-2000-06-02.png
+  templates:
+    - id: standard
+      path: result.md
+tests:
+  - folder: tests/standard
+script:
+  folder: .
+  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: reports/load-profiles/commercial
+environment: 
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny

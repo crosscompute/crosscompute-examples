@@ -1,0 +1,16 @@
+---
+crosscompute: 0.8.4
+kind: result
+name: '{name} - Front Cover'
+tool:
+  path: tool.yml
+input:
+  variables:
+    - id: name
+      data:
+        batch:
+          path: datasets/names-some.txt
+print:
+  style:
+    path: report.css
+  format: pdf
