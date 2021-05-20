@@ -1,0 +1,5 @@
+USA_AR_Fayetteville-Drake.Field
+USA_FL_Jacksonville.Intl.AP
+USA_IA_Cedar.Rapids.Muni.AP
+USA_MO_Springfield.Rgnl.AP
+USA_SD_Rapid.City.Rgnl.AP
