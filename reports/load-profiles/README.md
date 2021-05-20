@@ -11,6 +11,7 @@ This example report demonstrates the following:
 7. How to separate common code into modules
 8. How to debug notebooks
 9. How to generate reports over more places
+10. How to minimize merge conflicts
 
 You can see what the reports look like by opening the `examples` subfolder. Here are the steps you can take to recreate those examples.
 
@@ -120,3 +121,12 @@ For command-line scripts and modules such as `routines.py`, use [pudb](https://p
 1. Replace `names-some.txt` with `names-all.txt` (see `report.yml`)
 
 To speed iteration, keep the batch small while prototyping and polishing your report.
+
+## How to minimize merge conflicts
+
+The outputs in JupyterLab notebooks are a common cause of merge conflicts and are tedious to resolve. You can avoid this by clearing notebook output before every commit.
+
+```
+#!/bin/bash
+find . -name "*.ipynb" -prune -exec jupyter nbconvert --clear-output --inplace '{}' ';'
+```
