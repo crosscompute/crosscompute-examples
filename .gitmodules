@@ -1,0 +1,3 @@
+[submodule "reports/load-profiles"]
+	path = reports/load-profiles
+	url = git@github.com:crosscompute/load-profiles-report-example
