@@ -1,2 +1,0 @@
-Country,CountryCode,StartYear,EndYEar,PopStartYear,UrbanRatioStartYear,UrbanCutOff,UrbanRatioModelled,PopEndYearHigh,PopEndYearLow,UrbanRatioEndYear,NumPeoplePerHHRural,NumPeoplePerHHUrban,GridCapacityInvestmentCost,GridLosses,BaseToPeak,ExistingGridCostRatio,MaxGridExtensionDist,NewGridGenerationCapacityAnnualLimitMW,ElecActual,Rural_elec_ratio,Urban_elec_ratio,ElecModelled,urban_elec_ratio_modelled,rural_elec_ratio_modelled,,,,,,
-Djibouti,dj,2018,2030,971000,0.778,,,1179150,1132710,0.8,7.7,6.5,4426,0.083,0.8,0.1,50,19,0.6,0.26,0.7,,,,,,,,,

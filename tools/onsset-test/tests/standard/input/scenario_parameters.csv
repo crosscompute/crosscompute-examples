@@ -1,4 +1,0 @@
-,PopEndYear,UrbanTargetTier,RuralTargetTier,5YearTarget,GridConnectionsLimitThousands,GridGenerationCost,PV_Cost_adjust,DieselPrice,ProductiveDemand,PrioritizationAlgorithm,AutoIntensificationKM
-0,0,4,1,0.833333333,9999,0.024,1,99,0,5,0
-1,1,5,3,0.833333333,3.587579806,0.03,1.25,99,0,4,1
-2,,6,6,,,,0.75,,,4,2
