@@ -1,0 +1,32 @@
+---
+crosscompute: 0.9.0
+name: Add Numbers
+version: 0.1.0
+input:
+  variables:
+    - id: a
+      view: number
+      path: variables.json
+    - id: b
+      view: number
+      path: variables.json
+output:
+  variables:
+    - id: c
+      view: number
+      path: variables.json
+tests:
+  - folder: tests/integers
+  - folder: tests/floats
+script:
+  folder: .
+  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: add-numbers
+environment:
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny
+layout:
+  name: input output
