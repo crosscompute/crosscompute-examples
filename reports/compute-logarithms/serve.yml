@@ -7,10 +7,13 @@ input:
     - id: base
       view: number
       path: variables.json
-    - id: minimum
+    - id: start
       view: number
       path: variables.json
-    - id: maximum
+    - id: stop
+      view: number
+      path: variables.json
+    - id: step
       view: number
       path: variables.json
 output:
