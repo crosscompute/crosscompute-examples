@@ -1,21 +1,21 @@
 ---
 crosscompute: 0.9.0
-name: Watch CPU Usage
+name: Watch CPU Usage History
 version: 0.0.1
 output:
   variables:
-    - id: cpu-usage
-      view: number
-      path: variables.json
+    - id: cpu-usage-history
+      view: image
+      path: cpu.png
 tests:
   - folder: tests/standard
 script:
   module: run
   function: plot
-  schedule: * * * * * * *
+  schedule: */5 * * * * * *
 repository:
   uri: https://github.com/crosscompute/crosscompute-examples
-  folder: widgets/watch-cpu
+  folder: widgets/watch-cpu-history
 environment:
   image: docker.io/library/python:slim-buster
   processor: cpu
