@@ -5,8 +5,8 @@ version: 0.0.1
 output:
   variables:
     - id: ram-usage
-      view: image
-      path: ram.png
+      view: number
+      path: variables.json
 tests:
   - folder: tests/standard
 script:

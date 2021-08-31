@@ -5,13 +5,14 @@ version: 0.0.1
 output:
   variables:
     - id: cpu-usage
-      view: image
-      path: cpu.png
+      view: number
+      path: variables.json
 tests:
   - folder: tests/standard
 script:
   module: run
   function: plot
+  schedule: * * * * * * *
 repository:
   uri: https://github.com/crosscompute/crosscompute-examples
   folder: widgets/watch-cpu
