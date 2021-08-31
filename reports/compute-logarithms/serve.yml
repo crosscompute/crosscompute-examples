@@ -1,32 +1,38 @@
 ---
 crosscompute: 0.9.0
-name: Add Numbers
-version: 0.1.0
+name: Compute Logarithms
+version: 0.0.1
 input:
   variables:
-    - id: a
+    - id: base
       view: number
       path: variables.json
-    - id: b
+    - id: minimum
+      view: number
+      path: variables.json
+    - id: maximum
       view: number
       path: variables.json
 output:
   variables:
-    - id: c
-      view: number
-      path: variables.json
+    - id: logarithm-table
+      view: table
+      path: values.csv
 tests:
-  - folder: tests/integers
-  - folder: tests/floats
+  - folder: tests/base-10
+batches:
+  - folder: batches/base-2
+  - folder: batches/base-10
+  - folder: batches/base-e
 script:
   folder: .
   command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
 repository:
   uri: https://github.com/crosscompute/crosscompute-examples
-  folder: tools/add-numbers
+  folder: reports/compute-logarithms
 environment:
   image: docker.io/library/python:slim-buster
   processor: cpu
   memory: tiny
 layout:
-  name: input output
+  name: output
