@@ -22,11 +22,12 @@ output:
       view: table
       path: values.csv
 tests:
+  - folder: tests/base-e
   - folder: tests/base-10
 batches:
   - folder: batches/base-2
-  - folder: batches/base-10
   - folder: batches/base-e
+  - folder: batches/base-10
 script:
   folder: .
   command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
