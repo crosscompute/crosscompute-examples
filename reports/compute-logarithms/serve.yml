@@ -18,7 +18,7 @@ input:
       path: variables.json
 output:
   variables:
-    - id: logarithm-table
+    - id: logarithms
       view: table
       path: values.csv
 tests:
