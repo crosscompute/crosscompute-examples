@@ -13,12 +13,5 @@ script:
   module: run
   function: plot
   schedule: */5 * * * * * *
-repository:
-  uri: https://github.com/crosscompute/crosscompute-examples
-  folder: widgets/watch-cpu-history
-environment:
-  image: docker.io/library/python:slim-buster
-  processor: cpu
-  memory: tiny
 layout:
   name: output

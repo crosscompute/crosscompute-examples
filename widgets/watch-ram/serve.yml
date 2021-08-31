@@ -12,12 +12,6 @@ tests:
 script:
   module: run
   function: plot
-repository:
-  uri: https://github.com/crosscompute/crosscompute-examples
-  folder: widgets/watch-ram
-environment:
-  image: docker.io/library/python:slim-buster
-  processor: cpu
-  memory: tiny
+  schedule: * * * * * * *
 layout:
   name: output
