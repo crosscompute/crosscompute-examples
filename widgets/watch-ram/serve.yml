@@ -1,0 +1,23 @@
+---
+crosscompute: 0.9.0
+name: Watch RAM
+version: 0.0.1
+output:
+  variables:
+    - id: ram-usage
+      view: image
+      path: ram.png
+tests:
+  - folder: tests/standard
+script:
+  module: run
+  function: plot
+repository:
+  uri: https://github.com/crosscompute/crosscompute-examples
+  folder: widgets/watch-ram
+environment:
+  image: docker.io/library/python:slim-buster
+  processor: cpu
+  memory: tiny
+layout:
+  name: output

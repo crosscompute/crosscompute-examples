@@ -21,6 +21,8 @@ output:
     - id: logarithms
       view: table
       path: values.csv
+  templates:
+    - path: report.md
 tests:
   - folder: tests/base-e
   - folder: tests/base-10

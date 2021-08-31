@@ -21,12 +21,5 @@ tests:
 script:
   folder: .
   command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
-repository:
-  uri: https://github.com/crosscompute/crosscompute-examples
-  folder: tools/add-numbers
-environment:
-  image: docker.io/library/python:slim-buster
-  processor: cpu
-  memory: tiny
 layout:
   name: input output

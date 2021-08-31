@@ -1,6 +1,6 @@
 # CrossCompute Examples
 
-Here are example tools, reports, widgets, dashboards made using the CrossCompute framework.
+Here are example tools, reports, widgets, dashboards made using the CrossCompute Analytics Automation Framework.
 
 ```
 pip install -U crosscompute
