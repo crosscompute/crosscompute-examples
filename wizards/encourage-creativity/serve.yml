@@ -1,0 +1,33 @@
+---
+crosscompute: 0.9.0
+name: Encourage Creativity
+version: 0.0.1
+input:
+  variables:
+    - id: wants_change
+      view: boolean
+      path: variables.json
+    - id: current_habit
+      view: choice
+      path: variables.json
+    - id: desired_habit
+      view: string
+      path: variables.json
+    - id: reminder_when
+      view: calendar
+      path: variables.json
+  templates:
+    - path: ask.ipynb
+output:
+  variables:
+    - id: summary
+      view: markdown
+      path: summary.md
+tests:
+  - folder: tests/constant
+  - folder: tests/change
+script:
+  folder: .
+  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
+layout:
+  name: output

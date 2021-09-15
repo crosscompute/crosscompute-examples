@@ -1,0 +1,29 @@
+---
+
+# TODO: Add comments
+
+crosscompute: 0.9.0
+name: Encourage Exercise
+version: 0.0.1
+input:
+  variables:
+    - id: more_exercise
+      view: boolean
+      path: variables.json
+    - id: simple_exercise
+      view: string
+      path: variables.json
+  templates:
+    - path: ask.ipynb
+output:
+  variables:
+    - id: summary
+      view: markdown
+      path: summary.md
+tests:
+  - folder: tests/standard
+script:
+  folder: .
+  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
+layout:
+  name: output
