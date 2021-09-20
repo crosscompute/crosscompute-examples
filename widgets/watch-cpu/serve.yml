@@ -10,8 +10,8 @@ output:
 tests:
   - folder: tests/standard
 script:
-  module: run
-  function: plot
-  schedule: * * * * * * *
+  folder: .
+  function: run.plot
+  schedule: '* * * * * * *'
 layout:
   name: output
