@@ -40,5 +40,11 @@ environment:
   image: docker.io/library/python:slim-buster
   processor: cpu
   memory: tiny
-layout:
-  name: output
+display:
+  style: report.css
+  header:
+    path: header.md
+  footer:
+    path: footer.md
+  layout: output
+  format: pdf

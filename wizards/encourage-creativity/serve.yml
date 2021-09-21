@@ -29,5 +29,5 @@ tests:
 script:
   folder: .
   command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
-layout:
-  name: output
+display:
+  layout: output

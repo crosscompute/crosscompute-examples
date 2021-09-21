@@ -13,5 +13,5 @@ script:
   module: run
   function: plot
   schedule: '* * * * * * *'
-layout:
-  name: output
+display:
+  layout: output

@@ -13,5 +13,5 @@ script:
   folder: .
   function: run.plot
   schedule: '* * * * * * *'
-layout:
-  name: output
+display:
+  layout: output

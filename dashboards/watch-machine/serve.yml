@@ -10,5 +10,5 @@ imports:
 output:
   templates:
     - path: dashboard.md
-layout:
-  name: output
+display:
+  layout: output
