@@ -1,8 +1,21 @@
 ---
+# version of crosscompute
 crosscompute: 0.9.0
+
+# name of your report, tool, widget, dashboard, wizard
 name: Add Numbers
+
+# version of your report, tool, widget, dashboard, wizard
 version: 0.1.0
+
+# input configuration
 input:
+
+  # input variables
+  #   - id to use when referencing your variable in the template
+  #   - view to use when rendering your variable on the display
+  #   - path where your script loads the variable,
+  #     relative to the input folder
   variables:
     - id: a
       view: number
@@ -10,16 +23,37 @@ input:
     - id: b
       view: number
       path: variables.json
+
+# output configuration
 output:
+
+  # output variables
+  #   - id to use when referencing your variable in the template
+  #   - view to use when rendering your variable on the display
+  #   - path where your script saves the variable,
+  #     relative to the output folder
   variables:
     - id: c
       view: number
       path: variables.json
+
+# test configuration
+#   - folder where test is defined
 tests:
   - folder: tests/integers
   - folder: tests/floats
+
+# script configuration
 script:
+
+  # folder where script should run
   folder: .
-  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
+
+  # command to use to run your script
+  command: python run.py
+
+# display configuration
 display:
+
+  # layout to use when rendering your variables
   layout: input output
