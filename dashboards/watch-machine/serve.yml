@@ -1,14 +1,32 @@
 ---
+# version of crosscompute
 crosscompute: 0.9.0
+
+# name of your resource
 name: Watch Machine
+
+# version of your resource
 version: 0.0.1
+
+# import configuration
+# - id to use when referencing this import in your template
+# - path to the configuration file that you want to import
 imports:
   - id: cpu
     path: ../../widgets/watch-cpu/serve.yml
   - id: ram
     path: ../../widgets/watch-ram/serve.yml
+
+# output configuration
 output:
+
+  # output templates
+  #   - path to your markdown template or jupyter notebook wizard
   templates:
     - path: dashboard.md
+
+# display configuration
 display:
+
+  # layout to use by default when rendering this resource
   layout: output

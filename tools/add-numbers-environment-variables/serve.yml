@@ -3,10 +3,10 @@
 crosscompute: 0.9.0
 
 # name of your resource
-name: Encourage Exercise
+name: Add Numbers
 
 # version of your resource
-version: 0.0.1
+version: 0.1.0
 
 # input configuration
 input:
@@ -17,17 +17,12 @@ input:
   # - path where your script loads the variable,
   #   relative to the input folder
   variables:
-    - id: more_exercise
-      view: boolean
+    - id: a
+      view: number
       path: variables.json
-    - id: simple_exercise
-      view: string
+    - id: b
+      view: number
       path: variables.json
-
-  # input templates
-  # - path to your markdown template or jupyter notebook wizard
-  templates:
-    - path: ask.ipynb
 
 # output configuration
 output:
@@ -38,15 +33,16 @@ output:
   # - path where your script saves the variable,
   #   relative to the output folder
   variables:
-    - id: summary
-      view: markdown
-      path: summary.md
+    - id: c
+      view: number
+      path: variables.json
 
 # test configuration
 # - folder that contains an input subfolder with paths for
 #   input variables that define a specific test
 tests:
-  - folder: tests/standard
+  - folder: tests/integers
+  - folder: tests/floats
 
 # script configuration
 script:
@@ -55,10 +51,10 @@ script:
   folder: .
 
   # command to use to run your script
-  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
+  command: python run.py
 
 # display configuration
 display:
 
   # layout to use by default when rendering this resource
-  layout: output
+  layout: input output

@@ -12,6 +12,6 @@ tests:
 script:
   module: run
   function: plot
-  schedule: '*/5 * * * * * *'
+  schedule: '*/5 * * * * *'
 display:
   layout: output

@@ -1,17 +1,49 @@
 ---
+# version of crosscompute
 crosscompute: 0.9.0
+
+# name of your resource
 name: Watch CPU Usage
+
+# version of your resource
 version: 0.0.1
+
+# output configuration
 output:
+
+  # output variables
+  # - id to use when referencing your variable in the template
+  # - view to use when rendering your variable on the display
+  # - path where your script saves the variable,
+  #   relative to the output folder
   variables:
     - id: cpu-usage
       view: number
       path: variables.json
+
+# test configuration
+#   - folder that contains an input subfolder with paths for
+#     input variables that define a specific test
 tests:
   - folder: tests/standard
+
+# script configuration
 script:
+
+  # folder where your script should run
   folder: .
+
+  # function to use to run your script, specified using
+  # module.function syntax, relative to the script folder
   function: run.plot
-  schedule: '* * * * * * *'
+
+  # schedule to use to run your script, specified using extended
+  # crontab syntax -- second-of-minute minute-of-hour
+  # hour-of-day day-of-month month-of-year day-of-week
+  schedule: '* * * * * *'
+
+# display configuration
 display:
+
+  # layout to use by default when rendering this resource
   layout: output

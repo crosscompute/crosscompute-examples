@@ -12,6 +12,6 @@ tests:
 script:
   module: run
   function: plot
-  schedule: '* * * * * * *'
+  schedule: '* * * * * *'
 display:
   layout: output
