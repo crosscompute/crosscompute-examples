@@ -18,7 +18,7 @@ input:
   #   relative to the input folder
   variables:
     - id: geometries
-      view: map
+      view: map-mapbox
       path: geometries.geojson
 
 # output configuration
@@ -31,42 +31,42 @@ output:
   #   relative to the output folder
   variables:
     - id: streets
-      view: map
+      view: map-mapbox
       path: geometries.geojson
       settings:
         - style: mapbox://styles/mapbox/streets-v11
     - id: outdoors
-      view: map
+      view: map-mapbox
       path: geometries.geojson
       settings:
         - style: mapbox://styles/mapbox/outdoors-v11
     - id: light
-      view: map
+      view: map-mapbox
       path: geometries.geojson
       settings:
         - style: mapbox://styles/mapbox/light-v10
     - id: dark
-      view: map
+      view: map-mapbox
       path: geometries.geojson
       settings:
         - style: mapbox://styles/mapbox/dark-v10
     - id: satellite
-      view: map
+      view: map-mapbox
       path: geometries.geojson
       settings:
         - style: mapbox://styles/mapbox/satellite-v9
     - id: satellite-streets
-      view: map
+      view: map-mapbox
       path: geometries.geojson
       settings:
         - style: mapbox://styles/mapbox/satellite-streets-v11
     - id: navigation-day
-      view: map
+      view: map-mapbox
       path: geometries.geojson
       settings:
         - style: mapbox://styles/mapbox/navigation-day-v1
     - id: navigation-night
-      view: map
+      view: map-mapbox
       path: geometries.geojson
       settings:
         - style: mapbox://styles/mapbox/navigation-night-v1
@@ -88,15 +88,6 @@ tests:
 batches:
   - folder: batches/usa-maine
 
-# script configuration
-script:
-
-  # folder where your script should run
-  folder: .
-
-  # command to use to run your script
-  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
-
 # repository configuration
 repository:
 
@@ -105,19 +96,6 @@ repository:
 
   # folder that contains this configuration file
   folder: reports/show-maps
-
-# environment configuration
-environment:
-
-  # image of the container that you want to use to run your script
-  image: docker.io/library/python:slim-buster
-
-  # type of the processor you want to use to run your script, either
-  # cpu or gpu
-  processor: cpu
-
-  # amount of memory you want to reserve to run your script
-  memory: tiny
 
 # display configuration
 display:
