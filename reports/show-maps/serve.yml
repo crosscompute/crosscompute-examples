@@ -1,0 +1,133 @@
+---
+# version of crosscompute
+crosscompute: 0.9.0
+
+# name of your resource
+name: Show Maps
+
+# version of your resource
+version: 0.0.1
+
+# input configuration
+input:
+
+  # input variables
+  # - id to use when referencing your variable in the template
+  # - view to use when rendering your variable on the display
+  # - path where your script loads the variable,
+  #   relative to the input folder
+  variables:
+    - id: geometries
+      view: map
+      path: geometries.geojson
+
+# output configuration
+output:
+
+  # output variables
+  # - id to use when referencing your variable in the template
+  # - view to use when rendering your variable on the display
+  # - path where your script saves the variable,
+  #   relative to the output folder
+  variables:
+    - id: streets
+      view: map
+      path: geometries.geojson
+      settings:
+        - style: mapbox://styles/mapbox/streets-v11
+    - id: outdoors
+      view: map
+      path: geometries.geojson
+      settings:
+        - style: mapbox://styles/mapbox/outdoors-v11
+    - id: light
+      view: map
+      path: geometries.geojson
+      settings:
+        - style: mapbox://styles/mapbox/light-v10
+    - id: dark
+      view: map
+      path: geometries.geojson
+      settings:
+        - style: mapbox://styles/mapbox/dark-v10
+    - id: satellite
+      view: map
+      path: geometries.geojson
+      settings:
+        - style: mapbox://styles/mapbox/satellite-v9
+    - id: satellite-streets
+      view: map
+      path: geometries.geojson
+      settings:
+        - style: mapbox://styles/mapbox/satellite-streets-v11
+    - id: navigation-day
+      view: map
+      path: geometries.geojson
+      settings:
+        - style: mapbox://styles/mapbox/navigation-day-v1
+    - id: navigation-night
+      view: map
+      path: geometries.geojson
+      settings:
+        - style: mapbox://styles/mapbox/navigation-night-v1
+
+  # output templates
+  #   - path to your markdown template or jupyter notebook wizard
+  templates:
+    - path: report.md
+
+# test configuration
+# - folder that contains an input subfolder with paths for
+#   input variables that define a specific test
+tests:
+  - folder: tests/points
+
+# batch configuration
+# - folder that contains an input subfolder with paths for
+#   input variables that define a specific batch
+batches:
+  - folder: batches/usa-maine
+
+# script configuration
+script:
+
+  # folder where your script should run
+  folder: .
+
+  # command to use to run your script
+  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
+
+# repository configuration
+repository:
+
+  # uri of repository that contains your script
+  uri: https://github.com/crosscompute/crosscompute-examples
+
+  # folder that contains this configuration file
+  folder: reports/show-maps
+
+# environment configuration
+environment:
+
+  # image of the container that you want to use to run your script
+  image: docker.io/library/python:slim-buster
+
+  # type of the processor you want to use to run your script, either
+  # cpu or gpu
+  processor: cpu
+
+  # amount of memory you want to reserve to run your script
+  memory: tiny
+
+# display configuration
+display:
+
+  style:
+    # path to CSS stylesheet that will be used to render your templates
+    path: report.css
+
+  # layout to use by default when rendering this resource
+  layout: output
+
+  # format to use by default when rendering this resource
+  format: pdf
