@@ -1,0 +1,75 @@
+---
+# version of crosscompute
+crosscompute: 0.9.0
+
+# name of your resource
+name: Randomize Histograms
+
+# version of your resource
+version: 0.0.1
+
+# input configuration
+input:
+
+  # input variables
+  # - id to use when referencing your variable in the template
+  # - view to use when rendering your variable on the display
+  # - path where your script loads the variable,
+  #   relative to the input folder
+  variables:
+    - id: mean
+      view: number
+      path: variables.json
+    - id: variance
+      view: number
+      path: variables.json
+    - id: value_count
+      view: number
+      path: variables.json
+    - id: bin_count
+      view: number
+      path: variables.json
+
+# output configuration
+output:
+
+  # output variables
+  # - id to use when referencing your variable in the template
+  # - view to use when rendering your variable on the display
+  # - path where your script saves the variable,
+  #   relative to the output folder
+  variables:
+    - id: histogram-1d
+      view: image
+      path: histogram-1d.png
+    - id: histogram-2d
+      view: image
+      path: histogram-2d.png
+
+  # output templates
+  #   - path to your markdown template or jupyter notebook wizard
+  templates:
+    - path: report.md
+
+# test configuration
+# - folder that contains an input subfolder with paths for
+#   input variables that define a specific test
+tests:
+  - folder: tests/standard
+
+# batch configuration
+# - folder that contains an input subfolder with paths for
+#   input variables that define a specific batch
+batches:
+  - folder: batches/a
+  - folder: batches/b
+
+# display configuration
+display:
+
+  style:
+    # path to CSS stylesheet that will be used to render your templates
+    path: report.css
+
+  # layout to use by default when rendering this resource
+  layout: output
