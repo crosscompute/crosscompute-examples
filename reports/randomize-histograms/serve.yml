@@ -64,6 +64,15 @@ batches:
   - folder: batches/a
   - folder: batches/b
 
+# script configuration
+script:
+
+  # folder where your script should run
+  folder: .
+
+  # command to use to run your script
+  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
+
 # display configuration
 display:
 
