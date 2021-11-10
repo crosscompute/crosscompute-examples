@@ -100,12 +100,12 @@ repository:
 # display configuration
 display:
 
-  style:
-    # path to CSS stylesheet that will be used to render your templates
-    path: report.css
+  # style configuration
+  # - uri to CSS stylesheet that will be used to render your templates
+  # - path to CSS stylesheet that will be used to render your templates
+  styles:
+    - uri: https://fonts.googleapis.com/css2?family=Open+Sans&display=swap
+    - path: report.css
 
   # layout to use by default when rendering this resource
   layout: output
-
-  # format to use by default when rendering this resource
-  format: pdf

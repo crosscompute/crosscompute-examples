@@ -97,9 +97,11 @@ environment:
 # display configuration
 display:
 
-  style:
-    # path to CSS stylesheet that will be used to render your templates
-    path: report.css
+  # style configuration
+  # - uri to CSS stylesheet that will be used to render your templates
+  # - path to CSS stylesheet that will be used to render your templates
+  styles:
+    - path: report.css
 
   header:
     # path to markdown template that defines the header
