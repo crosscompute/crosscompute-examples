@@ -87,6 +87,7 @@ tests:
 #   input variables that define a specific batch
 batches:
   - folder: batches/usa-maine
+  - folder: batches/usa-florida
 
 # repository configuration
 repository:
