@@ -8,19 +8,6 @@ name: Show Maps
 # version of your resource
 version: 0.0.1
 
-# input configuration
-input:
-
-  # input variables
-  # - id to use when referencing your variable in the template
-  # - view to use when rendering your variable on the display
-  # - path where your script loads the variable,
-  #   relative to the input folder
-  variables:
-    - id: geometries
-      view: map-mapbox
-      path: geometries.geojson
-
 # output configuration
 output:
 
@@ -30,46 +17,49 @@ output:
   # - path where your script saves the variable,
   #   relative to the output folder
   variables:
+    - id: geometries
+      view: map-mapbox
+      path: geometries.geojson
     - id: streets
       view: map-mapbox
       path: geometries.geojson
       settings:
-        - style: mapbox://styles/mapbox/streets-v11
+        style: mapbox://styles/mapbox/streets-v11
     - id: outdoors
       view: map-mapbox
       path: geometries.geojson
       settings:
-        - style: mapbox://styles/mapbox/outdoors-v11
+        style: mapbox://styles/mapbox/outdoors-v11
     - id: light
       view: map-mapbox
       path: geometries.geojson
       settings:
-        - style: mapbox://styles/mapbox/light-v10
+        style: mapbox://styles/mapbox/light-v10
     - id: dark
       view: map-mapbox
       path: geometries.geojson
       settings:
-        - style: mapbox://styles/mapbox/dark-v10
+        style: mapbox://styles/mapbox/dark-v10
     - id: satellite
       view: map-mapbox
       path: geometries.geojson
       settings:
-        - style: mapbox://styles/mapbox/satellite-v9
+        style: mapbox://styles/mapbox/satellite-v9
     - id: satellite-streets
       view: map-mapbox
       path: geometries.geojson
       settings:
-        - style: mapbox://styles/mapbox/satellite-streets-v11
+        style: mapbox://styles/mapbox/satellite-streets-v11
     - id: navigation-day
       view: map-mapbox
       path: geometries.geojson
       settings:
-        - style: mapbox://styles/mapbox/navigation-day-v1
+        style: mapbox://styles/mapbox/navigation-day-v1
     - id: navigation-night
       view: map-mapbox
       path: geometries.geojson
       settings:
-        - style: mapbox://styles/mapbox/navigation-night-v1
+        style: mapbox://styles/mapbox/navigation-night-v1
 
   # output templates
   #   - path to your markdown template or jupyter notebook wizard
