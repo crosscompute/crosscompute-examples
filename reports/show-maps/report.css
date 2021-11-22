@@ -10,3 +10,7 @@ body {
   line-height: 130%;
   font-size: 12pt;
 }
+
+.map-mapbox {
+  height: 300px;
+}
