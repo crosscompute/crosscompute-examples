@@ -25,41 +25,49 @@ output:
       path: geometries.geojson
       settings:
         style: mapbox://styles/mapbox/streets-v11
+        path: geometries.json
     - id: outdoors
       view: map-mapbox
       path: geometries.geojson
       settings:
         style: mapbox://styles/mapbox/outdoors-v11
+        path: geometries.json
     - id: light
       view: map-mapbox
       path: geometries.geojson
       settings:
         style: mapbox://styles/mapbox/light-v10
+        path: geometries.json
     - id: dark
       view: map-mapbox
       path: geometries.geojson
       settings:
         style: mapbox://styles/mapbox/dark-v10
+        path: geometries.json
     - id: satellite
       view: map-mapbox
       path: geometries.geojson
       settings:
         style: mapbox://styles/mapbox/satellite-v9
+        path: geometries.json
     - id: satellite-streets
       view: map-mapbox
       path: geometries.geojson
       settings:
         style: mapbox://styles/mapbox/satellite-streets-v11
+        path: geometries.json
     - id: navigation-day
       view: map-mapbox
       path: geometries.geojson
       settings:
         style: mapbox://styles/mapbox/navigation-day-v1
+        path: geometries.json
     - id: navigation-night
       view: map-mapbox
       path: geometries.geojson
       settings:
         style: mapbox://styles/mapbox/navigation-night-v1
+        path: geometries.json
 
   # output templates
   #   - path to your markdown template or jupyter notebook wizard
