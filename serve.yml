@@ -1,0 +1,9 @@
+---
+crosscompute: 0.9.0
+name: CrossCompute Examples
+version: 20211127
+imports:
+  - id: randomize-histograms
+    path: reports/randomize-histograms/serve.yml
+  - id: show-maps
+    path: reports/show-maps/serve.yml
