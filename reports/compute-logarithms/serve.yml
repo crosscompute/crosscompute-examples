@@ -2,10 +2,10 @@
 # version of crosscompute
 crosscompute: 0.9.0
 
-# name of your resource
+# name of your automation
 name: Compute Logarithms
 
-# version of your resource
+# version of your automation
 version: 0.0.1
 
 # input configuration
@@ -111,8 +111,8 @@ display:
     # path to markdown template that defines the footer
     path: footer.md
 
-  # layout to use by default when rendering this resource
+  # layout to use by default when rendering this automation
   layout: output
 
-  # format to use by default when rendering this resource
+  # format to use by default when rendering this automation
   format: pdf

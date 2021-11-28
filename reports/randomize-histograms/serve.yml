@@ -2,10 +2,10 @@
 # version of crosscompute
 crosscompute: 0.9.0
 
-# name of your resource
+# name of your automation
 name: Randomize Histograms
 
-# version of your resource
+# version of your automation
 version: 0.0.1
 
 # input configuration
@@ -83,5 +83,5 @@ display:
     - uri: https://fonts.googleapis.com/css2?family=Roboto&display=swap
     - path: report.css
 
-  # layout to use by default when rendering this resource
+  # layout to use by default when rendering this automation
   layout: output
