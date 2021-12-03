@@ -37,7 +37,7 @@ output:
       view: number
       path: variables.json
 
-# test configuration
+# tests configuration
 # - folder that contains an input subfolder with paths for
 #   input variables that define a specific test
 tests:

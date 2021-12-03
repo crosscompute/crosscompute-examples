@@ -8,7 +8,7 @@ name: Watch Machine
 # version of your automation
 version: 0.0.1
 
-# import configuration
+# imports configuration
 # - id to use when referencing this import in your template
 # - path to the configuration file that you want to import
 imports:

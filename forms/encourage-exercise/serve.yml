@@ -42,7 +42,7 @@ output:
       view: markdown
       path: summary.md
 
-# test configuration
+# tests configuration
 # - folder that contains an input subfolder with paths for
 #   input variables that define a specific test
 tests:
