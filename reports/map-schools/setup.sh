@@ -1,0 +1,1 @@
+pip install invisibleroads-macros-disk pandas openpyxl
