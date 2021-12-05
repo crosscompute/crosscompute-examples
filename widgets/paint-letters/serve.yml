@@ -47,8 +47,8 @@ tests:
 # - configuration for batch template
 #   - path containing different values for the input variables
 batches:
-  - name: {document_text}
-    folder: batches/{document_text | normalize_key}
+  - name: '{document_text}'
+    folder: batches/{document_text | slug}
     configuration:
       path: datasets/proverbs.txt
 

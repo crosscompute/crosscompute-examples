@@ -47,7 +47,7 @@ tests:
 # - configuration for batch template
 #   - path containing different values for the input variables
 batches:
-  - name: {question}
+  - name: '{question}'
     folder: batches/{id}
     configuration:
       path: datasets/questions.csv

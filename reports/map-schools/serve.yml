@@ -42,7 +42,7 @@ tests:
 # - configuration for batch template
 #   - path containing different values for the input variables
 batches:
-  - name: {type | title} Schools {period}
+  - name: '{type | title} Schools {period}'
     folder: batches/{type}-{period}
     configuration:
       path: datasets/batches.csv
