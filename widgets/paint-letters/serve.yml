@@ -44,15 +44,13 @@ tests:
 # - name of the batch; can include variable ids for batch template
 # - folder that contains an input subfolder with paths for
 #   input variables that define a specific batch
-# - variables configuration for batch template
-#   - id of the input variable that you want to batch
-#   - path containing different values for this variable
+# - configuration for batch template
+#   - path containing different values for the input variables
 batches:
   - name: {document_text}
     folder: batches/{document_text | normalize_key}
-    variables:
-      - id: document_text
-        path: datasets/proverbs.txt
+    configuration:
+      path: datasets/proverbs.txt
 
 # script configuration
 script:
