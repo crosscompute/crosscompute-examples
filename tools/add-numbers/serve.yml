@@ -57,4 +57,4 @@ script:
 display:
 
   # layout to use by default when rendering this automation
-  layout: input output
+  layout: input

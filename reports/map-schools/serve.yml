@@ -20,12 +20,12 @@ output:
     - id: schools
       view: map-pydeck-screengrid
       path: geometries.csv
-      settings:
+      configuration:
         style: mapbox://styles/mapbox/dark-v10
         path: geometries.json
 
   # output templates
-  #   - path to your markdown template or jupyter notebook wizard
+  # - path to your markdown template or jupyter notebook wizard
   templates:
     - path: report.md
 
@@ -43,13 +43,9 @@ tests:
 #   - id of the input variable that you want to batch
 #   - path containing different values for this variable
 batches:
-  - name: {}
-    folder: batches/{}
-    variables:
-      - id: type
-      - id: period
-      - id: url
-    settings:
+  - name: {type | title} Schools {period}
+    folder: batches/{type}-{period}
+    configuration:
       path: datasets/batches.csv
 
 # script configuration

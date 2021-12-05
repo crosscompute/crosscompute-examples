@@ -47,7 +47,7 @@ output:
       path: histogram-2d.png
 
   # output templates
-  #   - path to your markdown template or jupyter notebook wizard
+  # - path to your markdown template or jupyter notebook wizard
   templates:
     - path: report.md
 
