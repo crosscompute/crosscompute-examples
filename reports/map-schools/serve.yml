@@ -39,7 +39,6 @@ output:
     - id: schools
       view: map-pydeck-screengrid
       path: geometries.json
-      # path: geometries.csv
       configuration:
         style: mapbox://styles/mapbox/dark-v10
         path: configuration.json
