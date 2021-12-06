@@ -8,6 +8,19 @@ name: Map Schools
 # version of your automation
 version: 0.0.1
 
+# input configuration
+input:
+
+  # input variables
+  # - id to use when referencing your variable in the template
+  # - view to use when rendering your variable on the display
+  # - path where your script loads the variable,
+  #   relative to the input folder
+  variables:
+    - id: url
+      view: string
+      path: url.txt
+
 # output configuration
 output:
 
@@ -19,10 +32,11 @@ output:
   variables:
     - id: schools
       view: map-pydeck-screengrid
-      path: geometries.csv
+      path: geometries.json
+      # path: geometries.csv
       configuration:
         style: mapbox://styles/mapbox/dark-v10
-        path: geometries.json
+        path: configuration.json
 
   # output templates
   # - path to your markdown template or jupyter notebook wizard
