@@ -7,5 +7,6 @@ crosscompute: 0.9.0
 imports:
   - path: reports/randomize-histograms/serve.yml
   - path: reports/show-maps/serve.yml
+  - path: reports/map-schools/serve.yml
   - path: tools/ask-question/serve.yml
   - path: widgets/paint-letters/serve.yml

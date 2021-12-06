@@ -12,5 +12,5 @@ body {
 }
 
 .schools {
-  height: 80%;
+  height: calc(100vh - 71px);
 }

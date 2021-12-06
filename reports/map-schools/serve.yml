@@ -17,9 +17,15 @@ input:
   # - path where your script loads the variable,
   #   relative to the input folder
   variables:
+    - id: type
+      view: string
+      path: variables.json
+    - id: period
+      view: string
+      path: variables.json
     - id: url
       view: string
-      path: url.txt
+      path: variables.json
 
 # output configuration
 output:
