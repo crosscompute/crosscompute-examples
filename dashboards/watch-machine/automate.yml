@@ -13,9 +13,9 @@ version: 0.0.1
 # - path to the configuration file that you want to import
 imports:
   - id: cpu
-    path: ../../widgets/watch-cpu/serve.yml
+    path: ../../widgets/watch-cpu/automate.yml
   - id: ram
-    path: ../../widgets/watch-ram/serve.yml
+    path: ../../widgets/watch-ram/automate.yml
 
 # output configuration
 output:
