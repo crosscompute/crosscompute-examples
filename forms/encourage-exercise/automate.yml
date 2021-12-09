@@ -25,7 +25,7 @@ input:
       path: variables.json
 
   # input templates
-  # - path to your markdown template or jupyter notebook wizard
+  # - path to your markdown template or jupyter notebook form
   templates:
     - path: ask.ipynb
 

@@ -44,7 +44,7 @@ output:
       path: values.csv
 
   # output templates
-  # - path to your markdown template or jupyter notebook wizard
+  # - path to your markdown template or jupyter notebook form
   templates:
     - path: report.md
 
