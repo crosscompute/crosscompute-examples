@@ -9,4 +9,5 @@ imports:
   - path: reports/show-maps/automate.yml
   - path: reports/map-schools/automate.yml
   - path: tools/ask-question/automate.yml
+  - path: tools/add-numbers/automate.yml
   - path: widgets/paint-letters/automate.yml
