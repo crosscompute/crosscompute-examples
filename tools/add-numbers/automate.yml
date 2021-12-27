@@ -44,6 +44,18 @@ tests:
   - folder: tests/integers
   - folder: tests/floats
 
+# batches configuration
+# - name of the batch; can include variable ids for batch template
+# - folder that contains an input subfolder with paths for
+#   input variables that define a specific batch
+# - configuration for batch template
+#   - path containing different values for the input variables
+batches:
+  - name: '{a} + {b}'
+    folder: batches/{a}-{b}
+    configuration:
+      path: datasets/batches.csv
+
 # script configuration
 script:
 
