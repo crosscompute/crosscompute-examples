@@ -3,10 +3,10 @@
 crosscompute: 0.9.0
 
 # name of your automation
-name: Add Numbers
+name: Gather Locations
 
 # version of your automation
-version: 0.1.0
+version: 0.0.1
 
 # input configuration
 input:
@@ -17,11 +17,8 @@ input:
   # - path where your script loads the variable,
   #   relative to the input folder
   variables:
-    - id: a
-      view: number
-      path: variables.json
-    - id: b
-      view: number
+    - id: address
+      view: string
       path: variables.json
 
 # output configuration
@@ -33,7 +30,10 @@ output:
   # - path where your script saves the variable,
   #   relative to the output folder
   variables:
-    - id: c
+    - id: longitude
+      view: number
+      path: variables.json
+    - id: latitude
       view: number
       path: variables.json
 
@@ -41,8 +41,19 @@ output:
 # - folder that contains an input subfolder with paths for
 #   input variables that define a specific test
 tests:
-  - folder: tests/integers
-  - folder: tests/floats
+  - folder: tests/standard
+
+# batches configuration
+# - name of the batch; can include variable ids for batch template
+# - folder that contains an input subfolder with paths for
+#   input variables that define a specific batch
+# - configuration for batch template
+#   - path containing different values for the input variables
+batches:
+  - name: '{address}'
+    folder: batches/{address | slug}
+    configuration:
+      path: datasets/batches.txt
 
 # script configuration
 script:
@@ -51,10 +62,4 @@ script:
   folder: .
 
   # command to use to run your script
-  command: python run.py
-
-# display configuration
-display:
-
-  # layout to use by default when rendering this automation
-  layout: input
+  command: python run.py {input_folder} {output_folder}
