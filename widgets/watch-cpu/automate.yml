@@ -19,7 +19,7 @@ output:
   variables:
     - id: cpu-usage
       view: number
-      path: variables.json
+      path: variables.dictionary
 
 # tests configuration
 #   - folder that contains an input subfolder with paths for

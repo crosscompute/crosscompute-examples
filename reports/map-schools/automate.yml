@@ -19,13 +19,13 @@ input:
   variables:
     - id: type
       view: string
-      path: variables.json
+      path: variables.dictionary
     - id: period
       view: string
-      path: variables.json
+      path: variables.dictionary
     - id: url
       view: string
-      path: variables.json
+      path: variables.dictionary
 
 # output configuration
 output:

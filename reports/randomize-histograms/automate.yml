@@ -19,16 +19,16 @@ input:
   variables:
     - id: mean
       view: number
-      path: variables.json
+      path: variables.dictionary
     - id: variance
       view: number
-      path: variables.json
+      path: variables.dictionary
     - id: value_count
       view: number
-      path: variables.json
+      path: variables.dictionary
     - id: bin_count
       view: number
-      path: variables.json
+      path: variables.dictionary
 
 # output configuration
 output:

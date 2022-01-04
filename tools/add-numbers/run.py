@@ -8,7 +8,7 @@ input_folder, output_folder = argv[1:]
 
 
 # Load input variables from input folder
-variables = json.load(open(join(input_folder, 'variables.json'), 'rt'))
+variables = json.load(open(join(input_folder, 'variables.dictionary'), 'rt'))
 
 
 # Perform calculation
@@ -18,4 +18,4 @@ c = variables['a'] + variables['b']
 # Save output variables to output folder
 json.dump({
     'c': c,
-}, open(join(output_folder, 'variables.json'), 'wt'))
+}, open(join(output_folder, 'variables.dictionary'), 'wt'))

@@ -6,16 +6,16 @@ input:
   variables:
     - id: wants_change
       view: boolean
-      path: variables.json
+      path: variables.dictionary
     - id: current_habit
       view: choice
-      path: variables.json
+      path: variables.dictionary
     - id: desired_habit
       view: string
-      path: variables.json
+      path: variables.dictionary
     - id: reminder_when
       view: calendar
-      path: variables.json
+      path: variables.dictionary
   templates:
     - path: ask.ipynb
 output:

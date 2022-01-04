@@ -19,10 +19,10 @@ input:
   variables:
     - id: a
       view: number
-      path: variables.json
+      path: variables.dictionary
     - id: b
       view: number
-      path: variables.json
+      path: variables.dictionary
 
 # output configuration
 output:
@@ -35,7 +35,7 @@ output:
   variables:
     - id: c
       view: number
-      path: variables.json
+      path: variables.dictionary
 
 # tests configuration
 # - folder that contains an input subfolder with paths for

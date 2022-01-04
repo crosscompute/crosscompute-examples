@@ -19,16 +19,16 @@ input:
   variables:
     - id: base
       view: number
-      path: variables.json
+      path: variables.dictionary
     - id: start
       view: number
-      path: variables.json
+      path: variables.dictionary
     - id: stop
       view: number
-      path: variables.json
+      path: variables.dictionary
     - id: step
       view: number
-      path: variables.json
+      path: variables.dictionary
 
 # output configuration
 output:

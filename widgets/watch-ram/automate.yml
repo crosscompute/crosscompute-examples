@@ -6,7 +6,7 @@ output:
   variables:
     - id: ram-usage
       view: number
-      path: variables.json
+      path: variables.dictionary
 tests:
   - folder: tests/standard
 script:

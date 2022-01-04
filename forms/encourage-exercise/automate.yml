@@ -19,10 +19,10 @@ input:
   variables:
     - id: more_exercise
       view: boolean
-      path: variables.json
+      path: variables.dictionary
     - id: simple_exercise
       view: string
-      path: variables.json
+      path: variables.dictionary
 
   # input templates
   # - path to your markdown template or jupyter notebook form

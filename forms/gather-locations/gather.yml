@@ -19,7 +19,7 @@ input:
   variables:
     - id: address
       view: string
-      path: variables.json
+      path: variables.dictionary
 
 # output configuration
 output:
@@ -32,10 +32,10 @@ output:
   variables:
     - id: longitude
       view: number
-      path: variables.json
+      path: variables.dictionary
     - id: latitude
       view: number
-      path: variables.json
+      path: variables.dictionary
 
 # tests configuration
 # - folder that contains an input subfolder with paths for
