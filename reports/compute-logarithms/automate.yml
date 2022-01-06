@@ -103,16 +103,5 @@ display:
   styles:
     - path: report.css
 
-  header:
-    # path to markdown template that defines the header
-    path: header.md
-
-  footer:
-    # path to markdown template that defines the footer
-    path: footer.md
-
-  # layout to use by default when rendering this automation
-  layout: output
-
   # format to use by default when rendering this automation
   format: pdf

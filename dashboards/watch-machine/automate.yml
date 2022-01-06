@@ -24,9 +24,3 @@ output:
   # - path to your markdown template or jupyter notebook form
   templates:
     - path: dashboard.md
-
-# display configuration
-display:
-
-  # layout to use by default when rendering this automation
-  layout: output

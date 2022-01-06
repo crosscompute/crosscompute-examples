@@ -82,8 +82,4 @@ display:
   # - uri to CSS stylesheet that will be used to render your templates
   # - path to CSS stylesheet that will be used to render your templates
   styles:
-    - uri: https://fonts.googleapis.com/css2?family=Roboto&display=swap
     - path: report.css
-
-  # layout to use by default when rendering this automation
-  layout: output

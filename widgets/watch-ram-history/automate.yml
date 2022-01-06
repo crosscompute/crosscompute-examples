@@ -13,5 +13,3 @@ script:
   module: run
   function: plot
   schedule: '*/5 * * * * *'
-display:
-  layout: output

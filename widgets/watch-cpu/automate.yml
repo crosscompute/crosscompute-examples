@@ -41,9 +41,3 @@ script:
   # crontab syntax -- second-of-minute minute-of-hour
   # hour-of-day day-of-month month-of-year day-of-week
   schedule: '* * * * * *'
-
-# display configuration
-display:
-
-  # layout to use by default when rendering this automation
-  layout: output

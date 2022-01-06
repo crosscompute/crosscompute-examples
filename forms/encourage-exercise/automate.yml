@@ -56,9 +56,3 @@ script:
 
   # command to use to run your script
   command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
-
-# display configuration
-display:
-
-  # layout to use by default when rendering this automation
-  layout: output

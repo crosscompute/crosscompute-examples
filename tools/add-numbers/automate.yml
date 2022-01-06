@@ -64,9 +64,3 @@ script:
 
   # command to use to run your script
   command: python run.py {input_folder} {output_folder}
-
-# display configuration
-display:
-
-  # layout to use by default when rendering this automation
-  layout: input
