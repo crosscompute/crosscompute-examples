@@ -1,0 +1,3 @@
+[submodule "tools/send-emails"]
+	path = tools/send-emails
+	url = git@github.com:crosscompute/email-automation
