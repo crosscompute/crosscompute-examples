@@ -37,7 +37,7 @@ output:
   #   relative to the output folder
   variables:
     - id: schools
-      view: map-pydeck-screengrid
+      view: map-deck-screengrid
       path: geometries.json
       configuration:
         style: mapbox://styles/mapbox/dark-v10
