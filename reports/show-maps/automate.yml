@@ -25,6 +25,10 @@ output:
       path: geometries.geojson
       configuration:
         style: mapbox://styles/mapbox/streets-v11
+        layers:
+          - type: fill
+            paint:
+              fill-color: blue
         path: geometries.json
     - id: outdoors
       view: map-mapbox
