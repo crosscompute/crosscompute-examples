@@ -4,10 +4,6 @@
 
 { streets }
 
-## Outdoors
-
-{ outdoors }
-
 ## Light
 
 { light }
@@ -16,18 +12,6 @@
 
 { dark }
 
-## Satellite
-
-{ satellite }
-
 ## Satellite Streets
 
 { satellite-streets }
-
-## Navigation Day
-
-{ navigation-day }
-
-## Navigation Night
-
-{ navigation-night }

@@ -17,9 +17,6 @@ output:
   # - path where your script saves the variable,
   #   relative to the output folder
   variables:
-    - id: geometries
-      view: map-mapbox
-      path: geometries.geojson
     - id: streets
       view: map-mapbox
       path: geometries.geojson
@@ -30,47 +27,35 @@ output:
             paint:
               fill-color: blue
         path: geometries.json
-    - id: outdoors
-      view: map-mapbox
-      path: geometries.geojson
-      configuration:
-        style: mapbox://styles/mapbox/outdoors-v11
-        path: geometries.json
     - id: light
       view: map-mapbox
       path: geometries.geojson
       configuration:
         style: mapbox://styles/mapbox/light-v10
+        layers:
+          - type: fill
+            paint:
+              fill-color: blue
         path: geometries.json
     - id: dark
       view: map-mapbox
       path: geometries.geojson
       configuration:
         style: mapbox://styles/mapbox/dark-v10
-        path: geometries.json
-    - id: satellite
-      view: map-mapbox
-      path: geometries.geojson
-      configuration:
-        style: mapbox://styles/mapbox/satellite-v9
+        layers:
+          - type: fill
+            paint:
+              fill-color: yellow
         path: geometries.json
     - id: satellite-streets
       view: map-mapbox
       path: geometries.geojson
       configuration:
         style: mapbox://styles/mapbox/satellite-streets-v11
-        path: geometries.json
-    - id: navigation-day
-      view: map-mapbox
-      path: geometries.geojson
-      configuration:
-        style: mapbox://styles/mapbox/navigation-day-v1
-        path: geometries.json
-    - id: navigation-night
-      view: map-mapbox
-      path: geometries.geojson
-      configuration:
-        style: mapbox://styles/mapbox/navigation-night-v1
+        layers:
+          - type: fill
+            paint:
+              fill-color: yellow
         path: geometries.json
 
   # output templates
