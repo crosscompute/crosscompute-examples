@@ -13,4 +13,5 @@ imports:
   - path: tools/ask-question/automate.yml
   - path: tools/add-numbers/automate.yml
   - path: tools/send-emails/automate.yml
+  - path: tools/find-places/automate.yml
   - path: widgets/paint-letters/automate.yml
