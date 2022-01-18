@@ -1,3 +1,6 @@
 [submodule "tools/send-emails"]
 	path = tools/send-emails
 	url = git@github.com:crosscompute/email-automation
+[submodule "tools/find-places"]
+	path = tools/find-places
+	url = git@github.com:crosscompute/find-places
