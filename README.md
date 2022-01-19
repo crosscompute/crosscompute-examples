@@ -11,9 +11,9 @@ cd crosscompute-examples
 bash setup.sh
 
 # Configure environment for reports/map-schools
-# export MAPBOX_TOKEN=
+# export MAPBOX_TOKEN=YOUR-MAPBOX-TOKEN
 # Configure environment for tools/send-emails
-# export ATTACHMENTS_FOLDER=
+# export ATTACHMENTS_FOLDER=~/Documents/attachments
 
 crosscompute
 ```
