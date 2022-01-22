@@ -8,7 +8,9 @@ pip install crosscompute crosscompute-views-map --upgrade
 cd ~/Documents
 git clone https://github.com/crosscompute/crosscompute-examples --recursive
 cd crosscompute-examples
-bash setup.sh
+git submodule init
+git submodule update
+find . -name setup.sh -exec bash '{}' ';'
 
 # Configure environment for reports/map-schools
 # export MAPBOX_TOKEN=YOUR-MAPBOX-TOKEN

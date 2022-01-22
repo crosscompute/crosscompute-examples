@@ -4,3 +4,6 @@
 [submodule "tools/find-places"]
 	path = tools/find-places
 	url = git@github.com:crosscompute/find-places
+[submodule "reports/run-onsset"]
+	path = reports/run-onsset
+	url = git@github.com:crosscompute/onsset-automation

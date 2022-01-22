@@ -1,20 +1,12 @@
-@page {
-  margin-left: 1in;
-  margin-right: 1in;
-  margin-top: 1in;
-  margin-bottom: 1in;
-}
-
 body {
-  font-family: Arial, Verdana, sans-serif;
-  font-size: 12pt;
+  font-family: sans-serif;
 }
 
 /* Right align cells */
-.logarithms td {
+.logarithms th, td {
   text-align: right;
 }
-/* Set color for first row */
+/* Set color for first column */
 .logarithms tbody :first-child {
-  color: yellow;
+  color: blue;
 }

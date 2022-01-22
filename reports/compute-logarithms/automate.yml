@@ -41,7 +41,7 @@ output:
   variables:
     - id: logarithms
       view: table
-      path: values.csv
+      path: values.json
 
   # output templates
   # - path to your markdown template or jupyter notebook form
