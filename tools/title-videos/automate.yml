@@ -38,7 +38,7 @@ output:
   variables:
     - id: video
       view: link
-      path: video.mp4
+      path: video.ts
 
 # batches configuration
 # - name of the batch; can include variable ids for batch template

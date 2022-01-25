@@ -27,7 +27,7 @@ image_path = join(debug_folder, basename(image_url))
 download_url(image_url, image_path)
 
 
-original_video_path = join(debug_folder, 'original.mp4')
+original_video_path = join(debug_folder, 'original.ts')
 if not exists(original_video_path):
     with TemporaryStorage() as s:
         temporary_folder = s.folder
@@ -39,37 +39,34 @@ if not exists(original_video_path):
             y.download([video_url])
         temporary_paths = glob(join(temporary_folder, '*'))
         temporary_path = temporary_paths[0]
-        shutil.move(temporary_path, original_video_path)
+        check_output(
+            f'ffmpeg -i "{temporary_path}" -c copy '
+            f'-bsf:v h264_mp4toannexb -f mpegts "{original_video_path}"')
 
 
-channel_layout = check_output(
-    f'ffprobe -show_entries stream=channel_layout -select_streams a:0 '
-    f'-of csv=p=0 {original_video_path}')
 width_in_pixels, height_in_pixels = check_output(
     'ffprobe -v error -select_streams v:0 '
     '-show_entries stream=width,height -of csv=p=0 '
     f'{original_video_path}'
-).split(',')
+).splitlines()[0].split(',')
 
 
-image_video_path = join(debug_folder, 'image.mp4')
+image_video_path = join(debug_folder, 'image.ts')
 image_video_scale = ','.join([
     f'{width_in_pixels}:{height_in_pixels}:force_original_aspect_ratio=1',
     f'pad={width_in_pixels}:{height_in_pixels}:(ow-iw)/2:(oh-ih)/2',
 ])
 check_output(
-    f'ffmpeg -y -loop 1 -i {image_path} '
-    f'-f lavfi -i anullsrc=channel_layout={channel_layout} -shortest '
+    f'ffmpeg -y -loop 1 -i "{image_path}" '
+    f'-f lavfi -i aevalsrc=0 -shortest '
     f'-t {image_time_in_seconds} '
-    f'-vf format=yuv420p,scale={image_video_scale} '
-    f'{image_video_path}')
+    f'-vf scale={image_video_scale} '
+    f'"{image_video_path}"')
 
 
-paths = [image_video_path, original_video_path]
-rows = ["file '%s'" % abspath(_) for _ in paths]
-files_path = join(debug_folder, 'files.txt')
-open(files_path, 'wt').write('\n'.join(rows))
-final_video_path = join(output_folder, 'video.mp4')
-check_output(
-    f'ffmpeg -y -f concat -safe 0 -i {files_path} -c copy '
-    f'{final_video_path}')
+final_video_path = join(output_folder, 'video.ts')
+subprocess.run([
+    'cat',
+    image_video_path,
+    original_video_path,
+], stdout=open(final_video_path, 'wb'))
