@@ -19,7 +19,6 @@ imports:
   - path: tools/ask-question/automate.yml
   - path: tools/send-emails/automate.yml
   - path: tools/find-places/automate.yml
-  - path: tools/title-videos/automate.yml
   - path: widgets/paint-letters/automate.yml
 # - path: widgets/watch-cpu-history/automate.yml
 # - path: widgets/watch-cpu/automate.yml
