@@ -6,7 +6,7 @@ crosscompute: 0.9.1
 name: Randomize Histograms
 
 # version of your automation
-version: 0.0.1
+version: 0.0.2
 
 # input configuration
 input:
@@ -62,7 +62,40 @@ tests:
 #   input variables that define a specific batch
 batches:
   - folder: batches/a
-  - folder: batches/b
+  - folder: batches/auto0/me{mean}-va{variance}-vc{value_count}-bc{bin_count}
+    configuration:
+      path: datasets/batches.csv
+  - folder: batches/auto1/me{mean}-va{variance}-vc{value_count}-bc{bin_count}
+    variables:
+      - id: mean
+        code: '[0, 10]'
+      - id: variance
+        code: 'range(1, 3)'
+      - id: value_count
+        code: "__import__('numpy').linspace(10, 10000, num=5)"
+      - id: bin_count
+        code: "__import__('numpy').logspace(1, 3, num=3)"
+  - folder: batches/auto2/me{mean}-va{variance}-vc{value_count}-bc{bin_count}
+    reference:
+      folder: batches/a
+    variables:
+      - id: variance
+        code: "__import__('numpy').arange(0, 5, num=0.5)"
+  - folder: batches/auto3/me{mean}-va{variance}-vc{value_count}-bc{bin_count}
+    reference:
+      folder: batches/a
+    configuration:
+      path: datasets/batches-vc-bc.csv
+  - folder: batches/auto4/me{mean}-va{variance}-vc{value_count}-bc{bin_count}
+    reference:
+      folder: batches/a
+    variables:
+      - id: mean
+        code: "[-1, 0, 1]"
+      - id: variance
+        code: "__import__('numpy').arange(0, 5, num=0.5)"
+    configuration:
+      path: datasets/batches-vc-bc.csv
 
 # script configuration
 script:
