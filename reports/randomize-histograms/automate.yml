@@ -70,13 +70,13 @@ batches:
     configuration:
       path: datasets/batches.csv
 
-  # case 2: use a reference folder to set default values for missing variables
-  #         use a batch configuration to vary selected variables
-  - folder: batches/me{mean}-va{variance}-vc{value_count}-bc{bin_count}
-    reference:
-      folder: batches/a
-    configuration:
-      path: datasets/batches-vc-bc.csv
+# case 2: use a reference folder to set default values for missing variables
+#         use a batch configuration to vary selected variables
+# - folder: batches/me{mean}-va{variance}-vc{value_count}-bc{bin_count}
+#   reference:
+#     folder: batches/a
+#   configuration:
+#     path: datasets/batches-vc-bc.csv
 
 # script configuration
 script:
