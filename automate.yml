@@ -10,9 +10,19 @@ imports:
   - path: reports/compute-logarithms/automate.yml
   - path: reports/show-maps/automate.yml
   - path: reports/map-schools/automate.yml
-  - path: reports/run-onsset/automate.yml
+# - path: reports/run-onsset/automate.yml
   - path: tools/add-numbers/automate.yml
   - path: tools/ask-question/automate.yml
   - path: tools/send-emails/automate.yml
   - path: tools/find-places/automate.yml
   - path: widgets/paint-letters/automate.yml
+
+# display configuration
+display:
+
+  # templates configuration
+  # - id of template
+  # - path to template
+  templates:
+    - id: root
+      path: root.jinja2

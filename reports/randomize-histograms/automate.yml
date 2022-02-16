@@ -84,8 +84,8 @@ script:
   # folder where your script should run
   folder: .
 
-  # command to use to run your script
-  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
+  # path to your script, relative to the script folder
+  path: run.ipynb
 
 # display configuration
 display:

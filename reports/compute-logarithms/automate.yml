@@ -69,30 +69,8 @@ script:
   # folder where your script should run
   folder: .
 
-  # command to use to run your script
-  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
-
-# repository configuration
-repository:
-
-  # uri of repository that contains your script
-  uri: https://github.com/crosscompute/crosscompute-examples
-
-  # folder that contains this configuration file
-  folder: reports/compute-logarithms
-
-# environment configuration
-environment:
-
-  # image of the container that you want to use to run your script
-  image: docker.io/library/python:slim-buster
-
-  # type of the processor you want to use to run your script, either
-  # cpu or gpu
-  processor: cpu
-
-  # amount of memory you want to reserve to run your script
-  memory: tiny
+  # path to your script, relative to the script folder
+  path: run.ipynb
 
 # display configuration
 display:
@@ -102,6 +80,3 @@ display:
   # - path to CSS stylesheet that will be used to render your templates
   styles:
     - path: report.css
-
-  # format to use by default when rendering this automation
-  format: pdf
