@@ -10,7 +10,7 @@ input_folder, output_folder = argv[1:]
 
 # Load input variables from input folder
 rows = []
-with open('datasets/locations.csv', 'rt') as f:
+with open('../locations.csv', 'rt') as f:
     csv_reader = csv.reader(f)
     next(csv_reader)
     for row in csv_reader:

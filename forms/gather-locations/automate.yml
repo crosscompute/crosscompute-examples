@@ -1,0 +1,9 @@
+---
+# version of crosscompute
+crosscompute: 0.9.1
+
+# imports configuration
+# - path to the configuration file that you want to import
+imports:
+  - path: gather/automate.yml
+  - path: manage/automate.yml

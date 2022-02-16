@@ -23,7 +23,7 @@ latitude = location.latitude
 
 
 # Save data
-table_path = 'datasets/locations.csv'
+table_path = '../locations.csv'
 is_new = not exists(table_path)
 with open(table_path, 'at') as f:
     fcntl.flock(f, fcntl.LOCK_EX)
