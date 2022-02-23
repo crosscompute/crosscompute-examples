@@ -66,14 +66,10 @@ batches:
     configuration:
       path: datasets/batches.csv
 
-# script configuration
-script:
-
-  # folder where your script should run
-  folder: .
-
-  # path to your script, relative to the script folder
-  path: run.ipynb
+# scripts configuration
+# - path to your script, relative to the script folder
+scripts:
+  - path: run.ipynb
 
 # display configuration
 display:

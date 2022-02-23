@@ -39,14 +39,10 @@ tests:
 batches:
   - folder: batches/latest
 
-# script configuration
-script:
-
-  # folder where your script should run
-  folder: .
-
-  # command to use to run your script
-  command: python manage.py {input_folder} {output_folder}
+# scripts configuration
+# - command to use to run your script
+scripts:
+  - command: python run.py {input_folder} {output_folder}
 
 # display configuration
 display:
