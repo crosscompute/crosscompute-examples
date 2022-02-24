@@ -29,7 +29,7 @@ pip install --upgrade \
     jupyterlab-crosscompute>=0.2.0.1
 ```
 
-[![CrossCompute Extensions for JupyterLab](https://img.youtube.com/vi/zFuaJG_39r4/0.jpg)](https://www.youtube.com/watch?v=zFuaJG_39r4)
+[![CrossCompute Extensions for JupyterLab](https://i.ytimg.com/vi_webp/zFuaJG_39r4/maxresdefault.webp)](https://www.youtube.com/watch?v=zFuaJG_39r4)
 
 - For documentation, please see https://d.crosscompute.com.
 - For tutorials, please see https://forum.crosscompute.com.
