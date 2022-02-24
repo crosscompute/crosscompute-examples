@@ -66,14 +66,10 @@ batches:
     configuration:
       path: datasets/batches.csv
 
-# script configuration
-script:
-
-  # folder where your script should run
-  folder: .
-
-  # command to use to run your script
-  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
+# scripts configuration
+# - path to your script, relative to the script folder
+scripts:
+  - path: run.ipynb
 
 # display configuration
 display:

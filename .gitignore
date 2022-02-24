@@ -19,5 +19,6 @@ dist/
 .DS_Store
 # data
 batches/
-debug/
 runs/
+debug/
+run.py

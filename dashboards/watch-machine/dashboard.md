@@ -1,5 +1,0 @@
-# CPU
-{ cpu }
-
-# RAM
-{ ram }

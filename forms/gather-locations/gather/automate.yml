@@ -3,10 +3,10 @@
 crosscompute: 0.9.1
 
 # name of your automation
-name: Encourage Exercise
+name: Gather Locations
 
 # version of your automation
-version: 0.0.1
+version: 0.0.2
 
 # input configuration
 input:
@@ -17,17 +17,9 @@ input:
   # - path where your script loads the variable,
   #   relative to the input folder
   variables:
-    - id: more_exercise
-      view: boolean
-      path: variables.dictionary
-    - id: simple_exercise
+    - id: address
       view: string
       path: variables.dictionary
-
-  # input templates
-  # - path to your markdown template or jupyter notebook form
-  templates:
-    - path: ask.ipynb
 
 # output configuration
 output:
@@ -38,9 +30,12 @@ output:
   # - path where your script saves the variable,
   #   relative to the output folder
   variables:
-    - id: summary
-      view: markdown
-      path: summary.md
+    - id: longitude
+      view: number
+      path: variables.dictionary
+    - id: latitude
+      view: number
+      path: variables.dictionary
 
 # tests configuration
 # - folder that contains an input subfolder with paths for
@@ -48,11 +43,19 @@ output:
 tests:
   - folder: tests/standard
 
-# script configuration
-script:
+# batches configuration
+# - name of the batch; can include variable ids for batch template
+# - folder that contains an input subfolder with paths for
+#   input variables that define a specific batch
+# - configuration for batch template
+#   - path containing different values for the input variables
+batches:
+  - name: '{address}'
+    folder: batches/{address | slug}
+    configuration:
+      path: datasets/batches.txt
 
-  # folder where your script should run
-  folder: .
-
-  # command to use to run your script
-  command: python -c "$(jupyter nbconvert run.ipynb --to script --stdout)"
+# scripts configuration
+# - command to use to run your script
+scripts:
+  - command: python run.py {input_folder} {output_folder}

@@ -6,7 +6,7 @@ crosscompute: 0.9.1
 name: Manage Locations
 
 # version of your automation
-version: 0.0.1
+version: 0.0.2
 
 # output configuration
 output:
@@ -28,7 +28,7 @@ output:
 # - folder that contains an input subfolder with paths for
 #   input variables that define a specific test
 tests:
-  - folder: tests/manage
+  - folder: tests/standard
 
 # batches configuration
 # - name of the batch; can include variable ids for batch template
@@ -37,16 +37,12 @@ tests:
 # - configuration for batch template
 #   - path containing different values for the input variables
 batches:
-  - folder: batches/manage/latest
+  - folder: batches/latest
 
-# script configuration
-script:
-
-  # folder where your script should run
-  folder: .
-
-  # command to use to run your script
-  command: python manage.py {input_folder} {output_folder}
+# scripts configuration
+# - command to use to run your script
+scripts:
+  - command: python run.py {input_folder} {output_folder}
 
 # display configuration
 display:
@@ -55,4 +51,4 @@ display:
   # - uri to CSS stylesheet that will be used to render your templates
   # - path to CSS stylesheet that will be used to render your templates
   styles:
-    - path: manage.css
+    - path: style.css
