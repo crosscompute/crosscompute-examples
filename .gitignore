@@ -18,6 +18,7 @@ dist/
 *_data
 .DS_Store
 # data
+datasets/
 batches/
 runs/
 debug/
