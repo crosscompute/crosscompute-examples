@@ -17,6 +17,7 @@ dist/
 *.tmp
 *_data
 .DS_Store
+.~lock.*
 # data
 datasets/
 batches/
