@@ -24,5 +24,7 @@ display:
   # - id of template
   # - path to template
   templates:
+    - id: base
+      path: base.jinja2
     - id: root
       path: root.jinja2
