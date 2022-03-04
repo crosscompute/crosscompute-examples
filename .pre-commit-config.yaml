@@ -17,7 +17,7 @@ repos:
     hooks:
       - id: clean-notebooks
         name: clean-notebooks
-        entry: scripts/clean-notebooks.sh
-        language: script
+        entry: find . -name "*.ipynb" -prune -exec jupyter nbconvert --clear-output --inplace '{}' ';'
+        language: system
         types: [jupyter]
         pass_filenames: false
