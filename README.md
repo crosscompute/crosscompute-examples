@@ -2,7 +2,7 @@
 
 Here are example reports, forms, tools, widgets, dashboards made using the CrossCompute Analytics Automation Framework.
 
-- For documentation, please see https://d.crosscompute.com.
+- For documentation, please see https://docs.crosscompute.com.
 - For tutorials, please see https://forum.crosscompute.com.
 - For videos, please see https://youtube.com/crosscompute.
 
