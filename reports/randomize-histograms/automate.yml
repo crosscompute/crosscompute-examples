@@ -1,6 +1,6 @@
 ---
 # version of crosscompute
-crosscompute: 0.9.1
+crosscompute: 0.9.2
 
 # name of your automation
 name: Randomize Histograms
@@ -91,3 +91,12 @@ display:
   # - path to CSS stylesheet that will be used to render your templates
   styles:
     - path: report.css
+
+# prints configuration
+prints:
+  - format: pdf
+    configuration:
+      page-number:
+        location: footer
+    folder: ~/Documents/attachments/randomize-histograms-{timestamp}
+    name: me{mean}-va{variance}-vc{value_count}-bc{bin_count}.pdf
