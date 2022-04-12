@@ -86,6 +86,9 @@ display:
   # - id of the page (required)
   # - configuration of the page
   pages:
+    - id: automation
+      configuration:
+        design: output
     - id: output
       configuration:
         design: none
