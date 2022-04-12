@@ -1,7 +1,3 @@
-body {
-  margin: 0;
-}
-
 .map {
-  height: 100vh;
+  height: calc(100vh - 115px);
 }

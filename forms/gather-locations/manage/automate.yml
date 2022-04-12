@@ -52,3 +52,14 @@ display:
   # - path to CSS stylesheet that will be used to render your templates
   styles:
     - path: style.css
+
+  # pages configuration
+  # - id of the page (required)
+  # - configuration of the page
+  pages:
+    - id: automation
+      configuration:
+        design: output
+    - id: output
+      configuration:
+        design: none

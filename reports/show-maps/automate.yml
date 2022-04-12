@@ -58,11 +58,6 @@ output:
               fill-color: yellow
         path: geometries.json
 
-  # output templates
-  # - path to your markdown template or jupyter notebook form
-  templates:
-    - path: report.md
-
 # tests configuration
 # - folder that contains an input subfolder with paths for
 #   input variables that define a specific test
@@ -93,3 +88,11 @@ display:
   # - path to CSS stylesheet that will be used to render your templates
   styles:
     - path: report.css
+
+  # pages configuration
+  # - id of the page (required)
+  # - configuration of the page
+  pages:
+    - id: automation
+      configuration:
+        design: output

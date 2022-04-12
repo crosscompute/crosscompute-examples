@@ -26,6 +26,8 @@ input:
     - id: url
       view: string
       path: variables.dictionary
+      configuration:
+        label: URL
 
 # output configuration
 output:
@@ -79,3 +81,11 @@ display:
   # - path to CSS stylesheet that will be used to render your templates
   styles:
     - path: report.css
+
+  # pages configuration
+  # - id of the page (required)
+  # - configuration of the page
+  pages:
+    - id: output
+      configuration:
+        design: none
