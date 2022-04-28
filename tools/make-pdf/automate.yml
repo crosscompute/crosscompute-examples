@@ -1,0 +1,29 @@
+---
+crosscompute: 0.9.2
+name: Turn Markdown into PDF
+slug: markdown-to-pdf
+version: 0.0.1
+input:
+  variables:
+    - id: document-markdown
+      view: markdown
+      path: document.md
+    - id: css-style
+      view: text
+      path: style.css
+output:
+  variables:
+    - id: document-pdf
+      view: link
+      path: document.pdf
+      configuration:
+        link-text: Download PDF
+batches:
+  - folder: batches/standard
+scripts:
+  - command: bash run.sh
+display:
+  pages:
+    - id: output
+      configuration:
+        design: none
