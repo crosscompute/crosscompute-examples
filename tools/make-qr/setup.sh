@@ -1,2 +1,2 @@
 pip install -U \
-    qrcode
+    qrcode[pil]

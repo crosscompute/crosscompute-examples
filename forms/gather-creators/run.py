@@ -11,6 +11,7 @@ variables = json.load(open(join(input_folder, 'variables.dictionary'), 'rt'))
 
 
 datasets_folder = Path('datasets')
+datasets_folder.mkdir(exist_ok=True)
 table_path = datasets_folder / 'entries.csv'
 is_new = not exists(table_path)
 with open(table_path, 'at') as f:

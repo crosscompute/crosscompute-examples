@@ -16,6 +16,8 @@ imports:
   - path: tools/ask-question/automate.yml
   - path: tools/send-emails/automate.yml
   - path: tools/find-places/automate.yml
+  - path: tools/make-pdf/automate.yml
+  - path: tools/make-qr/automate.yml
   - path: widgets/paint-letters/automate.yml
 
 # display configuration
