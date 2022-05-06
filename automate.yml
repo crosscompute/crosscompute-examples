@@ -19,6 +19,8 @@ imports:
   - path: tools/make-pdf/automate.yml
   - path: tools/make-qr/automate.yml
   - path: widgets/paint-letters/automate.yml
+  - path: widgets/watch-cpu/automate.yml
+  - path: widgets/watch-cpu-history/automate.yml
 
 # display configuration
 display:
