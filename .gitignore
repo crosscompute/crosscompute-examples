@@ -26,4 +26,4 @@ datasets/
 batches/
 runs/
 debug/
-.*.ipynb.py
+.*.py

@@ -71,15 +71,6 @@ batches:
   - folder: batches/usa-maine
   - folder: batches/usa-florida
 
-# repository configuration
-repository:
-
-  # uri of repository that contains your script
-  uri: https://github.com/crosscompute/crosscompute-examples
-
-  # folder that contains this configuration file
-  folder: reports/show-maps
-
 # display configuration
 display:
 

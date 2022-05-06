@@ -1,0 +1,22 @@
+---
+crosscompute: 0.9.2
+name: Watch CPU Usage History
+version: 0.0.1
+output:
+  variables:
+    - id: cpu_usage_history
+      view: image
+      path: cpu.png
+      configuration:
+        label: CPU Usage History
+batches:
+  - folder: batches/standard
+scripts:
+  - function: run.plot
+environment:
+  interval: 5 seconds
+display:
+  pages:
+    - id: automation
+      configuration:
+        design: output
