@@ -18,5 +18,5 @@ def plot(log_folder, output_folder):
         xs = [float(_) for _ in xs]
         ys = [float(_) for _ in ys]
 
-    plt.plot(xs[-10:], ys[-10:])
+    plt.scatter(xs[-10:], ys[-10:])
     plt.savefig(output_folder / 'cpu.png')
