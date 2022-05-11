@@ -38,7 +38,6 @@ podman run -it --env-file YOUR-ENV-FILE -p 7000:7000 crosscompute-examples
 ### Try via JupyterLab
 
 ```bash
-# Setup packages
 pip install --upgrade \
     jupyterlab-crosscompute>=0.2.2
 find . -name setup.sh -exec bash '{}' ';'
@@ -68,7 +67,6 @@ jupyter lab
 ### Try via Command Line
 
 ```bash
-# Setup packages
 pip install --upgrade \
     crosscompute>=0.9.2
 find . -name setup.sh -exec bash '{}' ';'
@@ -79,7 +77,6 @@ crosscompute
 If you want to try the examples that require environment variables, use the following commands:
 
 ```bash
-# Setup packages
 pip install --upgrade \
     crosscompute-views-map>=0.1.2
 find . -name setup.sh -exec bash '{}' ';'
