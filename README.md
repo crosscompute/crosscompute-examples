@@ -28,13 +28,33 @@ vim YOUR-ENV-FILE
 podman run -it --env-file YOUR-ENV-FILE -p 7000:7000 crosscompute-examples
 ```
 
+### Usage via JupyterLab
+
+```bash
+# Setup packages
+pip install --upgrade \
+    crosscompute-views-map>=0.1.2 \
+    jupyterlab-crosscompute>=0.2.2
+
+# Configure environment for reports/map-schools
+export MAPBOX_TOKEN=YOUR-MAPBOX-TOKEN
+# Configure environment for tools/find-places
+export GOOGLE_KEY=YOUR-GOOGLE-KEY
+# Configure environment for tools/send-emails
+export ATTACHMENTS_FOLDER=~/Documents/attachments
+
+jupyter lab
+```
+
+[![CrossCompute Extensions for JupyterLab](https://i.ytimg.com/vi_webp/zFuaJG_39r4/maxresdefault.webp)](https://www.youtube.com/watch?v=zFuaJG_39r4)
+
 ### Usage via Command Line
 
 ```bash
 # Setup packages
 pip install --upgrade \
-    crosscompute>=0.9.1.3 \
-    crosscompute-views-map>=0.0.2
+    crosscompute>=0.9.2 \
+    crosscompute-views-map>=0.1.2
 find . -name setup.sh -exec bash '{}' ';'
 
 # Configure environment for reports/map-schools
@@ -46,17 +66,6 @@ export ATTACHMENTS_FOLDER=~/Documents/attachments
 
 crosscompute
 ```
-
-### Usage via JupyterLab
-
-```bash
-pip install --upgrade \
-    jupyterlab-crosscompute>=0.2.0.1
-
-jupyter lab
-```
-
-[![CrossCompute Extensions for JupyterLab](https://i.ytimg.com/vi_webp/zFuaJG_39r4/maxresdefault.webp)](https://www.youtube.com/watch?v=zFuaJG_39r4)
 
 ## Development
 
