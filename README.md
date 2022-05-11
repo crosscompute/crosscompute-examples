@@ -41,6 +41,7 @@ podman run -it --env-file YOUR-ENV-FILE -p 7000:7000 crosscompute-examples
 # Setup packages
 pip install --upgrade \
     jupyterlab-crosscompute>=0.2.2
+find . -name setup.sh -exec bash '{}' ';'
 
 jupyter lab
 ```
@@ -50,6 +51,7 @@ If you want to try the examples that require environment variables, use the foll
 ```bash
 pip install --upgrade \
     crosscompute-views-map>=0.1.2
+find . -name setup.sh -exec bash '{}' ';'
 
 # Configure environment for reports/map-schools
 export MAPBOX_TOKEN=YOUR-MAPBOX-TOKEN
