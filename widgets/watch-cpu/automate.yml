@@ -14,7 +14,7 @@ batches:
 scripts:
   - function: run.plot
 environment:
-  interval: 5 seconds
+  interval: 10 seconds
 display:
   pages:
     - id: automation

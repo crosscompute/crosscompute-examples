@@ -1,33 +1,25 @@
 ---
-# version of crosscompute
 crosscompute: 0.9.2
-
-# imports configuration
-# - path to the configuration file that you want to import
 imports:
   - path: forms/gather-creators/automate.yml
-  - path: forms/gather-locations/automate.yml
+# - path: forms/gather-locations/automate.yml
   - path: reports/randomize-histograms/automate.yml
   - path: reports/compute-logarithms/automate.yml
-  - path: reports/show-maps/automate.yml
-  - path: reports/map-schools/automate.yml
-  - path: reports/run-onsset/automate.yml
+# - path: reports/show-maps/automate.yml
+# - path: reports/map-schools/automate.yml
+# - path: reports/run-onsset/automate.yml
   - path: tools/add-numbers/automate.yml
   - path: tools/ask-question/automate.yml
-  - path: tools/send-emails/automate.yml
-  - path: tools/find-places/automate.yml
+# - path: tools/send-emails/automate.yml
+# - path: tools/find-places/automate.yml
   - path: tools/make-pdf/automate.yml
   - path: tools/make-qr/automate.yml
   - path: widgets/paint-letters/automate.yml
-  - path: widgets/watch-cpu/automate.yml
+# - path: widgets/watch-cpu/automate.yml
   - path: widgets/watch-cpu-history/automate.yml
-
-# display configuration
+# - path: widgets/watch-ram/automate.yml
+  - path: widgets/watch-ram-history/automate.yml
 display:
-
-  # templates configuration
-  # - id of template
-  # - path to template
   templates:
     - id: base
       path: base.jinja2

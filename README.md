@@ -20,11 +20,14 @@ git submodule update
 
 ```bash
 cd ~/Projects/crosscompute-examples
+
 podman build . -t crosscompute-examples
+
 vim YOUR-ENV-FILE
     MAPBOX_TOKEN=YOUR-MAPBOX-TOKEN
     GOOGLE_KEY=YOUR-GOOGLE-KEY
     ATTACHMENTS_FOLDER=~/Documents/attachments
+
 podman run -it --env-file YOUR-ENV-FILE -p 7000:7000 crosscompute-examples
 ```
 
@@ -65,6 +68,7 @@ export GOOGLE_KEY=YOUR-GOOGLE-KEY
 export ATTACHMENTS_FOLDER=~/Documents/attachments
 
 crosscompute
+crosscompute automate-plus.yml
 ```
 
 ## Development

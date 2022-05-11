@@ -1,0 +1,16 @@
+---
+crosscompute: 0.9.2
+imports:
+  - path: automate.yml
+  - path: forms/gather-locations/automate.yml
+  - path: reports/show-maps/automate.yml
+  - path: reports/map-schools/automate.yml
+  - path: reports/run-onsset/automate.yml
+  - path: tools/send-emails/automate.yml
+  - path: tools/find-places/automate.yml
+display:
+  templates:
+    - id: base
+      path: base.jinja2
+    - id: root
+      path: root.jinja2
