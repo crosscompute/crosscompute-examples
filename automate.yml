@@ -11,6 +11,7 @@ imports:
 # - path: reports/run-onsset/automate.yml
   - path: tools/add-numbers/automate.yml
   - path: tools/ask-question/automate.yml
+  - path: tools/diff-texts/automate.yml
 # - path: tools/send-emails/automate.yml
 # - path: tools/find-places/automate.yml
   - path: tools/make-pdf/automate.yml
