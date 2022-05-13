@@ -1,0 +1,74 @@
+---
+crosscompute: 0.9.2
+name: Gather Packages
+version: 0.0.1
+input:
+  variables:
+    - id: referral_code
+      view: string
+      path: variables.dictionary
+      configuration:
+        label: Referral Code if you have one
+    - id: package_category
+      view: string
+      path: variables.dictionary
+      configuration:
+        label: Package Category e.g. Energy Infrastructure
+    - id: repository_url
+      view: string
+      path: variables.dictionary
+      configuration:
+        label: Link to a Repository on GitHub or GitLab
+    - id: star_count
+      view: number
+      path: variables.dictionary
+      configuration:
+        label: Number of Stars
+    - id: fork_count
+      view: number
+      path: variables.dictionary
+      configuration:
+        label: Number of Forks
+    - id: updated_when
+      view: string
+      path: variables.dictionary
+      configuration:
+        label: Last Updated e.g. 2022-05-13
+    - id: license_type
+      view: string
+      path: variables.dictionary
+      configuration:
+        label: License Type e.g. MIT
+    - id: organization_name
+      view: string
+      path: variables.dictionary
+    - id: published_paper_url
+      view: string
+      path: variables.dictionary
+      configuration:
+        label: Link to a Published Paper
+    - id: conference_talk_url
+      view: string
+      path: variables.dictionary
+      configuration:
+        label: Link to a Conference Talk
+    - id: pypi_url
+      view: string
+      path: variables.dictionary
+      configuration:
+        label: PyPI URL
+  templates:
+    - path: form.md
+output:
+  variables:
+    - id: response_text
+      view: text
+      path: variables.dictionary
+      configuration:
+        label: Response
+  templates:
+    - path: report.md
+batches:
+  - folder: batches/standard
+scripts:
+  - command: python run.py {input_folder} {output_folder}
