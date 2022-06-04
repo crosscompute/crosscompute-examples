@@ -1,14 +1,15 @@
 import json
-from os.path import join
+from pathlib import Path
 from sys import argv
 
 
 # Get folder paths from command-line arguments
-input_folder, output_folder = argv[1:]
+input_folder, output_folder = [Path(_) for _ in argv[1:]]
 
 
 # Load input variables from input folder
-variables = json.load(open(join(input_folder, 'variables.dictionary'), 'rt'))
+with (input_folder / 'variables.dictionary').open('rt') as f:
+    variables = json.load(f)
 
 
 # Perform calculation
@@ -16,6 +17,5 @@ c = variables['a'] + variables['b']
 
 
 # Save output variables to output folder
-json.dump({
-    'c': c,
-}, open(join(output_folder, 'variables.dictionary'), 'wt'))
+with (output_folder / 'variables.dictionary').open('wt') as f:
+    json.dump({'c': c}, f)
