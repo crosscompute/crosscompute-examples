@@ -23,4 +23,5 @@ batches:
 scripts:
   - command: python run.py {input_folder} {output_folder}
 environment:
-  image: python
+  container:
+    image: python
