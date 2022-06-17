@@ -1,5 +1,8 @@
 # Map Schools
 
+- [Configuration](automate.yml)
+- [Demo](https://crosscompute.net/a/map-schools)
+
 ```bash
 git clone https://github.com/crosscompute/crosscompute-examples
 cd crosscompute-examples/reports/map-schools
