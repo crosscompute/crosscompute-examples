@@ -50,12 +50,6 @@ output:
   templates:
     - path: report.md
 
-# tests configuration
-# - folder that contains an input subfolder with paths for
-#   input variables that define a specific test
-tests:
-  - folder: tests/standard
-
 # batches configuration
 # - name of the batch; can include variable ids for batch template
 # - folder that contains an input subfolder with paths for
