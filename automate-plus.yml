@@ -8,6 +8,7 @@ imports:
   - path: reports/run-onsset/automate.yml
   - path: tools/send-emails/automate.yml
   - path: tools/find-places/automate.yml
+  - path: tools/make-pdf/automate.yml
 display:
   templates:
     - id: base

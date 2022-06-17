@@ -1,13 +1,12 @@
-FROM python
-COPY . /home/user/code
-RUN \
-useradd --uid 1000 --user-group user && \
-chown -R user:user /home/user
+FROM python:3.10
+RUN useradd user
 USER user
-WORKDIR /home/user/code
+WORKDIR /home/user
+COPY --chown=user:user . .
 ENV VIRTUAL_ENV="/home/user/.virtualenvs/crosscompute"
 ENV PATH="/home/user/.local/bin:$VIRTUAL_ENV/bin:$PATH"
 RUN \
-python3 -m venv $VIRTUAL_ENV --system-site-packages && \
-find . -name setup.sh -exec bash '{}' ';'
+python -m venv $VIRTUAL_ENV --system-site-packages && \
+find . -name setup.sh -exec bash '{}' ';' && \
+rm -rf ~/.cache
 CMD ["crosscompute", "--host", "0.0.0.0", "--port", "7000", "--no-browser"]
