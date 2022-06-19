@@ -27,5 +27,6 @@ batches/
 runs/
 debug/
 .*.py
+.*.sh
 .containerfile
 .containerignore
