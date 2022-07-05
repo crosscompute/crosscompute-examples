@@ -30,3 +30,4 @@ debug/
 .run.*
 .containerfile
 .containerignore
+# data
