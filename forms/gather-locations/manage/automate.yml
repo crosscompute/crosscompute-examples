@@ -22,7 +22,6 @@ output:
       path: geometries.json
       configuration:
         style: mapbox://styles/mapbox/dark-v10
-        path: configuration.json
 
 # tests configuration
 # - folder that contains an input subfolder with paths for

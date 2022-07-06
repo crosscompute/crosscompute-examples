@@ -21,8 +21,3 @@ latitudes = [_[1] for _ in rows]
 
 # Save output variables to output folder
 json.dump(rows, open(join(output_folder, 'geometries.json'), 'wt'))
-json.dump({
-    'longitude': sum(longitudes) / len(longitudes),
-    'latitude': sum(latitudes) / len(latitudes),
-    'zoom': 2,
-}, open(join(output_folder, 'configuration.json'), 'wt'))

@@ -1,3 +1,6 @@
 ._text {
   height: 20em;
 }
+._map-mapbox {
+  height: calc(100vh - 70px);
+}
