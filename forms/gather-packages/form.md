@@ -13,3 +13,5 @@ Submit open source packages that you think would be useful to have in our librar
 { published_paper_url }
 { conference_talk_url }
 { pypi_url }
+
+[See Code for this Automation](https://github.com/crosscompute/crosscompute-examples/tree/master/forms/gather-packages)
