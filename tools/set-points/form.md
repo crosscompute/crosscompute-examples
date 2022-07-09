@@ -6,4 +6,4 @@ Given a point and a radius, generate random points within the point radius.
 
 { count }
 
-[Code](https://github.com/crosscompute/crosscompute-examples/tree/master/tools/set-points)
+[See Code for this Automation](https://github.com/crosscompute/crosscompute-examples/tree/master/tools/set-points)
