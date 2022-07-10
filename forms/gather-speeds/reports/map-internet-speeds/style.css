@@ -3,6 +3,12 @@ body {
   font-size: 12pt;
 }
 
-._map-deck-screengrid{
-  height: 300px;
+._map-deck-screengrid {
+  height: 50vh;
+}
+
+@media only screen and (min-height: 600px) {
+  ._map-deck-screengrid {
+    height: calc(100vh - 300px);
+  }
 }

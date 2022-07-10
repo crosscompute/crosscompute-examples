@@ -4,5 +4,11 @@ body {
 }
 
 ._map-mapbox-location {
-  height: calc(100vh - 500px);
+  height: 50vh;
+}
+
+@media only screen and (min-height: 600px) {
+  ._map-mapbox-location {
+    height: calc(100vh - 300px);
+  }
 }

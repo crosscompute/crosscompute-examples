@@ -1,6 +1,13 @@
 ._text {
   height: 20em;
 }
+
 ._map-mapbox {
-  height: calc(100vh - 70px);
+  height: 50vh;
+}
+
+@media only screen and (min-height: 600px) {
+  ._map-mapbox {
+    height: calc(100vh - 300px);
+  }
 }
