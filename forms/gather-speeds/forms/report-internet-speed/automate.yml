@@ -1,6 +1,7 @@
 ---
 crosscompute: 0.9.2
 name: Report Internet Speed
+description: Submit your internet speed test results by location and provider
 version: 0.0.1
 input:
   variables:
