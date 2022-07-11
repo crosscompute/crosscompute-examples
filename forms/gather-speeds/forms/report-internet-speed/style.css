@@ -3,6 +3,10 @@ body {
   font-size: 12pt;
 }
 
+.highlight {
+  background: yellow;
+}
+
 ._map-mapbox-location {
   height: 50vh;
 }

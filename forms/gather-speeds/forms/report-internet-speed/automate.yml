@@ -8,7 +8,7 @@ input:
       view: map-mapbox-location
       path: variables.dictionary
       configuration:
-        label: Where are you? Press the target icon in the upper right hand corner of the map to share your location. Location tracking will have low accuracy on a desktop but high accuracy on a smartphone.
+        label: Where are you? Press the button below to share your location. Location tracking will have low accuracy on a desktop but high accuracy on a smartphone.
         style: mapbox://styles/mapbox/streets-v11
     - id: download-speed
       view: number
