@@ -6,4 +6,4 @@ This map is updated every hour. [Report your internet speed](https://crosscomput
 
 { map-speeds-upload }
 
-[See Code for this Automation](https://github.com/crosscompute/crosscompute-examples/tree/master/forms/gather-speeds/reports/map-internet-speeds)
+[See Code for this Automation](https://github.com/crosscompute/crosscompute-examples/tree/master/forms/gather-internet-speeds/reports/map-internet-speeds)

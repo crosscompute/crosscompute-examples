@@ -1,0 +1,14 @@
+body {
+  font-family: sans-serif;
+  font-size: 12pt;
+}
+
+._map-mapbox {
+  height: 50vh;
+}
+
+@media only screen and (min-height: 600px) {
+  ._map-mapbox {
+    height: calc(100vh - 300px);
+  }
+}
