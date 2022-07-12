@@ -2,7 +2,8 @@
 crosscompute: 0.9.2
 imports:
   - path: automate.yml
-  - path: forms/gather-speeds/automate.yml
+  - path: forms/gather-internet-speeds/automate.yml
+  - path: forms/gather-cell-towers/automate.yml
   - path: reports/show-maps/automate.yml
   - path: reports/map-schools/automate.yml
   - path: reports/run-onsset/automate.yml
