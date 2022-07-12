@@ -1,6 +1,6 @@
 ---
 crosscompute: 0.9.2
-name: Report Cell Tower Location
+name: Report Cell Tower
 description: Submit the location of a cell tower
 version: 0.0.1
 input:

@@ -1,4 +1,4 @@
-# Report Cell Tower Location
+# Report Cell Tower
 
 Help your neighbors improve their mobile internet connection by finding the location of the nearest [cell tower](https://en.wikipedia.org/wiki/Cell_site).
 
