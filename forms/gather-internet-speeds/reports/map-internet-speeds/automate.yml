@@ -26,10 +26,14 @@ batches:
 datasets:
   - folder: datasets/runs
     reference:
-      folder: ../../forms/record-internet-speed/runs
+      folder: ../../forms/report-internet-speed/runs
 scripts:
   - path: run.ipynb
 environment:
+  image: python
+  packages:
+    - id: numpy
+      manager: pip
   interval: 1 hour
 display:
   styles:
