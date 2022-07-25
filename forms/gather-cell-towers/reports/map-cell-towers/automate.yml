@@ -13,16 +13,19 @@ output:
         layers:
           - type: circle
             paint:
-              circle-color: yellow
-              circle-radius: 7
+              circle-color: ['match', ['get', 'is_contributed'], 1, 'orange', 'yellow']
+              circle-radius: 5
   templates:
     - path: report.md
 batches:
   - folder: batches/standard
 datasets:
+  - path: datasets/cell-towers.csv
+    reference:
+      url: https://query.data.world/s/cfxj66w6rvg3zhk3r25dum575czl3q
   - folder: datasets/runs
     reference:
-      folder: ../../forms/record-cell-tower/runs
+      folder: ../../forms/report-cell-tower/runs
 scripts:
   - path: run.ipynb
 environment:
