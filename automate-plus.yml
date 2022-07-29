@@ -11,9 +11,6 @@ imports:
   - path: tools/find-places/automate.yml
   - path: tools/make-pdf/automate.yml
 display:
-  styles:
-    - path: style.css
-    - uri: https://fonts.googleapis.com/css?family=Tangerine
   templates:
     - id: base
       path: base.jinja2
