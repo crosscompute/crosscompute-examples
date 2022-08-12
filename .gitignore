@@ -12,15 +12,15 @@
 __pycache__
 build/
 dist/
-# sqlite
-*.sqlite
-*.sqlite-journal
 # transient
 *.log
 *.tmp
 *_data
 .DS_Store
 .~lock.*
+# sqlite
+*.sqlite
+*.sqlite-journal
 # crosscompute
 datasets/
 batches/
