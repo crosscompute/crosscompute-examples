@@ -10,6 +10,7 @@ imports:
   - path: tools/send-emails/automate.yml
   - path: tools/find-places/automate.yml
   - path: tools/make-pdf/automate.yml
+  - path: tools/set-points/automate.yml
 display:
   templates:
     - id: base

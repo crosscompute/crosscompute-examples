@@ -9,7 +9,6 @@ imports:
   - path: tools/ask-question/automate.yml
   - path: tools/diff-texts/automate.yml
   - path: tools/make-qr/automate.yml
-  - path: tools/set-points/automate.yml
   - path: widgets/paint-letters/automate.yml
   - path: widgets/watch-cpu-history/automate.yml
   - path: widgets/watch-ram-history/automate.yml
