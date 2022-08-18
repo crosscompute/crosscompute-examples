@@ -1,0 +1,8 @@
+.districts_map {
+    height: calc(100vh - 10em);
+}
+
+.districts_table {
+    height: 5em;
+    background-color: yellow;
+}

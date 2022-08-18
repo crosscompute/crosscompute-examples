@@ -4,7 +4,7 @@
 # Documentation: https://docs.crosscompute.com
 # Forum: https://forum.crosscompute.com
 
-crosscompute: 0.0.1
+crosscompute: 0.9.2
 name: See Airport Traffic
 description: See how long it takes to get to the airport from different parts of a city
 version: 0.0.1
@@ -20,8 +20,8 @@ input:
     - id: travel_mode
       view: string
       path: variables.dictionary
-  templates:
-    - path: form.md
+# templates:
+#   - path: form.md
 
 output:
   variables:
@@ -33,12 +33,12 @@ output:
         layers:
           - type: fill
             paint:
-              fill-color: ['interpolate', ['linear'], ['get', 'time_in_minutes'], 0, 'blue', 120, 'red']
-    - id: districts_table
-      view: table
-      path: table.json
-  templates:
-    - path: report.md
+              fill-color: ['interpolate', ['linear'], ['get', 't'], 0, 'blue', 60, 'red']
+    - id: time_histogram
+      view: image
+      path: histogram.png
+# templates:
+#   - path: report.md
 
 batches:
   - folder: batches/{city_name | slug}-{destination_name | slug}-{travel_mode | slug}
@@ -62,7 +62,7 @@ environment:
 
 display:
   styles:
-    - path: report.css
+    - path: style.css
   pages:
     - id: automation
       configuration:
