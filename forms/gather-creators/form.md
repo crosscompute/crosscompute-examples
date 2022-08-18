@@ -9,3 +9,5 @@ We are building a computational marketplace and want to know what you would like
 { email_address }
 { interview_when }
 { referral_code }
+
+[See Code for this Automation](https://github.com/crosscompute/crosscompute-examples/tree/master/forms/gather-creators)

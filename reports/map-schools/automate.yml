@@ -43,7 +43,6 @@ output:
       path: geometries.json
       configuration:
         style: mapbox://styles/mapbox/dark-v10
-        path: configuration.json
 
   # output templates
   # - path to your markdown template or jupyter notebook form

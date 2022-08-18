@@ -1,0 +1,23 @@
+---
+crosscompute: 0.9.2
+name: Report Cell Tower
+description: Submit the location of a cell tower
+version: 0.0.1
+input:
+  variables:
+    - id: location
+      view: map-mapbox-location
+      path: variables.dictionary
+      configuration:
+        label: Where is the cell tower?
+        style: mapbox://styles/mapbox/satellite-streets-v11
+  templates:
+    - path: form.md
+output:
+  templates:
+    - path: report.md
+batches:
+  - folder: batches/standard
+display:
+  styles:
+    - path: style.css

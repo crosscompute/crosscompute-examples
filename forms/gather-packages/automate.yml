@@ -71,4 +71,4 @@ output:
 batches:
   - folder: batches/standard
 scripts:
-  - command: python run.py {input_folder} {output_folder}
+  - command: python3 run.py {input_folder} {output_folder}

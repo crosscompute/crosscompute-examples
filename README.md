@@ -16,13 +16,17 @@ git submodule init
 git submodule update
 ```
 
-### Usage via Podman
+### Try via Podman
 
 ```bash
 cd ~/Projects/crosscompute-examples
-
 podman build . -t crosscompute-examples
+podman run -it -p 7000:7000 crosscompute-examples
+```
 
+If you want to try the examples that require environment variables, use the following commands:
+
+```bash
 vim YOUR-ENV-FILE
     MAPBOX_TOKEN=YOUR-MAPBOX-TOKEN
     GOOGLE_KEY=YOUR-GOOGLE-KEY
@@ -31,13 +35,22 @@ vim YOUR-ENV-FILE
 podman run -it --env-file YOUR-ENV-FILE -p 7000:7000 crosscompute-examples
 ```
 
-### Usage via JupyterLab
+### Try via JupyterLab
 
 ```bash
-# Setup packages
 pip install --upgrade \
-    crosscompute-views-map>=0.1.2 \
     jupyterlab-crosscompute>=0.2.2
+find . -name setup.sh -exec bash '{}' ';'
+
+jupyter lab
+```
+
+If you want to try the examples that require environment variables, use the following commands:
+
+```bash
+pip install --upgrade \
+    crosscompute-views-map>=0.1.2
+find . -name setup.sh -exec bash '{}' ';'
 
 # Configure environment for reports/map-schools
 export MAPBOX_TOKEN=YOUR-MAPBOX-TOKEN
@@ -51,12 +64,20 @@ jupyter lab
 
 [![CrossCompute Extensions for JupyterLab](https://i.ytimg.com/vi_webp/zFuaJG_39r4/maxresdefault.webp)](https://www.youtube.com/watch?v=zFuaJG_39r4)
 
-### Usage via Command Line
+### Try via Command Line
 
 ```bash
-# Setup packages
 pip install --upgrade \
-    crosscompute>=0.9.2 \
+    crosscompute>=0.9.2
+find . -name setup.sh -exec bash '{}' ';'
+
+crosscompute
+```
+
+If you want to try the examples that require environment variables, use the following commands:
+
+```bash
+pip install --upgrade \
     crosscompute-views-map>=0.1.2
 find . -name setup.sh -exec bash '{}' ';'
 
@@ -67,7 +88,6 @@ export GOOGLE_KEY=YOUR-GOOGLE-KEY
 # Configure environment for tools/send-emails
 export ATTACHMENTS_FOLDER=~/Documents/attachments
 
-crosscompute
 crosscompute automate-plus.yml
 ```
 

@@ -1,2 +1,8 @@
+# crosscompute
+datasets/
 batches/
 runs/
+debug/
+.*.py
+.containerfile
+.containerignore

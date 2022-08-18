@@ -1,0 +1,72 @@
+---
+# Reference: https://github.com/crosscompute/crosscompute-examples
+# Gallery: https://crosscompute.net
+# Documentation: https://docs.crosscompute.com
+# Forum: https://forum.crosscompute.com
+
+crosscompute: 0.0.1
+name: See Airport Traffic
+description: See how long it takes to get to the airport from different parts of a city
+version: 0.0.1
+
+input:
+  variables:
+    - id: districts_uri
+      view: string
+      path: variables.dictionary
+    - id: destination_address
+      view: string
+      path: variables.dictionary
+    - id: travel_mode
+      view: string
+      path: variables.dictionary
+  templates:
+    - path: form.md
+
+output:
+  variables:
+    - id: districts_map
+      view: map-mapbox
+      path: map.geojson
+      configuration:
+        style: mapbox://styles/mapbox/dark-v10
+        layers:
+          - type: fill
+            paint:
+              fill-color: ['interpolate', ['linear'], ['get', 'time_in_minutes'], 0, 'blue', 120, 'red']
+    - id: districts_table
+      view: table
+      path: table.json
+  templates:
+    - path: report.md
+
+batches:
+  - folder: batches/{city_name | slug}-{destination_name | slug}-{travel_mode | slug}
+    name: '{city_name} - {destination_name} - {travel_mode}'
+    slug: '{city_name | slug}-{destination_name | slug}-{travel_mode | slug}'
+    configuration:
+      path: datasets/batches.csv
+
+scripts:
+  - path: run.ipynb
+
+environment:
+  # engine: podman
+  # image: python
+  # packages:
+  #   - id: chromium
+  #     manager: apt
+  variables:
+    - id: GOOGLE_KEY
+  interval: 1 hour
+
+display:
+  styles:
+    - path: report.css
+  pages:
+    - id: automation
+      configuration:
+        design: output
+    - id: output
+      configuration:
+        design: none

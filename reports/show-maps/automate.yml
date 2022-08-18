@@ -1,21 +1,8 @@
 ---
-# version of crosscompute
 crosscompute: 0.9.2
-
-# name of your automation
 name: Show Maps
-
-# version of your automation
 version: 0.0.1
-
-# output configuration
 output:
-
-  # output variables
-  # - id to use when referencing your variable in the template
-  # - view to use when rendering your variable on the display
-  # - path where your script saves the variable,
-  #   relative to the output folder
   variables:
     - id: streets
       view: map-mapbox
@@ -57,32 +44,14 @@ output:
             paint:
               fill-color: yellow
         path: geometries.json
-
-# tests configuration
-# - folder that contains an input subfolder with paths for
-#   input variables that define a specific test
 tests:
   - folder: tests/points
-
-# batches configuration
-# - folder that contains an input subfolder with paths for
-#   input variables that define a specific batch
 batches:
   - folder: batches/usa-maine
   - folder: batches/usa-florida
-
-# display configuration
 display:
-
-  # styles configuration
-  # - uri to CSS stylesheet that will be used to render your templates
-  # - path to CSS stylesheet that will be used to render your templates
   styles:
     - path: report.css
-
-  # pages configuration
-  # - id of the page (required)
-  # - configuration of the page
   pages:
     - id: automation
       configuration:

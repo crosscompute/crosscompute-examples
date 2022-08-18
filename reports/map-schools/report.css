@@ -4,5 +4,11 @@ body {
 }
 
 .schools {
-  height: calc(100vh - 115px);
+  height: 50vh;
+}
+
+@media only screen and (min-height: 600px) {
+  .schools {
+    height: calc(100vh - 300px);
+  }
 }
