@@ -33,12 +33,13 @@ output:
         layers:
           - type: fill
             paint:
-              fill-color: ['interpolate', ['linear'], ['get', 't'], 0, 'blue', 60, 'red']
+              fill-color: ['interpolate', ['linear'], ['get', 't'], 1, 'blue', 60, 'red']
+              fill-opacity: 0.8
     - id: time_histogram
       view: image
       path: histogram.png
-# templates:
-#   - path: report.md
+  templates:
+    - path: report.md
 
 batches:
   - folder: batches/{city_name | slug}-{destination_name | slug}-{travel_mode | slug}

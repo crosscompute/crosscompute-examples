@@ -22,10 +22,11 @@ dist/
 *.sqlite
 *.sqlite-journal
 # crosscompute
-datasets/
 batches/
-runs/
+datasets/
 debug/
+runs/
+tests/
 .*.py
 .run.*
 .containerfile
