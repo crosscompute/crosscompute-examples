@@ -1,3 +1,6 @@
 .districts_map {
-    height: 50vh;
+  height: 50vh;
+}
+._image {
+  max-width: 100%;
 }
