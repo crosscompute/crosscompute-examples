@@ -17,7 +17,24 @@ input:
   templates:
     - path: form.md
 output:
+  variables:
+    - id: application_timestamp
+      view: string
+      path: variables.dictionary
+    - id: project_description
+      view: text
+      path: variables.dictionary
+    - id: email_address
+      view: email
+      path: variables.dictionary
   templates:
     - path: report.md
+scripts:
+  - path: run.ipynb
 batches:
   - folder: batches/standard
+display:
+  buttons:
+    - id: run
+      configuration:
+        button-text: Apply
