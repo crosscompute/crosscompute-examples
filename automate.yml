@@ -3,6 +3,7 @@ crosscompute: 0.9.2
 imports:
   - path: forms/gather-creators/automate.yml
   - path: forms/gather-packages/automate.yml
+  - path: forms/gather-projects/automate.yml
   - path: reports/randomize-histograms/automate.yml
   - path: reports/compute-logarithms/automate.yml
   - path: tools/add-numbers/automate.yml
