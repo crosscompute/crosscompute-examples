@@ -22,6 +22,8 @@ output:
 batches:
   - folder: batches/standard
 display:
+  styles:
+    - path: style.css
   buttons:
     - id: run
       configuration:
