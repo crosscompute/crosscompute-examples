@@ -59,7 +59,7 @@ environment:
   #     manager: apt
   variables:
     - id: GOOGLE_KEY
-  interval: 8 hours
+  interval: 25 hours
 
 display:
   styles:
