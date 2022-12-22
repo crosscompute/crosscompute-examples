@@ -75,7 +75,7 @@ display:
   # - uri to CSS stylesheet that will be used to render your templates
   # - path to CSS stylesheet that will be used to render your templates
   styles:
-    - path: report.css
+    - path: style.css
 
   # pages configuration
   # - id of the page (required)

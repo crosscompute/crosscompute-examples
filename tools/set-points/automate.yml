@@ -23,4 +23,4 @@ scripts:
   - path: run.ipynb
 display:
   styles:
-    - path: report.css
+    - path: style.css

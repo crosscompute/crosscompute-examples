@@ -51,7 +51,7 @@ batches:
   - folder: batches/usa-florida
 display:
   styles:
-    - path: report.css
+    - path: style.css
   pages:
     - id: automation
       configuration:

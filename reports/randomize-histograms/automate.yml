@@ -94,7 +94,7 @@ display:
   # styles configuration
   # - path to CSS stylesheet that will be used to render your templates
   styles:
-    - path: report.css
+    - path: style.css
 
 # prints configuration
 # prints:

@@ -23,7 +23,7 @@ scripts:
   - command: bash run.sh
 display:
   styles:
-    - path: report.css
+    - path: style.css
   pages:
     - id: output
       configuration:
