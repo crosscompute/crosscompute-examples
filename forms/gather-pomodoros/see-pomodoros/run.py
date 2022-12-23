@@ -39,11 +39,15 @@ for [
         key=lambda _: _[0],
         reverse=True,
     ):
-        summary_lines.append('### ' + date.strftime('%A, %B %d, %Y'))
+        summary_lines.extend([
+            '### ' + date.strftime('%A, %B %d, %Y'),
+            '| project_id | pomodoro_count |',
+            '| --- | --- |',
+        ])
         for [
             project_id,
             pomodoros,
         ] in pomodoros_by_project_id.items():
-            summary_lines.append(f'- {project_id}: {len(pomodoros)} pomodoros')
+            summary_lines.append(f'| {project_id} | {len(pomodoros)} |')
 with (output_folder / 'summary.md').open('wt') as f:
     f.write('\n'.join(summary_lines))
