@@ -1,0 +1,19 @@
+---
+crosscompute: 0.9.2
+name: See Pomodoros
+version: 0.0.1
+output:
+  variables:
+    - id: summary
+      view: markdown
+      path: summary.md
+batches:
+  - folder: batches/standard
+datasets:
+  - path: datasets/runs
+    reference:
+      path: ../log-pomodoro/runs
+scripts:
+  - path: run.py
+environment:
+  interval: 1 hour

@@ -1,0 +1,47 @@
+---
+crosscompute: 0.9.2
+name: Log Pomodoro
+version: 0.0.1
+input:
+  variables:
+    - id: project_id
+      view: string
+      path: variables.dictionary
+      configuration:
+        label: What project did you work on?
+output:
+  variables:
+    - id: counts
+      view: table
+      path: counts.json
+    - id: link
+      view: markdown
+      path: link.md
+  templates:
+    - path: output.md
+batches:
+  - folder: batches/standard
+scripts:
+  - path: run.py
+display:
+  styles:
+    - path: style.css
+  pages:
+    - id: output
+      configuration:
+        design: none
+  buttons:
+    - id: run
+      configuration:
+        button-text: Log a Pomodoro
+authorization:
+  tokens:
+    - path: tokens.yml
+  groups:
+    - configuration:
+        username: invisibleroads
+      permissions:
+        - id: see_root
+        - id: see_automation
+        - id: see_batch
+        - id: run_automation
