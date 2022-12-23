@@ -17,3 +17,11 @@ scripts:
   - path: run.py
 environment:
   interval: 1 hour
+display:
+  pages:
+    - id: automation
+      configuration:
+        design: output
+    - id: output
+      configuration:
+        design: none
