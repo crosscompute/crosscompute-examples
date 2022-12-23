@@ -18,6 +18,8 @@ scripts:
 environment:
   interval: 10 minutes
 display:
+  styles:
+    - path: style.css
   pages:
     - id: automation
       configuration:
