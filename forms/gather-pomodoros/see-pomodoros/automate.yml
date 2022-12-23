@@ -16,7 +16,7 @@ datasets:
 scripts:
   - path: run.py
 environment:
-  interval: 1 hour
+  interval: 10 minutes
 display:
   pages:
     - id: automation
