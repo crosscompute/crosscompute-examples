@@ -17,12 +17,6 @@ input:
         label: URI
 output:
   variables:
-    - id: type
-      view: string
-      path: variables.dictionary
-    - id: period
-      view: string
-      path: variables.dictionary
     - id: schools
       view: map-deck-screengrid
       path: geometries.json
