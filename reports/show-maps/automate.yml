@@ -1,5 +1,5 @@
 ---
-crosscompute: 0.9.2
+crosscompute: 0.9.3
 name: Show Maps
 version: 0.0.1
 output:
@@ -44,8 +44,6 @@ output:
             paint:
               fill-color: yellow
         path: geometries.json
-tests:
-  - folder: tests/points
 batches:
   - folder: batches/usa-maine
   - folder: batches/usa-florida

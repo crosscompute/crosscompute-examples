@@ -1,7 +1,0 @@
-{
-  "type": "FeatureCollection",
-  "features": [
-    {"type": "Feature", "properties": {"name": "Saint Petersburg", "population": 271842, "year": 2020}, "geometry": {"type": "Point", "coordinates": [-82.741943, 27.724722]}},
-    {"type": "Feature", "properties": {"name": "New York", "population": 8804190, "year": 2020}, "geometry": {"type": "Point", "coordinates": [-73.977295, 40.752655]}}
-  ]
-}
