@@ -1,0 +1,15 @@
+table {
+   border-collapse: collapse;
+   margin-bottom: 1em;
+}
+td {
+   padding: 0;
+   margin: 0;
+}
+th:nth-child(1), td:nth-child(1) {
+  text-align: left;
+  padding-right: 1em;
+}
+th:nth-child(2), td:nth-child(2) {
+  text-align: right;
+}
