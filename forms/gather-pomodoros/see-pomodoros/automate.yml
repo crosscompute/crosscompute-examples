@@ -16,10 +16,8 @@ datasets:
 scripts:
   - path: run.py
 environment:
-  interval: 10 minutes
+  interval: 1 hour
 display:
-  styles:
-    - path: style.css
   pages:
     - id: automation
       configuration:
@@ -27,3 +25,5 @@ display:
     - id: output
       configuration:
         design: none
+  styles:
+    - path: style.css

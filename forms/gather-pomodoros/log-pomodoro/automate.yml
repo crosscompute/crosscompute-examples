@@ -33,7 +33,7 @@ display:
   buttons:
     - id: run
       configuration:
-        button-text: Log Pomodoro
+        button-text: Log a Pomodoro
 authorization:
   tokens:
     - path: tokens.yml
