@@ -4,13 +4,19 @@ name: Turn Markdown to PDF
 slug: markdown-to-pdf
 version: 0.0.1
 input:
+  templates:
+    - path: input.md
   variables:
     - id: document-markdown
       view: markdown
       path: document.md
+      configuration:
+       label: Enter Your Markdown Below
     - id: css-style
       view: text
       path: style.css
+      configuration:
+        label: Enter Your Style in CSS Format Below
 output:
   variables:
     - id: document-pdf
@@ -23,6 +29,8 @@ batches:
 scripts:
   - command: bash run.sh
 display:
+  styles:
+    - path: style.css
   pages:
     - id: output
       configuration:
