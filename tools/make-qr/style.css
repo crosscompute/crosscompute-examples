@@ -1,4 +1,9 @@
 img {
   max-width: 100%;
-  max-height: calc(100vh - 3em);
+  max-height: calc(100vh - 5em);
+}
+
+.data {
+  height: 50vh;
+  min-height: 10em;
 }
