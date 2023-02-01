@@ -1,0 +1,58 @@
+---
+# version of crosscompute
+crosscompute: 0.9.3
+
+# name of your automation
+name: Ask Question
+
+# version of your automation
+version: 0.0.1
+
+# input configuration
+input:
+
+  # input variables
+  # - id to use when referencing your variable in the template
+  # - view to use when rendering your variable on the display
+  # - path where your script loads the variable,
+  #   relative to the input folder
+  variables:
+    - id: question
+      view: string
+      path: question.txt
+
+# output configuration
+output:
+
+  # output variables
+  # - id to use when referencing your variable in the template
+  # - view to use when rendering your variable on the display
+  # - path where your script saves the variable,
+  #   relative to the output folder
+  variables:
+    - id: response
+      view: markdown
+      path: response.md
+
+# tests configuration
+# - folder that contains an input subfolder with paths for
+#   input variables that define a specific test
+tests:
+  - folder: tests/standard
+
+# batches configuration
+# - name of the batch; can include variable ids for batch template
+# - folder that contains an input subfolder with paths for
+#   input variables that define a specific batch
+# - configuration for batch template
+#   - path containing different values for the input variables
+batches:
+  - name: '{question}'
+    folder: batches/{id}
+    configuration:
+      path: datasets/questions.csv
+
+# scripts configuration
+# - path to your script, relative to the script folder
+scripts:
+  - path: run.ipynb

@@ -1,20 +1,20 @@
 ---
-crosscompute: 0.9.2
+crosscompute: 0.9.3
 imports:
-  - path: automate.yml
-  - path: dashboards/airport-traffic/automate.yml
-  - path: forms/gather-internet-speeds/automate.yml
-  - path: forms/gather-cell-towers/automate.yml
-  - path: reports/show-maps/automate.yml
-  - path: reports/map-schools/automate.yml
-  - path: reports/run-onsset/automate.yml
-  - path: tools/send-emails/automate.yml
-  - path: tools/find-places/automate.yml
-  - path: tools/make-pdf/automate.yml
-  - path: tools/set-points/automate.yml
+  # - path: automate.yml
+  # - path: airport-traffic/automate.yml
+  # - path: gather-internet-speeds/automate.yml
+  # - path: gather-cell-towers/automate.yml
+  # - path: show-maps/automate.yml
+  # - path: map-schools/automate.yml
+  # - path: run-onsset/automate.yml
+  # - path: send-emails/automate.yml
+  # - path: find-places/automate.yml
+  # - path: make-pdf/automate.yml
+  # - path: set-points/automate.yml
 display:
   templates:
     - id: base
-      path: base.jinja2
+      path: base.html
     - id: root
-      path: root.jinja2
+      path: root.html

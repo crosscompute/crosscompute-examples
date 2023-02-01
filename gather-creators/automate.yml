@@ -1,0 +1,48 @@
+---
+crosscompute: 0.9.3
+name: Gather Creators
+version: 0.0.1
+input:
+  variables:
+    - id: goal_description
+      view: text
+      path: variables.dictionary
+      configuration:
+        label: What goal would you like to achieve by listing your team in our computational marketplace? Gather leads? Get referral traffic? Let customers experiment with a package, SDK or API? Earn subscription revenue? Earn ad revenue? Fund future open source projects?
+    - id: creator_url
+      view: string
+      path: variables.dictionary
+      configuration:
+        label: What is the URL of your team's GitHub or GitLab profile? We will not accept teams that are not active in the open source community.
+    - id: customer_count
+      view: number
+      path: variables.dictionary
+      configuration:
+        label: How many customers do you have? You will need at least one customer to qualify.
+    - id: repository_url
+      view: string
+      path: variables.dictionary
+      configuration:
+        label: What is the URL of a repository that you would like to turn into a runnable tool or report?
+    - id: email_address
+      view: email
+      path: variables.dictionary
+      configuration:
+        label: What is your email address?
+    - id: interview_when
+      view: string
+      path: variables.dictionary
+      configuration:
+        label: Which days and times work best for you to schedule a research interview? Qualified participants will receive an optional gift card.
+    - id: referral_code
+      view: string
+      path: variables.dictionary
+      configuration:
+        label: Please enter your referral code if you have one.
+  templates:
+    - path: form.md
+output:
+  templates:
+    - path: report.md
+batches:
+  - folder: batches/standard

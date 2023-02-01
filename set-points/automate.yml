@@ -1,0 +1,26 @@
+---
+crosscompute: 0.9.3
+name: Generate Random Points Within Region
+version: 0.2.0
+input:
+  variables:
+    - id: region
+      view: text
+      path: region.geojson
+    - id: count
+      view: number
+      path: variables.dictionary
+  templates:
+    - path: form.md
+output:
+  variables:
+    - id: points
+      view: map-mapbox
+      path: points.geojson
+batches:
+  - folder: batches/standard
+scripts:
+  - path: run.ipynb
+display:
+  styles:
+    - path: style.css

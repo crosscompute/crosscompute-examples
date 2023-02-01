@@ -1,0 +1,22 @@
+---
+crosscompute: 0.9.3
+name: Watch RAM Usage
+version: 0.0.1
+output:
+  variables:
+    - id: ram_usage
+      view: number
+      path: variables.dictionary
+      configuration:
+        label: RAM Usage
+batches:
+  - folder: batches/standard
+scripts:
+  - function: run.plot
+environment:
+  interval: 30 seconds
+display:
+  pages:
+    - id: automation
+      configuration:
+        design: output

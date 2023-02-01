@@ -1,0 +1,22 @@
+---
+crosscompute: 0.9.3
+name: Watch RAM Usage History
+version: 0.0.1
+output:
+  variables:
+    - id: ram_usage_history
+      view: image
+      path: ram.png
+      configuration:
+        label: RAM Usage History
+batches:
+  - folder: batches/standard
+scripts:
+  - function: run.plot
+environment:
+  interval: 30 seconds
+display:
+  pages:
+    - id: automation
+      configuration:
+        design: output

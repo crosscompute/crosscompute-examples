@@ -1,0 +1,30 @@
+---
+crosscompute: 0.9.3
+name: Diff Texts
+version: 0.0.1
+input:
+  variables:
+    - id: text1
+      view: text
+      path: text1.txt
+    - id: text2
+      view: text
+      path: text2.txt
+output:
+  variables:
+    - id: diff
+      view: text
+      path: diff.txt
+  templates:
+    - path: report.md
+batches:
+  - folder: batches/standard
+scripts:
+  - command: bash run.sh
+display:
+  styles:
+    - path: style.css
+  pages:
+    - id: output
+      configuration:
+        design: none
