@@ -11,12 +11,12 @@ input:
       view: markdown
       path: document.md
       configuration:
-       label: Enter Your Markdown Below
+        label: Enter markdown
     - id: css-style
       view: text
       path: style.css
       configuration:
-        label: Enter Your Style in CSS Format Below
+        label: Enter styles in CSS format
 output:
   variables:
     - id: document-pdf

@@ -17,6 +17,11 @@ output:
     - id: points
       view: map-mapbox
       path: points.geojson
+      configuration:
+        layers:
+          - type: circle
+            paint:
+              circle-color: yellow
 batches:
   - folder: batches/standard
 scripts:

@@ -1,4 +1,4 @@
-# Markdown to PDF Tool
+# Turn Markdown into PDF
 
 {document-markdown}
 

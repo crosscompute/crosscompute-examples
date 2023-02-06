@@ -6,7 +6,7 @@
 
 crosscompute: 0.9.3
 name: See Airport Traffic
-description: See how long it takes to get to an airport from different parts of a city
+description: See airport travel times by district
 version: 0.0.1
 
 input:
