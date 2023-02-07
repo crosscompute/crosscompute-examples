@@ -6,7 +6,6 @@ imports:
   - path: randomize-histograms/automate.yml
   - path: compute-logarithms/automate.yml
   - path: add-numbers/automate.yml
-  - path: ask-question/automate.yml
   - path: diff-texts/automate.yml
   - path: make-qr/automate.yml
   - path: paint-letters/automate.yml
