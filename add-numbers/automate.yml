@@ -19,8 +19,6 @@ batches:
   - name: '{a} + {b}'
     folder: batches/{a}-{b}
     configuration:
-      path: datasets/batches.csv
+      path: batches.csv
 scripts:
   - command: python3 run.py {input_folder} {output_folder}
-environment:
-  image: python
