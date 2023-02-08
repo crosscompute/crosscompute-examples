@@ -1,0 +1,7 @@
+# These examples are used for testing framework functionality.
+---
+crosscompute: 0.9.3
+imports:
+  - path: add-numbers/automate.yml
+  - path: randomize-histograms/automate.yml
+  - path: compute-logarithms/automate.yml

@@ -3,9 +3,6 @@ crosscompute: 0.9.3
 imports:
   - path: gather-pomodoros/automate.yml
   - path: gather-projects/automate.yml
-  - path: randomize-histograms/automate.yml
-  - path: compute-logarithms/automate.yml
-  - path: add-numbers/automate.yml
   - path: diff-texts/automate.yml
   - path: make-qr/automate.yml
   - path: paint-letters/automate.yml
