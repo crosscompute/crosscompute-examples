@@ -1,5 +1,4 @@
 type,period,uri
-public,2019-20,https://nces.ed.gov/programs/edge/data/EDGE_GEOCODE_PUBLICSCH_1920.zip
+public,2021-22,https://nces.ed.gov/programs/edge/data/EDGE_GEOCODE_PUBLICSCH_2122.zip
 private,2019-20,https://nces.ed.gov/programs/edge/data/EDGE_GEOCODE_PRIVATESCH_1920.zip
-postsecondary,2019-20,https://nces.ed.gov/programs/edge/data/EDGE_GEOCODE_POSTSEC_1920.zip
-postsecondary,2020-21,https://nces.ed.gov/programs/edge/data/EDGE_GEOCODE_POSTSECONDARYSCH_2021.zip
+postsecondary,2021-22,https://nces.ed.gov/programs/edge/data/EDGE_GEOCODE_POSTSECONDARYSCH_2122.zip
