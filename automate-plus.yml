@@ -2,7 +2,7 @@
 crosscompute: 0.9.3
 imports:
   - path: automate.yml
-  - path: airport-traffic/automate.yml
+  - path: see-airport-traffic/automate.yml
   - path: gather-internet-speeds/automate.yml
   - path: gather-cell-towers/automate.yml
   - path: show-maps/automate.yml
