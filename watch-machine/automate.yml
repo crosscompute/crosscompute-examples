@@ -1,9 +1,14 @@
 ---
 crosscompute: 0.9.3
-name: Watch RAM Usage History
-version: 0.0.1
+name: Watch Machine
+version: 0.1.0
 output:
   variables:
+    - id: cpu_usage_history
+      view: image
+      path: cpu.png
+      configuration:
+        label: CPU Usage History
     - id: ram_usage_history
       view: image
       path: ram.png
@@ -12,9 +17,9 @@ output:
 batches:
   - folder: batches/standard
 scripts:
-  - function: run.plot
+  - function: run.plot_all
 environment:
-  interval: 30 seconds
+  interval: 1 minute
 display:
   pages:
     - id: automation

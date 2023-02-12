@@ -6,8 +6,7 @@ imports:
   - path: diff-texts/automate.yml
   - path: make-qr/automate.yml
   - path: paint-letters/automate.yml
-  - path: watch-cpu-history/automate.yml
-  - path: watch-ram-history/automate.yml
+  - path: watch-machine/automate.yml
 display:
   templates:
     - id: base

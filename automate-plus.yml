@@ -7,9 +7,6 @@ imports:
   - path: gather-cell-towers/automate.yml
   - path: show-maps/automate.yml
   - path: map-schools/automate.yml
-  - path: run-onsset/automate.yml
-  - path: send-emails/automate.yml
-  - path: find-places/automate.yml
   - path: make-pdf/automate.yml
   - path: set-points/automate.yml
 display:
