@@ -9,6 +9,7 @@ imports:
   - path: map-schools/automate.yml
   - path: make-pdf/automate.yml
   - path: set-points/automate.yml
+  - path: gather-pomodoros/automate.yml
 display:
   templates:
     - id: base
