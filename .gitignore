@@ -7,6 +7,7 @@
 .cache
 .coverage
 .ipynb_checkpoints
+.jupyter_ystore.db
 .pytest_cache
 .tox
 __pycache__
