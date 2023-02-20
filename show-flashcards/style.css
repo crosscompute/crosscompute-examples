@@ -1,0 +1,21 @@
+.cards {
+  height: calc(100vh - 15em);
+  min-height: 5em;
+}
+
+.side {
+  font-size: xx-large;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#q {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+
+#a {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+}

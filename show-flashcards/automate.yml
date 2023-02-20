@@ -1,0 +1,28 @@
+---
+crosscompute: 0.9.3
+name: Show flashcards
+description: Reduce recall time
+version: 0.0.1
+input:
+  variables:
+    - id: cards
+      view: text
+      path: cards.md
+output:
+  variables:
+    - id: cards
+      view: json
+      path: cards.json
+  templates:
+    - path: output.md
+batches:
+  - folder: batches/standard
+scripts:
+  - path: run.py
+display:
+  styles:
+    - path: style.css
+  pages:
+    - id: output
+      configuration:
+        design: none
