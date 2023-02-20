@@ -1,6 +1,7 @@
 ---
 crosscompute: 0.9.3
 imports:
+  - path: show-flashcards/automate.yml
   - path: make-qr/automate.yml
   - path: paint-letters/automate.yml
   - path: diff-texts/automate.yml
