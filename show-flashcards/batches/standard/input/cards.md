@@ -9,5 +9,7 @@ hee' sah-lop'
 to show
 ---
 moutwé
-
-*Moutwé* nou lajan-an.
+===
+show us the money
+---
+*moutwé* nou lajan-an
