@@ -97,10 +97,10 @@ display:
     - path: style.css
 
 # prints configuration
-# prints:
-#   - format: pdf
-#     configuration:
-#       page-number:
-#         location: footer
-#     folder: ~/Documents/attachments/randomize-histograms-{timestamp}
-#     name: me{mean}-va{variance}-vc{value_count}-bc{bin_count}.pdf
+prints:
+  - format: pdf
+    configuration:
+      page-number:
+        location: footer
+    folder: ~/Documents/attachments/randomize-histograms-{timestamp}
+    name: me{mean}-va{variance}-vc{value_count}-bc{bin_count}.pdf
