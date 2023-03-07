@@ -29,5 +29,5 @@ async function showCards() {
   setTimeout(showCards, delayInMilliseconds);
 }
 
-setTimeout(showCards, delayInMilliseconds);
+registerCallback('cards', showCards);
 </script>
