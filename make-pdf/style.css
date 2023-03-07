@@ -2,3 +2,8 @@
   height: 25vh;
   min-height: 10em;
 }
+.document-pdf {
+  width: 100%;
+  height: calc(100vh - 5em);
+  min-height: 10em;
+}
