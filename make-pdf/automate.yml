@@ -20,10 +20,8 @@ input:
 output:
   variables:
     - id: document-pdf
-      view: link
+      view: pdf
       path: document.pdf
-      configuration:
-        link-text: Download PDF
 batches:
   - folder: batches/standard
 scripts:
