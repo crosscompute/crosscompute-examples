@@ -25,7 +25,17 @@ output:
       view: image
       path: histogram-2d.png
   templates:
-    - path: report.md
+    - path: output.md
+print:
+  variables:
+    - id: summary
+      view: pdf
+      path: summary.pdf
+      configuration:
+        page-number:
+          location: footer
+        folder: ~/Documents/attachments/randomize-histograms-{timestamp}
+        name: me{mean}-va{variance}-vc{value_count}-bc{bin_count}.pdf
 batches:
   # case 0: use a batch folder to set values for input variables
   - folder: batches/a
@@ -45,10 +55,3 @@ scripts:
 display:
   styles:
     - path: style.css
-prints:
-  - format: pdf
-    configuration:
-      page-number:
-        location: footer
-    folder: ~/Documents/attachments/randomize-histograms-{timestamp}
-    name: me{mean}-va{variance}-vc{value_count}-bc{bin_count}.pdf
