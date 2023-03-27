@@ -13,6 +13,11 @@ input:
     - id: document_text
       view: text
       path: document.txt
+  
+  # input templates
+  # - path to your markdown template or jupyter notebook form
+  templates:
+    - path: input.md
 
 # output configuration
 output:
@@ -26,6 +31,11 @@ output:
     - id: choropleth
       view: image
       path: choropleth.svg
+
+# output templates
+# - path to your markdown template or jupyter notebook form
+templates:
+  - path: output.md
 
 # tests configuration
 # - folder that contains an input subfolder with paths for
