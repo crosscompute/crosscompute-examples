@@ -9,7 +9,7 @@ Explore the vibrant keyboard heatmap to gain insights into character usage and f
 ## The Color Gradient
 The color gradient on the keys represents the frequency of each character in the text. Lighter shades denote less frequent characters, while darker shades indicate more frequent ones.
 
-<a href="">Click here to return to the main input form and analyze a new piece of text.</a>
+To analyze a new piece of text, simply return to the main input form and submit your desired text.
 
 Share your KeyMapPro experience with friends, colleagues, and fellow language enthusiasts!
 
