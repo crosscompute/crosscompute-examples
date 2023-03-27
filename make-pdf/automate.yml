@@ -1,6 +1,6 @@
 ---
 crosscompute: 0.9.3
-name: Turn Markdown to PDF
+name: MDtoPDF
 slug: markdown-to-pdf
 version: 0.0.1
 input:
