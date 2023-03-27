@@ -32,10 +32,10 @@ output:
       view: image
       path: choropleth.svg
 
-# output templates
-# - path to your markdown template or jupyter notebook form
-templates:
-  - path: output.md
+  # output templates
+  # - path to your markdown template or jupyter notebook form
+  templates:
+    - path: output.md
 
 # tests configuration
 # - folder that contains an input subfolder with paths for
