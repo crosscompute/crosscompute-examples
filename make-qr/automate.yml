@@ -8,6 +8,8 @@ input:
     - id: data
       view: text
       path: data.txt
+  templates:
+    - path: input.md
 output:
   variables:
     - id: qr
