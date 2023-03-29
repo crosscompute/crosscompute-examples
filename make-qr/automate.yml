@@ -1,6 +1,8 @@
 ---
 crosscompute: 0.9.3
-name: Make QR Code
+name: QRCreate
+title: QRCreate by CrossCompute - The User-Friendly Free QR Code Generator
+description: Generate free custom QR codes effortlessly with QRCreate by CrossCompute. Simplify information sharing with our easy-to-use and efficient QR code tool.
 slug: make-qr
 version: 0.0.1
 input:
