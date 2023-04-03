@@ -35,6 +35,11 @@ print:
         page-number:
           location: footer
         name: me{mean}-va{variance}-vc{value_count}-bc{bin_count}.pdf
+    - id: report-uri
+      view: link
+      path: report.pdf
+      configuration:
+        path: report-uri.json
 batches:
   # case 0: use a batch folder to set values for input variables
   - folder: batches/a
