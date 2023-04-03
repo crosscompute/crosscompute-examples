@@ -4,7 +4,7 @@
 # Documentation: https://docs.crosscompute.com
 # Forum: https://forum.crosscompute.com
 
-crosscompute: 0.9.3
+crosscompute: 0.9.4
 name: See Airport Traffic
 description: See airport travel times by district
 version: 0.0.1
