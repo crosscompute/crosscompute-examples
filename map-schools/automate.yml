@@ -13,8 +13,7 @@ input:
     - id: uri
       view: string
       path: variables.dictionary
-      configuration:
-        label: URI
+      label: URI
 output:
   variables:
     - id: schools

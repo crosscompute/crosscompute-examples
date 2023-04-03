@@ -7,13 +7,11 @@ input:
     - id: project_description
       view: text
       path: variables.dictionary
-      configuration:
-        label: What do you want to build?
+      label: What do you want to build?
     - id: email_address
       view: email
       path: variables.dictionary
-      configuration:
-        label: What is your email address?
+      label: What is your email address?
   templates:
     - path: form.md
 output:

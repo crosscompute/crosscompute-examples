@@ -38,8 +38,8 @@ print:
     - id: report-uri
       view: link
       path: report.pdf
+      label: Report URI
       configuration:
-        label: Report URI
         path: report-uri.json
 batches:
   # case 0: use a batch folder to set values for input variables

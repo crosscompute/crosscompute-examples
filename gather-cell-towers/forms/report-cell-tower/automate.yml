@@ -8,8 +8,8 @@ input:
     - id: location
       view: map-mapbox-location
       path: variables.dictionary
+      label: Where is the cell tower?
       configuration:
-        label: Where is the cell tower?
         style: mapbox://styles/mapbox/satellite-streets-v11
   templates:
     - path: form.md

@@ -7,8 +7,7 @@ input:
     - id: project_id
       view: string
       path: variables.dictionary
-      configuration:
-        label: What project did you work on?
+      label: What project did you work on?
 output:
   variables:
     - id: counts

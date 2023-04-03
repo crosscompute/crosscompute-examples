@@ -7,13 +7,11 @@ output:
     - id: cpu_usage_history
       view: image
       path: cpu.png
-      configuration:
-        label: CPU Usage History
+      label: CPU Usage History
     - id: ram_usage_history
       view: image
       path: ram.png
-      configuration:
-        label: RAM Usage History
+      label: RAM Usage History
 batches:
   - folder: batches/standard
 scripts:

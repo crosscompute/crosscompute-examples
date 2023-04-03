@@ -8,24 +8,21 @@ input:
     - id: service-location
       view: map-mapbox-location
       path: variables.dictionary
+      label: Where are you? Press the button below to share your location. Location tracking will have low accuracy on a desktop but high accuracy on a smartphone.
       configuration:
-        label: Where are you? Press the button below to share your location. Location tracking will have low accuracy on a desktop but high accuracy on a smartphone.
         style: mapbox://styles/mapbox/streets-v11
     - id: download-speed
       view: number
       path: variables.dictionary
-      configuration:
-        label: What is your download speed in megabits per second?
+      label: What is your download speed in megabits per second?
     - id: upload-speed
       view: number
       path: variables.dictionary
-      configuration:
-        label: What is your upload speed in megabits per second?
+      label: What is your upload speed in megabits per second?
     - id: service-provider
       view: string
       path: variables.dictionary
-      configuration:
-        label: What is the name of your service provider?
+      label: What is the name of your service provider?
   templates:
     - path: form.md
 output:
