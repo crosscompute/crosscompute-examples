@@ -39,6 +39,7 @@ print:
       view: link
       path: report.pdf
       configuration:
+        label: Report URI
         path: report-uri.json
 batches:
   # case 0: use a batch folder to set values for input variables
