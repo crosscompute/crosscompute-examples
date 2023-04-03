@@ -1,7 +1,7 @@
 ---
 crosscompute: 0.9.4
 name: Watch Machine
-version: 0.1.0
+version: 0.2.0
 output:
   variables:
     - id: cpu_usage_history
