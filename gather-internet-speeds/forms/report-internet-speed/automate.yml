@@ -1,7 +1,8 @@
 ---
 crosscompute: 0.9.3
-name: Report Internet Speed
-description: Submit your internet speed test results by location and provider
+name: GlobalSpeedSurvey
+title: GlobalSpeedSurvey - Worldwide Internet Speeds | CrossCompute
+description: Contribute to the GlobalSpeedSurvey and help us collect data on internet speeds around the world. Test your internet speeds and compare with others in your region. Join the largest internet speed survey today.
 version: 0.0.1
 input:
   variables:
