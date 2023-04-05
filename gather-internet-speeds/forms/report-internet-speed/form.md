@@ -24,6 +24,6 @@ Welcome to InternetSpeedSurvey - the free and easy way to test your internet spe
 That's it! You've successfully contributed to the world's largest internet speed survey. Thank you for helping us create a comprehensive picture of internet speeds worldwide.
 
 ## Thank You for Participating in the InternetSpeedSurvey from CrossCompute 
-We appreciate your contributions towards the world's largest internet speed survey. Contact us at support@crosscompute.com if you have any questions or feedback.
+We appreciate your contributions towards the world's largest internet speed survey. Contact us at [suppor@crosscompute.com](mailto:support+internetspeedsurvey@gmail.com) if you have any questions or feedback.
 
 © 2023 CrossCompute. All rights reserved.
