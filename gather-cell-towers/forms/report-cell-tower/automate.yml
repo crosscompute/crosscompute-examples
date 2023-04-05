@@ -1,7 +1,8 @@
 ---
 crosscompute: 0.9.3
-name: Report Cell Tower
-description: Submit the location of a cell tower
+name: CellTowerSpotter
+title: CellTowerSpotter - Find the Closest Cell Tower Location in Your Area | CrossCompute
+description: CellTowerSpotter is a free web-based tool that allows you to locate the nearest cell tower in your area. Improve your cell signal strength, call quality, and data speeds by identifying the best positioning for your device. With CellTowerSpotter, you can quickly and easily locate cell towers for emergency preparedness and more efficient battery use. Try CellTowerSpotter today to optimize your mobile experience.
 version: 0.0.1
 input:
   variables:
@@ -9,7 +10,7 @@ input:
       view: map-mapbox-location
       path: variables.dictionary
       configuration:
-        label: Where is the cell tower?
+        label: Drop Pin Here to Annotate Cell Tower Location
         style: mapbox://styles/mapbox/satellite-streets-v11
   templates:
     - path: form.md
