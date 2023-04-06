@@ -32,8 +32,15 @@ print:
       view: pdf
       path: report.pdf
       configuration:
+        header-footer:
+          font-family: sans-serif
+          font-size: 8pt
+          color: '#808080'
+          padding: 0.1in 0.25in
+          skip-first: true
         page-number:
           location: footer
+          alignment: right
         name: me{mean}-va{variance}-vc{value_count}-bc{bin_count}.pdf
     - id: report-uri
       view: link
