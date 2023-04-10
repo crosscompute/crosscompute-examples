@@ -22,7 +22,7 @@ batches:
 datasets:
   - path: datasets/cell-towers.csv
     reference:
-      url: https://query.data.world/s/cfxj66w6rvg3zhk3r25dum575czl3q
+      uri: https://query.data.world/s/cfxj66w6rvg3zhk3r25dum575czl3q
   - folder: datasets/runs
     reference:
       folder: ../../forms/report-cell-tower/runs
