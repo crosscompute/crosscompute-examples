@@ -1,0 +1,32 @@
+---
+crosscompute: 0.9.4
+name: Merge PDFs
+description: Merge two PDFs into one PDF
+slug: automation-x
+version: 0.1.0
+input:
+  variables:
+    - id: a
+      view: file
+      path: a.pdf
+      configuration:
+        mime-types:
+          - application/pdf
+    - id: b
+      view: file
+      path: b.pdf
+      configuration:
+        mime-types:
+          - application/pdf
+output:
+  variables:
+    - id: c
+      view: pdf
+      path: c.pdf
+    - id: document
+      view: link
+      path: c.pdf
+batches:
+  - folder: batches/standard
+scripts:
+  - command: bash run.sh
