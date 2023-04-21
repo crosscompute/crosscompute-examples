@@ -1,21 +1,8 @@
 ---
-# version of crosscompute
-crosscompute: 0.9.3
-
-# name of your automation
+crosscompute: 0.9.4
 name: Randomize Histograms
-
-# version of your automation
-version: 0.0.2
-
-# input configuration
+version: 0.1.0
 input:
-
-  # input variables
-  # - id to use when referencing your variable in the template
-  # - view to use when rendering your variable on the display
-  # - path where your script loads the variable,
-  #   relative to the input folder
   variables:
     - id: mean
       view: number
@@ -29,15 +16,7 @@ input:
     - id: bin_count
       view: number
       path: variables.dictionary
-
-# output configuration
 output:
-
-  # output variables
-  # - id to use when referencing your variable in the template
-  # - view to use when rendering your variable on the display
-  # - path where your script saves the variable,
-  #   relative to the output folder
   variables:
     - id: histogram-1d
       view: image
@@ -45,25 +24,37 @@ output:
     - id: histogram-2d
       view: image
       path: histogram-2d.png
-
-  # output templates
-  # - path to your markdown template or jupyter notebook form
   templates:
-    - path: report.md
-
-# batches configuration
-# - folder that contains an input subfolder with paths for
-#   input variables that define a specific batch
+    - path: output.md
+print:
+  variables:
+    - id: report
+      view: pdf
+      path: report.pdf
+      configuration:
+        header-footer:
+          font-family: sans-serif
+          font-size: 8pt
+          color: '#808080'
+          padding: 0.1in 0.25in
+          skip-first: true
+        page-number:
+          location: footer
+          alignment: right
+        name: me{mean}-va{variance}-vc{value_count}-bc{bin_count}.pdf
+    - id: report-uri
+      view: link
+      path: report.pdf
+      label: Report URI
+      configuration:
+        path: report-uri.json
 batches:
-
   # case 0: use a batch folder to set values for input variables
   - folder: batches/a
-
   # case 1: use a batch configuration to vary values for input variables
   - folder: batches/me{mean}-va{variance}-vc{value_count}-bc{bin_count}
     configuration:
       path: datasets/batches.csv
-
   # case 2: use a reference folder to set default values for missing variables
   #         use a batch configuration to vary selected variables
   - folder: batches/me{mean}-va{variance}-vc{value_count}-bc{bin_count}
@@ -71,36 +62,8 @@ batches:
       folder: batches/a
     configuration:
       path: datasets/batches-vc-bc.csv
-
-# scripts configuration
-# - path to your script, relative to the script folder
 scripts:
   - path: run.ipynb
-
-# environment configuration
-environment:
-
-  # image to use to initialize your container
-  image: python
-
-  # packages needed by your scripts
-  packages:
-    - id: matplotlib
-      manager: pip
-
-# display configuration
 display:
-
-  # styles configuration
-  # - path to CSS stylesheet that will be used to render your templates
   styles:
     - path: style.css
-
-# prints configuration
-prints:
-  - format: pdf
-    configuration:
-      page-number:
-        location: footer
-    folder: ~/Documents/attachments/randomize-histograms-{timestamp}
-    name: me{mean}-va{variance}-vc{value_count}-bc{bin_count}.pdf

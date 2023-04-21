@@ -1,5 +1,5 @@
 ---
-crosscompute: 0.9.3
+crosscompute: 0.9.4
 name: CompareText
 title: CompareText - A Free and Easy Text Comparison Tool | CrossCompute
 description: Quickly compare two different texts and identify differences with CompareText, a free and easy-to-use web-based text comparison tool from CrossCompute.
@@ -20,7 +20,7 @@ output:
       view: text
       path: diff.txt
   templates:
-    - path: report.md
+    - path: output.md
 batches:
   - folder: batches/standard
 scripts:

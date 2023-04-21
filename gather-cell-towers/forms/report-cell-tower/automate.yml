@@ -1,5 +1,5 @@
 ---
-crosscompute: 0.9.3
+crosscompute: 0.9.4
 name: Report Cell Tower
 description: Submit the location of a cell tower
 version: 0.0.1
@@ -8,8 +8,8 @@ input:
     - id: location
       view: map-mapbox-location
       path: variables.dictionary
+      label: Where is the cell tower?
       configuration:
-        label: Where is the cell tower?
         style: mapbox://styles/mapbox/satellite-streets-v11
   templates:
     - path: form.md

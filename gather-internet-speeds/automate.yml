@@ -1,5 +1,5 @@
 ---
-crosscompute: 0.9.3
+crosscompute: 0.9.4
 imports:
   - path: forms/report-internet-speed/automate.yml
   - path: reports/map-internet-speeds/automate.yml
