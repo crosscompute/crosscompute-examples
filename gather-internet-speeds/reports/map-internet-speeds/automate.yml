@@ -1,5 +1,5 @@
 ---
-crosscompute: 0.9.3
+crosscompute: 0.9.4
 name: Map Internet Speeds
 description: See a map of internet speed test results as submitted by users
 version: 0.0.1

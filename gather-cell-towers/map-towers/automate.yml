@@ -1,5 +1,5 @@
 ---
-crosscompute: 0.9.3
+crosscompute: 0.9.4
 name: Map Cell Towers
 description: See a map of cell towers as submitted by users
 version: 0.0.1
@@ -22,7 +22,7 @@ batches:
 datasets:
   - path: datasets/cell-towers.csv
     reference:
-      url: https://query.data.world/s/cfxj66w6rvg3zhk3r25dum575czl3q
+      uri: https://query.data.world/s/cfxj66w6rvg3zhk3r25dum575czl3q
   - folder: datasets/runs
     reference:
       folder: ../../forms/report-cell-tower/runs

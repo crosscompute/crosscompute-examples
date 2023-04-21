@@ -6,14 +6,20 @@ import psutil
 
 
 def plot_one(image_path, log_path, log_row):
+    t = time() - TIME_IN_MINUTES * 60
     with open(log_path, 'a+t') as csv_file:
         csv_writer = csv.writer(csv_file)
         csv_writer.writerow(log_row)
         csv_file.seek(0)
-        csv_reader = csv.reader(csv_file)
-        xs, ys = zip(*csv_reader)
-        xs = [float(_) for _ in xs]
-        ys = [float(_) for _ in ys]
+        xs = []
+        ys = []
+        for x, y in csv.reader(csv_file):
+            x = float(x)
+            y = float(y)
+            if x < t:
+                continue
+            xs.append(x)
+            ys.append(y)
     plt.figure()
     axes = plt.scatter(xs[-100:], ys[-100:]).axes
     axes.get_xaxis().set_visible(False)
@@ -29,3 +35,6 @@ def plot_all(log_folder, output_folder):
         unix_time, cpu_percent])
     plot_one(output_folder / 'ram.png', log_folder / 'ram.csv', [
         unix_time, ram_percent])
+
+
+TIME_IN_MINUTES = 10

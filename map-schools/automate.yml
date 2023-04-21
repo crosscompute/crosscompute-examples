@@ -1,5 +1,5 @@
 ---
-crosscompute: 0.9.3
+crosscompute: 0.9.4
 name: Map Schools
 version: 0.0.1
 input:
@@ -13,8 +13,7 @@ input:
     - id: uri
       view: string
       path: variables.dictionary
-      configuration:
-        label: URI
+      label: URI
 output:
   variables:
     - id: schools
