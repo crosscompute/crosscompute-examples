@@ -6,4 +6,6 @@ Help your neighbors improve their mobile internet connection by finding the loca
 
 { location }
 
+<button class="_continue" type="button">Continue</button>
+
 [See Code for this Automation](https://github.com/crosscompute/crosscompute-examples/tree/master/forms/gather-cell-towers/forms/report-cell-tower)

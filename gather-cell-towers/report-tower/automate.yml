@@ -12,10 +12,10 @@ input:
       configuration:
         style: mapbox://styles/mapbox/satellite-streets-v11
   templates:
-    - path: form.md
+    - path: input.md
 output:
   templates:
-    - path: report.md
+    - path: output.md
 batches:
   - folder: batches/standard
 display:
