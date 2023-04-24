@@ -29,10 +29,6 @@ display:
     - id: output
       configuration:
         design: none
-  buttons:
-    - id: run
-      configuration:
-        button-text: Log a Pomodoro
 authorization:
   tokens:
     - path: tokens.yml

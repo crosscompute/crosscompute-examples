@@ -10,7 +10,7 @@ input:
       path: variables.dictionary
       label: Where are you? Press the button below to share your location. Location tracking will have low accuracy on a desktop but high accuracy on a smartphone.
       configuration:
-        style: mapbox://styles/mapbox/streets-v11
+        style: mapbox://styles/mapbox/streets-v12
     - id: download-speed
       view: number
       path: variables.dictionary
@@ -24,10 +24,10 @@ input:
       path: variables.dictionary
       label: What is the name of your service provider?
   templates:
-    - path: form.md
+    - path: input.md
 output:
   templates:
-    - path: report.md
+    - path: output.md
 batches:
   - folder: batches/standard
 display:

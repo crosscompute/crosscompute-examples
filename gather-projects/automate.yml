@@ -13,16 +13,12 @@ input:
       path: variables.dictionary
       label: What is your email address?
   templates:
-    - path: form.md
+    - path: input.md
 output:
   templates:
-    - path: report.md
+    - path: output.md
 batches:
   - folder: batches/standard
 display:
   styles:
     - path: style.css
-  buttons:
-    - id: run
-      configuration:
-        button-text: Apply

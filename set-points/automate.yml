@@ -11,7 +11,7 @@ input:
       view: number
       path: variables.dictionary
   templates:
-    - path: form.md
+    - path: input.md
 output:
   variables:
     - id: points

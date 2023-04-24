@@ -4,4 +4,4 @@
 
 { histogram-2d }
 
-[See Code for this Automation](https://github.com/crosscompute/crosscompute-examples/tree/master/reports/randomize-histograms)
+[See Code for this Automation](https://github.com/crosscompute/crosscompute-examples/tree/master/randomize-histograms)

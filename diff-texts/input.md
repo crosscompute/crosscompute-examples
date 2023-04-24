@@ -14,10 +14,10 @@ To use CompareText,
 
 { text2 }
 
-<button class="_continue" type="button">Continue</button>
+{ BUTTON_PANEL }
 
 With CompareText, there's no need to install any software or pay for expensive text comparison tools. Our web-based application is completely free to use and provides accurate results in just a few clicks. Try it out today and see how it can help you with your text comparison needs.
 
-Thank you for using CompareText by CrossCompute. We hope you enjoy exploring the differences between your texts and uncovering new insights. If you have questions or feedback, please don't hesitate to contact us at [support@crosscompute.com](mailto:support+automations@crosscompute.com).
+Thank you for using CompareText by CrossCompute. We hope you enjoy exploring the differences between your texts and uncovering new insights. If you have questions or feedback, please don't hesitate to contact us at [support+automations@crosscompute.com](mailto:support+automations@crosscompute.com).
 
 CrossCompute © 2023. All rights reserved.

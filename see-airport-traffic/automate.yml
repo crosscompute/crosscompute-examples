@@ -1,14 +1,8 @@
 ---
-# Reference: https://github.com/crosscompute/crosscompute-examples
-# Gallery: https://crosscompute.net
-# Documentation: https://docs.crosscompute.com
-# Forum: https://forum.crosscompute.com
-
 crosscompute: 0.9.4
 name: See Airport Traffic
 description: See airport travel times by district
 version: 0.0.1
-
 input:
   variables:
     - id: districts_uri
@@ -20,9 +14,6 @@ input:
     - id: travel_mode
       view: string
       path: variables.dictionary
-# templates:
-#   - path: form.md
-
 output:
   variables:
     - id: districts_map
@@ -39,23 +30,19 @@ output:
       view: image
       path: histogram.png
   templates:
-    - path: report.md
-
+    - path: output.md
 batches:
   - folder: batches/{city_name | slug}-{destination_name | slug}-{travel_mode | slug}
     name: '{city_name} - {destination_name} - {travel_mode}'
     slug: '{city_name | slug}-{destination_name | slug}-{travel_mode | slug}'
     configuration:
       path: datasets/batches.csv
-
 scripts:
   - path: run.ipynb
-
 environment:
   variables:
     - id: GOOGLE_KEY
   interval: 25 hours
-
 display:
   styles:
     - path: style.css

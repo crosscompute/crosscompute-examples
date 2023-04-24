@@ -22,7 +22,7 @@ output:
       configuration:
         style: mapbox://styles/mapbox/dark-v10
   templates:
-    - path: report.md
+    - path: output.md
 batches:
   - name: '{type | title} Schools {period}'
     folder: batches/{type}-{period}
