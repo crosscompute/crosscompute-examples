@@ -4,7 +4,7 @@
 
 { cards }
 
-<script src="https://cdn.jsdelivr.net/npm/showdown"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
 
 <script>
 const q = document.getElementById('q'), a = document.getElementById('a'), delayInMilliseconds = 2000, c = new showdown.Converter(), getRandomIndex = count => Math.floor(Math.random() * count);
@@ -29,5 +29,5 @@ async function showCards() {
   setTimeout(showCards, delayInMilliseconds);
 }
 
-setTimeout(showCards, delayInMilliseconds);
+registerCallback('cards', showCards);
 </script>

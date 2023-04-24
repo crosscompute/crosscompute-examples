@@ -1,0 +1,45 @@
+---
+crosscompute: 0.9.4
+name: InternetSpeedMap
+slug: internet-speed-map
+description: See a map of internet speed test results as submitted by users
+version: 0.0.1
+output:
+  variables:
+    - id: map-speeds-download
+      view: map-deck-screengrid
+      path: speeds-download.json
+      configuration:
+        style: mapbox://styles/mapbox/dark-v10
+        position: d => [d[0], d[1]]
+        weight: d => d[2]
+    - id: map-speeds-upload
+      view: map-deck-screengrid
+      path: speeds-upload.json
+      configuration:
+        style: mapbox://styles/mapbox/dark-v10
+        position: d => [d[0], d[1]]
+        weight: d => d[2]
+  templates:
+    - path: output.md
+batches:
+  - folder: batches/standard
+datasets:
+  - folder: datasets/runs
+    reference:
+      folder: ../report-speed/runs
+scripts:
+  - path: run.ipynb
+environment:
+  image: python
+  packages:
+    - id: numpy
+      manager: pip
+  interval: 1 hour
+display:
+  styles:
+    - path: style.css
+  pages:
+    - id: automation
+      configuration:
+        design: output

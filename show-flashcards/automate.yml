@@ -1,6 +1,6 @@
 ---
-crosscompute: 0.9.3
-name: Show flashcards
+crosscompute: 0.9.4
+name: Show Flashcards
 description: Reduce recall time
 version: 0.0.1
 input:

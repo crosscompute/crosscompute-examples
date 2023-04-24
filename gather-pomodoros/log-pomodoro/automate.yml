@@ -1,14 +1,14 @@
 ---
-crosscompute: 0.9.3
+crosscompute: 0.9.4
 name: Log Pomodoro
+slug: log-pomodoro
 version: 0.0.1
 input:
   variables:
     - id: project_id
       view: string
       path: variables.dictionary
-      configuration:
-        label: What project did you work on?
+      label: What project did you work on?
 output:
   variables:
     - id: counts
@@ -30,10 +30,6 @@ display:
     - id: output
       configuration:
         design: none
-  buttons:
-    - id: run
-      configuration:
-        button-text: Log a Pomodoro
 authorization:
   tokens:
     - path: tokens.yml

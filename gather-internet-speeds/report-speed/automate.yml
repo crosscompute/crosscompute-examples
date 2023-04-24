@@ -1,0 +1,37 @@
+---
+crosscompute: 0.9.4
+name: InternetSpeedSurvey
+slug: internet-speed-survey
+title: InternetSpeedSurvey - Worldwide Internet Speeds | CrossCompute
+description: Contribute to the InternetSpeedSurvey and help us collect data on internet speeds around the world. Test your internet speeds and compare with others in your region. Join the largest internet speed survey today.
+version: 0.0.1
+input:
+  variables:
+    - id: service-location
+      view: map-mapbox-location
+      path: variables.dictionary
+      label: Where are you? Press the button below to share your location. Location tracking will have low accuracy on a desktop but high accuracy on a smartphone.
+      configuration:
+        style: mapbox://styles/mapbox/streets-v12
+    - id: download-speed
+      view: number
+      path: variables.dictionary
+      label: What is your download speed in megabits per second?
+    - id: upload-speed
+      view: number
+      path: variables.dictionary
+      label: What is your upload speed in megabits per second?
+    - id: service-provider
+      view: string
+      path: variables.dictionary
+      label: What is the name of your service provider?
+  templates:
+    - path: input.md
+output:
+  templates:
+    - path: output.md
+batches:
+  - folder: batches/standard
+display:
+  styles:
+    - path: style.css

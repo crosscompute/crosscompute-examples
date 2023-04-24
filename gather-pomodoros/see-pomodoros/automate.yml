@@ -1,6 +1,7 @@
 ---
-crosscompute: 0.9.3
+crosscompute: 0.9.4
 name: See Pomodoros
+slug: see-pomodoros
 version: 0.0.1
 output:
   variables:

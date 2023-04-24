@@ -1,0 +1,20 @@
+---
+crosscompute: 0.9.4
+name: Convert Image
+slug: convert-image
+description: Convert image format
+version: 0.0.1
+input:
+  variables:
+    - id: image_uri
+      view: string
+      path: variables.dictionary
+output:
+  variables:
+    - id: image_link
+      view: link
+      path: image.png
+batches:
+  - folder: batches/standard
+scripts:
+  - command: python3 run.py {input_folder} {output_folder} {debug_folder}

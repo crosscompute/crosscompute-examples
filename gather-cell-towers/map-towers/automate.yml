@@ -1,0 +1,43 @@
+---
+crosscompute: 0.9.4
+name: CellTowerMap
+slug: cell-tower-map
+description: See a map of cell towers as submitted by users
+version: 0.0.1
+output:
+  variables:
+    - id: map
+      view: map-mapbox
+      path: locations.geojson
+      configuration:
+        style: mapbox://styles/mapbox/satellite-streets-v11
+        layers:
+          - type: circle
+            paint:
+              circle-color: ['match', ['get', 'is_contributed'], 1, 'orange', 'yellow']
+              circle-radius: 5
+  templates:
+    - path: output.md
+batches:
+  - folder: batches/standard
+datasets:
+  - path: datasets/cell-towers.csv
+    reference:
+      uri: https://query.data.world/s/cfxj66w6rvg3zhk3r25dum575czl3q
+  - folder: datasets/runs
+    reference:
+      folder: ../report-tower/runs
+scripts:
+  - path: run.ipynb
+environment:
+  interval: 1 hour
+display:
+  styles:
+    - path: style.css
+  pages:
+    - id: automation
+      configuration:
+        design: output
+    - id: output
+      configuration:
+        design: none
