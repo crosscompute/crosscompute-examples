@@ -1,6 +1,7 @@
 ---
 crosscompute: 0.9.4
 name: Randomize Histograms
+slug: randomize-histograms
 version: 0.1.0
 input:
   variables:

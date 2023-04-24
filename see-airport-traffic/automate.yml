@@ -1,6 +1,7 @@
 ---
 crosscompute: 0.9.4
 name: See Airport Traffic
+slug: see-airport-traffic
 description: See airport travel times by district
 version: 0.0.1
 input:
@@ -20,7 +21,7 @@ output:
       view: map-mapbox
       path: map.geojson
       configuration:
-        style: mapbox://styles/mapbox/dark-v10
+        style: mapbox://styles/mapbox/dark-v11
         layers:
           - type: fill
             paint:

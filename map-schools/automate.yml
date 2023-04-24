@@ -1,6 +1,7 @@
 ---
 crosscompute: 0.9.4
 name: Map Schools
+slug: map-schools
 version: 0.0.1
 input:
   variables:
@@ -20,7 +21,7 @@ output:
       view: map-deck-screengrid
       path: geometries.json
       configuration:
-        style: mapbox://styles/mapbox/dark-v10
+        style: mapbox://styles/mapbox/dark-v11
   templates:
     - path: output.md
 batches:

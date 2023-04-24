@@ -10,14 +10,14 @@ output:
       view: map-deck-screengrid
       path: speeds-download.json
       configuration:
-        style: mapbox://styles/mapbox/dark-v10
+        style: mapbox://styles/mapbox/dark-v11
         position: d => [d[0], d[1]]
         weight: d => d[2]
     - id: map-speeds-upload
       view: map-deck-screengrid
       path: speeds-upload.json
       configuration:
-        style: mapbox://styles/mapbox/dark-v10
+        style: mapbox://styles/mapbox/dark-v11
         position: d => [d[0], d[1]]
         weight: d => d[2]
   templates:
