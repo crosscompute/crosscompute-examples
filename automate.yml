@@ -1,5 +1,5 @@
 ---
-crosscompute: 0.9.3
+crosscompute: 0.9.4
 imports:
   - path: show-flashcards/automate.yml
   - path: make-qr/automate.yml

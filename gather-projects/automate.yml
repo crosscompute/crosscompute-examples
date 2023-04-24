@@ -1,5 +1,5 @@
 ---
-crosscompute: 0.9.3
+crosscompute: 0.9.4
 name: Gather Projects
 version: 0.0.1
 input:
@@ -7,24 +7,18 @@ input:
     - id: project_description
       view: text
       path: variables.dictionary
-      configuration:
-        label: What do you want to build?
+      label: What do you want to build?
     - id: email_address
       view: email
       path: variables.dictionary
-      configuration:
-        label: What is your email address?
+      label: What is your email address?
   templates:
-    - path: form.md
+    - path: input.md
 output:
   templates:
-    - path: report.md
+    - path: output.md
 batches:
   - folder: batches/standard
 display:
   styles:
     - path: style.css
-  buttons:
-    - id: run
-      configuration:
-        button-text: Apply

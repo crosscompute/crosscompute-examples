@@ -1,1 +1,1 @@
-pdftk a.pdf b.pdf cat output c.pdf
+pdftk ${CROSSCOMPUTE_INPUT_FOLDER}/a.pdf ${CROSSCOMPUTE_INPUT_FOLDER}/b.pdf cat output ${CROSSCOMPUTE_OUTPUT_FOLDER}/c.pdf

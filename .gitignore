@@ -26,6 +26,7 @@ dist/
 batches/
 datasets/
 debug/
+prints/
 runs/
 tests/
 .*.py
