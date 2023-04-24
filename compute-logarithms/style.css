@@ -1,12 +1,12 @@
 body {
   font-family: sans-serif;
 }
-
 /* Right align cells */
 .logarithms th, td {
   text-align: right;
+  padding-right: 1em;
 }
 /* Set color for first column */
-.logarithms tbody :first-child {
+.logarithms tr :first-child {
   color: blue;
 }

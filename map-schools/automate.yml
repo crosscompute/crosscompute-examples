@@ -1,7 +1,6 @@
 ---
 crosscompute: 0.9.4
 name: Map Schools
-slug: map-schools
 version: 0.0.1
 input:
   variables:

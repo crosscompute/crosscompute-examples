@@ -1,7 +1,6 @@
 ---
 crosscompute: 0.9.4
 name: Log Pomodoro
-slug: log-pomodoro
 version: 0.0.1
 input:
   variables:

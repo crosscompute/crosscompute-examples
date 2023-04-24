@@ -1,7 +1,6 @@
 ---
 crosscompute: 0.9.4
 name: Merge PDFs
-slug: merge-pdfs
 description: Merge two PDFs into one PDF
 version: 0.1.0
 input:

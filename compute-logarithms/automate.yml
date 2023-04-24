@@ -1,7 +1,6 @@
 ---
 crosscompute: 0.9.4
 name: Compute Logarithms
-slug: compute-logarithms
 version: 0.0.1
 input:
   variables:

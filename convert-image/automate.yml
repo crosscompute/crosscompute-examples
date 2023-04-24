@@ -1,7 +1,6 @@
 ---
 crosscompute: 0.9.4
 name: Convert Image
-slug: convert-image
 description: Convert image format
 version: 0.0.1
 input:

@@ -1,7 +1,6 @@
 ---
 crosscompute: 0.9.4
 name: Add Numbers
-slug: add-numbers
 version: 0.1.0
 input:
   variables:
