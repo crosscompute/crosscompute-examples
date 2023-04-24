@@ -1,6 +1,7 @@
 ---
 crosscompute: 0.9.4
 name: KeyMapPro
+slug: key-map-pro
 version: 0.0.1
 input:
   variables:
