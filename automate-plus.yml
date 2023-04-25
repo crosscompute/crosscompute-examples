@@ -8,6 +8,7 @@ imports:
   - path: show-maps/automate.yml
   - path: map-schools/automate.yml
   - path: make-pdf/automate.yml
+  - path: merge-pdfs/automate.yml
   - path: set-points/automate.yml
   - path: gather-pomodoros/automate.yml
 display:
