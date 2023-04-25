@@ -26,8 +26,11 @@ async function showCards() {
     q.innerHTML = '';
     a.innerHTML = '';
   }
-  setTimeout(showCards, delayInMilliseconds);
 }
 
-registerCallback('cards', showCards);
+let refreshInterval;
+registerCallback('cards', function() {
+  clearInterval(refreshInterval);
+  refreshInterval = setInterval(showCards, delayInMilliseconds);
+});
 </script>
