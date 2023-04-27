@@ -11,5 +11,3 @@ display:
   templates:
     - id: base
       path: base.html
-    - id: root
-      path: root.html
