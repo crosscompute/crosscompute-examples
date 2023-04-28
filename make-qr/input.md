@@ -1,14 +1,18 @@
 # QRCreate by CrossCompute: Your Go-To QR Code Generator
 
-## Create Custom QR Code in No Time
+## Create Custom QR Codes in No Time
 
-Welcome to QRCreate by CrossCompute, the simplest and most efficient online QR code generator available. Our user-friendly tool, which is entirely free and web-based, requires no downloads or installations, making creating custom QR codes a breeze and streamlining your information sharing process.
+Welcome to QRCreate by CrossCompute, the simplest and most efficient online QR code generator available. Our user-friendly tool, which is entirely free and web-based, requires no downloads or installations, making creating custom QR codes a breeze and streamlining your information sharing process. Here are some ideas on how you can use QRCreate:
+
+- Send a URL from your desktop or tablet to your phone
+- Encode a URL for your business card, flyer or brochure
+- Transfer data between phones
 
 ## How to Use QRCreate
 
 Generating custom QR codes with QRCreate is quick and easy. Follow these steps to create your QR code in no time:
 
-- In the text input field labeled "Data" enter the data you want to encode in your QR code. This can be a URL, text, contact information, or any other supported data type.
+- In the text input field labeled "Data" enter the data you want to encode in your QR code. This can be a URL, text, contact information or any other supported data type.
 - Once you've input your data, click the "Continue" button. QRCreate will process your information and create a custom QR code based on the provided data.
 
 Experience the simplicity and efficiency of QRCreate for yourself and enhance your information sharing efforts with our user-friendly tool.
