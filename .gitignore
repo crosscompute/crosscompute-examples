@@ -26,6 +26,7 @@ dist/
 batches/
 datasets/
 debug/
+output/
 prints/
 runs/
 tests/
@@ -33,3 +34,10 @@ tests/
 .run.*
 .containerfile
 .containerignore
+# data
+*.csv
+*.ipynb.py
+*.jpg
+*.png
+*.txt
+*.xlsx
