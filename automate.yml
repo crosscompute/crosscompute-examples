@@ -1,11 +1,11 @@
 ---
 crosscompute: 0.9.4
 imports:
-  - path: show-flashcards/automate.yml
+  - path: diff-texts/automate.yml
   - path: make-qr/automate.yml
   - path: paint-letters/automate.yml
-  - path: diff-texts/automate.yml
-  - path: gather-projects/automate.yml
+  - path: show-flashcards/automate.yml
+  - path: subscribe-newsletter/automate.yml
   - path: watch-machine/automate.yml
 display:
   templates:
