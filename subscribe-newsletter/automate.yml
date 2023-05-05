@@ -8,7 +8,7 @@ input:
     - id: email_address
       view: email
       path: variables.dictionary
-      label: Email
+      label: Email Address
 output:
   templates:
     - path: output.md
