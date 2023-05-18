@@ -4,7 +4,7 @@ Welcome to InternetSpeedSurvey - the free and easy way to contribute to the worl
 
 ## How to Use InternetSpeedSurvey
 
-- Begin by completing the internet speed test by visiting any of the popular internet speed testing sites such as [Google's internet speed test.](https://www.google.com/search?q=internet+speed+test).
+- Begin by completing the internet speed test by visiting any of the popular internet speed testing sites such as [Google's internet speed test](https://www.google.com/search?q=internet+speed+test).
 - The speed test will automatically detect your download and upload speeds and display the results on the screen.
 - Once the speed test is complete, note your download and upload speeds as you will need to enter them into the InternetSpeedSurvey tool.
 - Enter your download speed, upload speed, service provider and location information into the InternetSpeedSurvey. This information will help us collect data on internet speeds from around the world.
