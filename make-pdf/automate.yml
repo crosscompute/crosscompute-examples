@@ -28,8 +28,6 @@ batches:
 scripts:
   - command: bash run.sh
 display:
-  styles:
-    - path: style.css
   pages:
     - id: output
       configuration:

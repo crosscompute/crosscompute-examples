@@ -32,6 +32,3 @@ output:
     - path: output.md
 batches:
   - folder: batches/standard
-display:
-  styles:
-    - path: style.css
