@@ -1,11 +1,5 @@
-@page {
-  margin: 0.5in;
-}
 body {
   font-family: sans-serif;
-}
-main {
-  font-size: 12pt;
 }
 ._image {
   height: 400px;
