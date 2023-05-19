@@ -1,6 +1,6 @@
-# MDtoPDF
+# Convert Markdown to PDF
 
-CrossCompute's MDtoPDF is a simple yet powerful online utility for converting Markdown files to PDF format. This free and user-friendly tool can help you create professional-looking documents, reports and presentations from your plain text files quickly and easily.
+Convert Markdown to PDF is a simple yet powerful online utility for converting Markdown files to PDF format. This free and user-friendly tool can help you create professional-looking documents, reports and presentations from your text files quickly and easily.
 
 ## User Guide
 
@@ -16,7 +16,7 @@ CrossCompute's MDtoPDF is a simple yet powerful online utility for converting Ma
 
 { BUTTON_PANEL}
 
-## About MDtoPDF
+## About Convert Markdown to PDF
 
 Convert your Markdown files to PDF format quickly and easily with the CrossCompute Markdown to PDF converter. Our powerful online utility allows you to create professional-looking documents, reports and presentations from your plain text files with just a few clicks.
 
@@ -33,4 +33,4 @@ Whether you're a blogger, writer or researcher, our Markdown to PDF converter ca
 
 ## Many Thanks
 
-Thank you for using MDtoPDF by CrossCompute. We hope you enjoy exploring the character distribution in your text and uncovering new insights. If you have questions or feedback, please contact us at [support+automations@crosscompute.com](mailto:support+automations@crosscompute.com).
+Thank you for using Markdown to PDF by CrossCompute. We hope you enjoy exploring the character distribution in your text and uncovering new insights. If you have questions or feedback, please contact us at [support+automations@crosscompute.com](mailto:support+automations@crosscompute.com).
