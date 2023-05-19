@@ -14,7 +14,6 @@ Introducing **KeyMapPro**, an innovative web application designed to transform t
 
 By leveraging advanced data visualization techniques, **KeyMapPro** offers an intuitive and user-friendly interface for users to explore the keyboard heatmap, revealing patterns and trends in the character usage. The choropleth map uses a vibrant color spectrum to represent the frequency distribution of each key, with the colors ranging from cool shades for less frequent characters to warm shades for the most frequently used ones.
 
-**KeyMapPro** is proudly powered by **CrossCompute**, an open-source platform for creating and sharing web applications.
-CrossCompute allows developers to easily build and deploy advanced tools, fostering innovation and collaboration within the community. For questions, feedback or suggestions, please message [support+automations@crosscompute.com](mailto:support+automations@crosscompute.com).
+**KeyMapPro** is proudly powered by **CrossCompute**, an open-source platform for creating and sharing web applications. CrossCompute allows developers to easily build and deploy advanced tools, fostering innovation and collaboration within the community. For questions, feedback or suggestions, please message [support+automations@crosscompute.com](mailto:support+automations@crosscompute.com).
 
 CrossCompute © 2023. All rights reserved.
