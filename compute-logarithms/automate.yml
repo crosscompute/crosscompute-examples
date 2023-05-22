@@ -22,7 +22,7 @@ output:
       view: table
       path: values.json
   templates:
-    - path: report.md
+    - path: output.md
 tests:
   - folder: tests/base-e
   - folder: tests/base-10

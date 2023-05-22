@@ -8,7 +8,7 @@ output:
       view: map-mapbox
       path: geometries.geojson
       configuration:
-        style: mapbox://styles/mapbox/streets-v11
+        style: mapbox://styles/mapbox/streets-v12
         layers:
           - type: fill
             paint:
@@ -18,7 +18,7 @@ output:
       view: map-mapbox
       path: geometries.geojson
       configuration:
-        style: mapbox://styles/mapbox/light-v10
+        style: mapbox://styles/mapbox/light-v11
         layers:
           - type: fill
             paint:
@@ -28,7 +28,7 @@ output:
       view: map-mapbox
       path: geometries.geojson
       configuration:
-        style: mapbox://styles/mapbox/dark-v10
+        style: mapbox://styles/mapbox/dark-v11
         layers:
           - type: fill
             paint:

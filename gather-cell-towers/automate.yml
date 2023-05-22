@@ -1,5 +1,5 @@
 ---
 crosscompute: 0.9.4
 imports:
-  - path: forms/report-cell-tower/automate.yml
-  - path: reports/map-cell-towers/automate.yml
+  - path: report-tower/automate.yml
+  - path: map-towers/automate.yml

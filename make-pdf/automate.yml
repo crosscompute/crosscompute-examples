@@ -1,7 +1,8 @@
 ---
 crosscompute: 0.9.4
-name: Turn Markdown to PDF
+name: Convert Markdown to PDF
 slug: markdown-to-pdf
+description: Convert markdown files to PDF format. Create professional-looking documents, reports and presentations from your text files.
 version: 0.0.1
 input:
   templates:
@@ -19,6 +20,9 @@ output:
   variables:
     - id: document-pdf
       view: pdf
+      path: document.pdf
+    - id: document-link
+      view: link
       path: document.pdf
 batches:
   - folder: batches/standard

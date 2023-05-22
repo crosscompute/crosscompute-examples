@@ -20,9 +20,9 @@ output:
       view: map-deck-screengrid
       path: geometries.json
       configuration:
-        style: mapbox://styles/mapbox/dark-v10
+        style: mapbox://styles/mapbox/dark-v11
   templates:
-    - path: report.md
+    - path: output.md
 batches:
   - name: '{type | title} Schools {period}'
     folder: batches/{type}-{period}
@@ -31,8 +31,6 @@ batches:
 scripts:
   - path: run.ipynb
 display:
-  styles:
-    - path: style.css
   pages:
     - id: automation
       configuration:

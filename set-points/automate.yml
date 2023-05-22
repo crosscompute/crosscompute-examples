@@ -1,6 +1,7 @@
 ---
 crosscompute: 0.9.4
 name: Generate Random Points Within Region
+slug: make-random-points
 version: 0.2.0
 input:
   variables:
@@ -11,7 +12,7 @@ input:
       view: number
       path: variables.dictionary
   templates:
-    - path: form.md
+    - path: input.md
 output:
   variables:
     - id: points

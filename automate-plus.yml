@@ -5,14 +5,12 @@ imports:
   - path: see-airport-traffic/automate.yml
   - path: gather-internet-speeds/automate.yml
   - path: gather-cell-towers/automate.yml
-  - path: show-maps/automate.yml
   - path: map-schools/automate.yml
   - path: make-pdf/automate.yml
+  - path: merge-pdfs/automate.yml
   - path: set-points/automate.yml
   - path: gather-pomodoros/automate.yml
 display:
   templates:
     - id: base
       path: base.html
-    - id: root
-      path: root.html

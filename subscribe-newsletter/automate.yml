@@ -1,0 +1,21 @@
+---
+crosscompute: 0.9.4
+name: Subscribe to Our Monthly Newsletter
+slug: subscribe-newsletter
+version: 0.1.0
+input:
+  variables:
+    - id: email_address
+      view: email
+      path: variables.dictionary
+      label: Email Address
+output:
+  templates:
+    - path: output.md
+batches:
+  - folder: batches/standard
+display:
+  buttons:
+    - id: continue
+      configuration:
+        button-text: Subscribe to Our Monthly Newsletter

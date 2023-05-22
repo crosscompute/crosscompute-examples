@@ -3,5 +3,11 @@
 crosscompute: 0.9.4
 imports:
   - path: add-numbers/automate.yml
-  - path: randomize-histograms/automate.yml
+  - path: authorization-groups/automate.yml
   - path: compute-logarithms/automate.yml
+  - path: conditional-templates/automate.yml
+  - path: dataset-references/automate.yml
+  - path: dynamic-options/automate.yml
+  - path: randomize-histograms/automate.yml
+  - path: show-maps/automate.yml
+  - path: variable-views/automate.yml

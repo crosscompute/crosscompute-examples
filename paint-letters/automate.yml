@@ -1,17 +1,22 @@
 ---
 crosscompute: 0.9.4
-name: Paint Letters
+name: KeyMapPro
+slug: key-map-pro
 version: 0.0.1
 input:
   variables:
     - id: document_text
       view: text
       path: document.txt
+  templates:
+    - path: input.md
 output:
   variables:
     - id: choropleth
       view: image
       path: choropleth.svg
+  templates:
+    - path: output.md
 tests:
   - folder: tests/standard
 batches:
