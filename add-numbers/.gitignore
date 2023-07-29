@@ -1,8 +1,8 @@
 # crosscompute
-datasets/
-batches/
-runs/
-debug/
 .*.py
 .containerfile
 .containerignore
+batches/
+datasets/
+debug/
+runs/
