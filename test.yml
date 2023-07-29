@@ -8,6 +8,7 @@ imports:
   - path: conditional-templates/automate.yml
   - path: dataset-references/automate.yml
   - path: dynamic-options/automate.yml
+  - path: map-schools/automate.yml
   - path: randomize-histograms/automate.yml
   - path: show-maps/automate.yml
   - path: variable-views/automate.yml
