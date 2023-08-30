@@ -1,0 +1,36 @@
+---
+crosscompute: 0.9.4
+name: Count Words
+version: 0.1.0
+input:
+  variables:
+    - id: document
+      view: text
+      path: document.txt
+  templates:
+    - path: input.md
+output:
+  variables:
+    - id: word_count
+      view: number
+      path: variables.dictionary
+    - id: word_counts
+      view: table
+      path: word_counts.json
+  templates:
+    - path: output.md
+batches:
+  - folder: batches/standard
+scripts:
+  - path: run.ipynb
+display:
+  styles:
+    - path: style.css
+  pages:
+    - id: output
+      configuration:
+        design: none
+environment:
+  packages:
+    - id: pandas
+      manager: pip
