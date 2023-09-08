@@ -34,7 +34,7 @@ output:
             paint:
               fill-color: yellow
         path: geometries.json
-    - id: satellite-streets
+    - id: satellite_streets
       view: map-mapbox
       path: geometries.geojson
       configuration:
