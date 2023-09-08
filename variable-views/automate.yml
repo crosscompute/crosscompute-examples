@@ -76,7 +76,7 @@ output:
     - id: message
       view: string
       path: variables.dictionary
-    - id: message-feedback
+    - id: message_feedback
       view: string
       path: variables.dictionary
       mode: input
