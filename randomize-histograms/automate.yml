@@ -18,10 +18,10 @@ input:
       path: variables.dictionary
 output:
   variables:
-    - id: histogram-1d
+    - id: histogram_1d
       view: image
       path: histogram-1d.png
-    - id: histogram-2d
+    - id: histogram_2d
       view: image
       path: histogram-2d.png
   templates:
@@ -65,8 +65,8 @@ batches:
 scripts:
   - path: run.ipynb
 environment:
-# engine: podman
-# image: python
+  # engine: podman
+  # image: python
   packages:
     - id: matplotlib
       manager: pip
