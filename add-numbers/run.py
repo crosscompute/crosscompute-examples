@@ -15,9 +15,6 @@ with (input_folder / 'variables.dictionary').open('rt') as f:
 # Perform calculation
 c = variables['a'] + variables['b']
 
-import time
-time.sleep(10)
-
 
 # Save output variables to output folder
 with (output_folder / 'variables.dictionary').open('wt') as f:
