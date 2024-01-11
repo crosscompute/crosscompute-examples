@@ -12,6 +12,9 @@ input:
       path: variables.dictionary
       label: Where are you? Press the button below to share your location. Location tracking will have low accuracy on a desktop but high accuracy on a smartphone.
       configuration:
+        longitude: -104.715279
+        latitude: 44.590279
+        zoom: 10
         style: mapbox://styles/mapbox/streets-v12
     - id: download-speed
       view: number
