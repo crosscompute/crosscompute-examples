@@ -48,20 +48,20 @@ print:
       label: Report URI
       configuration:
         path: report-uri.json
-batches:
-  # case 0: use a batch folder to set values for input variables
-  - folder: batches/a
-  # case 1: use a batch configuration to vary values for input variables
-  - folder: batches/me{mean}-va{variance}-vc{value_count}-bc{bin_count}
+presets:
+  # case 0: use a preset folder to set values for input variables
+  - folder: presets/a
+  # case 1: use a preset configuration to vary values for input variables
+  - folder: presets/me{mean}-va{variance}-vc{value_count}-bc{bin_count}
     configuration:
-      path: datasets/batches.csv
+      path: presets.csv
   # case 2: use a reference folder to set default values for missing variables
-  #         use a batch configuration to vary selected variables
-  - folder: batches/me{mean}-va{variance}-vc{value_count}-bc{bin_count}
+  #         use a preset configuration to vary selected variables
+  - folder: presets/me{mean}-va{variance}-vc{value_count}-bc{bin_count}
     reference:
-      folder: batches/a
+      folder: presets/a
     configuration:
-      path: datasets/batches-vc-bc.csv
+      path: presets-vc-bc.csv
 scripts:
   - path: run.ipynb
 environment:
