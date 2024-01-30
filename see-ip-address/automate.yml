@@ -14,7 +14,7 @@ input:
 output:
   variables:
     - id: ip_addresses
-      view: text
+      view: markdown
       path: ip-addresses.txt
       label: IP Address
 batches:

@@ -23,4 +23,4 @@ else:
         variables = json.load(f)
     ip_addresses = [variables['ip_address']]
 with (output_folder / 'ip-addresses.txt').open('wt') as f:
-    f.write('\n'.join(ip_addresses))
+    f.write('\n\n'.join(ip_addresses))
