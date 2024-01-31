@@ -12,6 +12,9 @@ input:
       path: variables.dictionary
       label: Drop Pin to Annotate Cell Tower Location
       configuration:
+        longitude: -76.872932
+        latitude: 42.380592
+        zoom: 10
         style: mapbox://styles/mapbox/satellite-streets-v11
   templates:
     - path: input.md

@@ -1,8 +1,7 @@
 # crosscompute
-datasets/
-presets/
-results/
-debug/
 .*.py
 .containerfile
 .containerignore
+datasets/
+presets/
+results/

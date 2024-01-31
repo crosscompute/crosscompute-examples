@@ -1,0 +1,23 @@
+---
+crosscompute: 0.9.4
+name: See IP Address
+description: Enter a URL to check its IP address or leave blank to see your own IP address
+version: 0.0.1
+input:
+  variables:
+    - id: url
+      view: string
+      path: variables.dictionary
+      label: URL
+  templates:
+    - path: input.md
+output:
+  variables:
+    - id: ip_addresses
+      view: markdown
+      path: ip-addresses.txt
+      label: IP Address
+batches:
+  - folder: batches/standard
+scripts:
+  - command: python3 run.py {input_folder} {debug_folder} {output_folder}
