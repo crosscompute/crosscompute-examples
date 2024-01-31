@@ -23,4 +23,5 @@ else:
         variables = json.load(f)
     ip_addresses = [variables['ip_address']]
 with (output_folder / 'ip-addresses.txt').open('wt') as f:
-    f.write('\n\n'.join(sorted(ip_addresses, key=lambda _: (len(_), _))))
+    f.write('\n\n'.join(sorted(ip_addresses, key=lambda _: (
+        ':' in _, len(_), _))))
