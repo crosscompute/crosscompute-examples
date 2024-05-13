@@ -1,8 +1,7 @@
 ---
 crosscompute: 0.9.4
-name: InternetSpeedMap
-slug: internet-speed-map
-description: See a map of internet speed test results as submitted by users
+name: Map Internet Speeds
+description: See a map of internet speeds as submitted by users
 version: 0.0.1
 output:
   variables:

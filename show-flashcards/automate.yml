@@ -1,7 +1,7 @@
 ---
 crosscompute: 0.9.4
 name: Show Flashcards
-description: Reduce recall time
+description: Reduce recall time by reviewing flashcards
 version: 0.0.1
 input:
   variables:
