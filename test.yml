@@ -1,8 +1,8 @@
 # These examples are used for testing framework functionality.
 ---
-crosscompute: 0.9.4
-imports:
-  - path: add-numbers/automate.yml
+crosscompute: 1.0.0
+tools:
+  - path: add-numbers/automate.yaml
   - path: authorization-groups/automate.yml
   - path: compute-logarithms/automate.yml
   - path: conditional-templates/automate.yml

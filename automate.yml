@@ -1,6 +1,6 @@
 ---
-crosscompute: 0.9.4
-imports:
+crosscompute: 1.0.0
+tools:
   - path: diff-texts/automate.yml
   - path: make-qr/automate.yml
   - path: paint-letters/automate.yml

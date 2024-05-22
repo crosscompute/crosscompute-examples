@@ -1,0 +1,8 @@
+---
+crosscompute: 1.0.0
+tools:
+  - path: add-numbers/automate.yaml
+display:
+  templates:
+    - id: base
+      path: base.html

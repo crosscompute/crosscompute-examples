@@ -1,6 +1,6 @@
 ---
-crosscompute: 0.9.4
-imports:
+crosscompute: 1.0.0
+tools:
   - path: automate.yml
   - path: see-airport-traffic/automate.yml
   - path: gather-internet-speeds/automate.yml
