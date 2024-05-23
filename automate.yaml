@@ -1,0 +1,14 @@
+---
+crosscompute: 0.9.4
+imports:
+  - path: diff-texts/automate.yaml
+  - path: make-qr/automate.yaml
+  - path: paint-letters/automate.yaml
+  - path: see-ip-address/automate.yaml
+  - path: show-flashcards/automate.yaml
+  - path: subscribe-newsletter/automate.yaml
+  - path: watch-machine/automate.yaml
+display:
+  templates:
+    - id: base
+      path: base.html

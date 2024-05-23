@@ -1,0 +1,14 @@
+---
+crosscompute: 0.9.4
+imports:
+  - path: automate.yaml
+  - path: see-airport-traffic/automate.yaml
+  - path: gather-internet-speeds/automate.yaml
+  - path: gather-cell-towers/automate.yaml
+  - path: make-pdf/automate.yaml
+  - path: merge-pdfs/automate.yaml
+  - path: set-points/automate.yaml
+display:
+  templates:
+    - id: base
+      path: base.html

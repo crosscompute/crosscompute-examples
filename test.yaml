@@ -1,0 +1,15 @@
+# These examples are used for testing framework functionality.
+---
+crosscompute: 0.9.4
+imports:
+  - path: add-numbers/automate.yaml
+  - path: authorization-groups/automate.yaml
+  - path: compute-logarithms/automate.yaml
+  - path: conditional-templates/automate.yaml
+  - path: dataset-references/automate.yaml
+  - path: dynamic-options/automate.yaml
+  - path: map-schools/automate.yaml
+  - path: randomize-histograms/automate.yaml
+  - path: show-maps/automate.yaml
+  - path: variable-views/automate.yaml
+  - path: gather-pomodoros/automate.yaml

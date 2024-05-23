@@ -17,6 +17,9 @@ batches:
 scripts:
   - function: run.plot_all
 environment:
+  packages:
+    - id: matplotlib
+      manager: pip
   interval: 1 minute
 display:
   pages:

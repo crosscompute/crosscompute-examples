@@ -1,0 +1,5 @@
+---
+crosscompute: 0.9.4
+imports:
+  - path: report-speed/automate.yaml
+  - path: map-speeds/automate.yaml

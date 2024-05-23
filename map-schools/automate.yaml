@@ -30,6 +30,14 @@ batches:
       path: datasets/batches.csv
 scripts:
   - path: run.ipynb
+environment:
+  packages:
+    - id: invisibleroads-macros-disk
+      manager: pip
+    - id: openpyxl
+      manager: pip
+    - id: pandas
+      manager: pip
 display:
   pages:
     - id: automation

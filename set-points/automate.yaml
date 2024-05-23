@@ -27,6 +27,10 @@ batches:
   - folder: batches/standard
 scripts:
   - path: run.ipynb
+environment:
+  packages:
+    - id: geotable
+      manager: pip
 display:
   styles:
     - path: style.css

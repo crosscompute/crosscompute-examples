@@ -17,3 +17,11 @@ batches:
   - folder: batches/standard
 scripts:
   - command: python3 run.py {input_folder} {output_folder} {debug_folder}
+environment:
+  packages:
+    - id: pillow
+      manager: pip
+    - id: reportlab
+      manager: pip
+    - id: svglib
+      manager: pip

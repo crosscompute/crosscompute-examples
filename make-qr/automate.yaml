@@ -1,0 +1,33 @@
+---
+crosscompute: 0.9.4
+name: Make QR Code
+slug: make-qr
+description: Turn text into a QR code
+version: 0.0.1
+input:
+  variables:
+    - id: data
+      view: text
+      path: data.txt
+  templates:
+    - path: input.md
+output:
+  variables:
+    - id: qr
+      view: image
+      path: qr.png
+batches:
+  - folder: batches/standard
+scripts:
+  - path: run.ipynb
+environment:
+  packages:
+    - id: qrcode[pil]
+      manager: pip
+display:
+  styles:
+    - path: style.css
+  pages:
+    - id: output
+      configuration:
+        design: none

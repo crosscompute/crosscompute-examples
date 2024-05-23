@@ -65,8 +65,6 @@ batches:
 scripts:
   - path: run.ipynb
 environment:
-  # engine: podman
-  # image: python
   packages:
     - id: matplotlib
       manager: pip
