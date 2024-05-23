@@ -1,7 +1,6 @@
 ---
 crosscompute: 0.9.4
-name: CellTowerMap
-slug: cell-tower-map
+name: Map Cell Towers
 description: See a map of cell towers as submitted by users
 version: 0.0.1
 output:

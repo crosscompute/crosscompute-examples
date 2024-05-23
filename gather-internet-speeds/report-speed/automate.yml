@@ -1,9 +1,7 @@
 ---
 crosscompute: 0.9.4
-name: InternetSpeedSurvey
-slug: internet-speed-survey
-title: InternetSpeedSurvey - Worldwide Internet Speeds | CrossCompute
-description: Contribute to the InternetSpeedSurvey and help us collect data on internet speeds around the world. Test your internet speeds and compare with others in your region. Join the largest internet speed survey today.
+name: Report Internet Speed
+description: Report your internet speed
 version: 0.0.1
 input:
   variables:
