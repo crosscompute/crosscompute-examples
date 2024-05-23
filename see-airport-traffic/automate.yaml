@@ -25,7 +25,11 @@ output:
         layers:
           - type: fill
             paint:
-              fill-color: ['interpolate', ['linear'], ['get', 't'], 1, 'blue', 60, 'red']
+              fill-color: [
+                'interpolate', ['linear'],
+                ['get', 't'],
+                1, 'blue',
+                60, 'red']
               fill-opacity: 0.8
     - id: time_histogram
       view: image
@@ -33,7 +37,8 @@ output:
   templates:
     - path: output.md
 batches:
-  - folder: batches/{city_name | slug}-{destination_name | slug}-{travel_mode | slug}
+  - folder: >-
+      batches/{city_name | slug}-{destination_name | slug}-{travel_mode | slug}
     name: '{city_name} - {destination_name} - {travel_mode}'
     slug: '{city_name | slug}-{destination_name | slug}-{travel_mode | slug}'
     configuration:
@@ -41,6 +46,13 @@ batches:
 scripts:
   - path: run.ipynb
 environment:
+  packages:
+    - id: matplotlib
+      manager: pip
+    - id: requests
+      manager: pip
+    - id: shapely
+      manager: pip
   variables:
     - id: GOOGLE_KEY
   interval: 25 hours

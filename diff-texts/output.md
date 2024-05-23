@@ -4,4 +4,4 @@
 </code>
 </pre>
 
-[See Code for this Automation](https://github.com/crosscompute/crosscompute-examples/tree/master/diff-texts)
+[See code](https://github.com/crosscompute/crosscompute-examples/tree/master/diff-texts).

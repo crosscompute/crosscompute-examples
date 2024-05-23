@@ -1,1 +1,1 @@
-Thank you for finding a cell tower. [Check this map to see the results]({ ROOT_URI }/a/cell-tower-map).
+Thank you for locating a cell tower. [See the results on a map]({ ROOT_URI }/a/map-cell-towers).

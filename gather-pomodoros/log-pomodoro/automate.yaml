@@ -31,7 +31,7 @@ display:
         design: none
 authorization:
   tokens:
-    - path: tokens.yml
+    - path: tokens.yaml
   groups:
     - configuration:
         username: invisibleroads

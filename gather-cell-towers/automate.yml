@@ -1,5 +1,0 @@
----
-crosscompute: 0.9.4
-imports:
-  - path: report-tower/automate.yml
-  - path: map-towers/automate.yml

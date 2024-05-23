@@ -1,0 +1,5 @@
+---
+crosscompute: 0.9.4
+imports:
+  - path: log-pomodoro/automate.yaml
+  - path: see-pomodoros/automate.yaml

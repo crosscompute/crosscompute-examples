@@ -1,6 +1,6 @@
-# Internet Speeds
+# Internet Speed Map
 
-This map is updated every hour. [Report your internet speed]({ ROOT_URI }/a/internet-speed-survey).
+This map is updated every hour. [Report your internet speed]({ ROOT_URI }/a/report-internet-speed).
 
 { map-speeds-download }
 
