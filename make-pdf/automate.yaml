@@ -28,12 +28,6 @@ batches:
   - folder: batches/standard
 scripts:
   - command: bash run.sh
-environment:
-  packages:
-    - id: chromium
-      manager: dnf
-    - id: md-to-pdf
-      manager: npm
 display:
   styles:
     - path: style.css

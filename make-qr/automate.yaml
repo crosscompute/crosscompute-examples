@@ -20,10 +20,6 @@ batches:
   - folder: batches/standard
 scripts:
   - path: run.ipynb
-environment:
-  packages:
-    - id: qrcode[pil]
-      manager: pip
 display:
   styles:
     - path: style.css

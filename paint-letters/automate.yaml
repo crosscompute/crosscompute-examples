@@ -1,9 +1,7 @@
 ---
 crosscompute: 0.9.4
 name: Paint Letters by Frequency
-description: >-
-  Make a choropleth of a QWERTY keyboard, highlighting the frequency of each
-  character in the provided text
+description: Make a choropleth of a QWERTY keyboard, highlighting the frequency of each character in the provided text
 version: 0.0.1
 input:
   variables:
@@ -28,7 +26,3 @@ batches:
       path: datasets/proverbs.txt
 scripts:
   - path: run.ipynb
-environment:
-  packages:
-    - id: matplotlib
-      manager: pip
