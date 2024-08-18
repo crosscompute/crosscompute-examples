@@ -1,7 +1,7 @@
 ---
-crosscompute: 0.9.4
+crosscompute: 0.9.5
 name: Test Variable Views
-version: 0.3.0
+version: 0.3.2
 input:
   variables:
     - id: town
@@ -121,9 +121,8 @@ output:
   templates:
     - path: output1.md
     - path: output2.md
-batches:
-  - folder: batches/standard
-# - folder: batches/no-output
+presets:
+  - folder: presets/standard
 display:
   styles:
     - path: style.css
