@@ -1,5 +1,5 @@
 ---
-crosscompute: 0.9.4
+crosscompute: 0.9.5
 name: Paint Letters by Frequency
 description: Make a choropleth of a QWERTY keyboard, highlighting the frequency of each character in the provided text
 version: 0.0.1
@@ -24,8 +24,8 @@ tests:
   - folder: tests/standard
 presets:
   - name: '{document_text}'
-    folder: batches/{document_text | slug}
+    folder: presets/{document_text | slug}
     configuration:
-      path: datasets/proverbs.txt
+      path: proverbs.txt
 scripts:
   - path: run.ipynb
