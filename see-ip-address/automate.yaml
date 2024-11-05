@@ -1,8 +1,11 @@
 ---
-crosscompute: 0.9.4
+crosscompute: 0.9.5
 name: See IP Address
 description: Enter a URL to check its IP address or leave blank to see your own IP address
 version: 0.0.1
+copyright:
+  name: CrossCompute Inc.
+  year: 2024
 input:
   variables:
     - id: url
@@ -17,7 +20,7 @@ output:
       view: markdown
       path: ip-addresses.txt
       label: IP Address
-batches:
-  - folder: batches/standard
+presets:
+  - folder: presets/standard
 scripts:
   - command: python3 run.py {input_folder} {debug_folder} {output_folder}

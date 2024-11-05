@@ -1,9 +1,11 @@
 ---
-crosscompute: 0.9.4
+crosscompute: 0.9.5
 name: Compare Text
-slug: compare-text
 description: Compare differences between two texts using the diff algorithm
 version: 0.0.1
+copyright:
+  name: CrossCompute Inc.
+  year: 2024
 input:
   variables:
     - id: text1
@@ -21,8 +23,8 @@ output:
       path: diff.txt
   templates:
     - path: output.md
-batches:
-  - folder: batches/standard
+presets:
+  - folder: presets/standard
 scripts:
   - command: bash run.sh
 display:

@@ -1,7 +1,10 @@
 ---
-crosscompute: 0.9.4
+crosscompute: 0.9.5
 name: Count Words
 version: 0.1.0
+copyright:
+  name: CrossCompute Inc.
+  year: 2024
 input:
   variables:
     - id: document
@@ -19,8 +22,8 @@ output:
       path: word_counts.json
   templates:
     - path: output.md
-batches:
-  - folder: batches/standard
+presets:
+  - folder: presets/standard
 scripts:
   - path: run.ipynb
 display:

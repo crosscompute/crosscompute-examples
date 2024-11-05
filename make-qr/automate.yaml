@@ -1,9 +1,12 @@
 ---
-crosscompute: 0.9.4
+crosscompute: 0.9.5
 name: Make QR Code
 slug: make-qr
 description: Turn text into a QR code
 version: 0.0.1
+copyright:
+  name: CrossCompute Inc.
+  year: 2024
 input:
   variables:
     - id: data
@@ -16,8 +19,8 @@ output:
     - id: qr
       view: image
       path: qr.png
-batches:
-  - folder: batches/standard
+presets:
+  - folder: presets/standard
 scripts:
   - path: run.ipynb
 display:
