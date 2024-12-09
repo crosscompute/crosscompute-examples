@@ -1,26 +1,17 @@
 ---
 crosscompute: 0.9.5
 name: See IP Address
-description: Enter a URL to check its IP address or leave blank to see your own IP address
+description: See your IP address
 version: 0.0.1
 copyright:
   name: CrossCompute Inc.
   year: 2024
-input:
-  variables:
-    - id: url
-      view: string
-      path: variables.dictionary
-      label: URL
-  templates:
-    - path: input.md
 output:
-  variables:
-    - id: ip_addresses
-      view: markdown
-      path: ip-addresses.txt
-      label: IP Address
+  templates:
+    - path: output.md
 presets:
   - folder: presets/standard
-scripts:
-  - command: python3 run.py {input_folder} {debug_folder} {output_folder}
+display:
+  pages:
+    - id: tool
+      design: output

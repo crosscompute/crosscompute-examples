@@ -5,6 +5,7 @@ tools:
   - path: make-qr/automate.yaml
   - path: paint-letters/automate.yaml
   - path: see-ip-address/automate.yaml
+  - path: get-ip-address/automate.yaml
   - path: show-flashcards/automate.yaml
   - path: subscribe-newsletter/automate.yaml
   - path: watch-machine/automate.yaml
