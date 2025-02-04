@@ -24,9 +24,11 @@ output:
     - id: histogram_1d
       view: image
       path: histogram-1d.png
+      label: Histogram 1D
     - id: histogram_2d
       view: image
       path: histogram-2d.png
+      label: Histogram 2D
   templates:
     - path: output.md
 print:
