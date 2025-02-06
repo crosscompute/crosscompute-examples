@@ -1,5 +1,5 @@
 ---
-crosscompute: 0.9.4
+crosscompute: 0.9.5
 name: Randomize Histograms
 version: 0.1.0
 copyright:
@@ -47,7 +47,7 @@ print:
           location: footer
           alignment: right
         name: me{mean}-va{variance}-vc{value_count}-bc{bin_count}.pdf
-    - id: report-uri
+    - id: report_uri
       view: link
       path: report.pdf
       label: Report URI
