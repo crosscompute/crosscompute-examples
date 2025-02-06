@@ -1,7 +1,10 @@
 ---
 crosscompute: 0.9.5
 name: Test Variable Views
-version: 0.3.2
+version: 0.3.3
+copyright:
+  name: CrossCompute Inc.
+  year: 2024
 input:
   variables:
     - id: town
@@ -127,7 +130,7 @@ display:
   styles:
     - path: style.css
   pages:
-    - id: automation
+    - id: tool
       configuration:
         design: input
     - id: output
