@@ -3,8 +3,10 @@ crosscompute: 0.9.5
 name: Add Numbers
 version: 0.1.0
 copyright:
-  name: CrossCompute Inc.
-  year: 2024
+  - name: CrossCompute Inc.
+    slug: crosscompute
+    years:
+      - 2024
 input:
   variables:
     - id: a
