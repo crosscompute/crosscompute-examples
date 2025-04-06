@@ -17,6 +17,9 @@ rows = [
     (datetime(2024, 3, 27), 112211),
     (datetime(2024, 5, 21), 115158),
     (datetime(2024, 10, 5), 120688),
+    (datetime(2024, 10, 11), 121046),
+    (datetime(2024, 11, 30), 123079),
+    (datetime(2025, 1, 29), 126248),
 ]
 xs = [_[0].timestamp() for _ in rows]
 ys = [_[1] for _ in rows]
@@ -28,7 +31,9 @@ ys = [_[1] for _ in rows]
 
 datetimes = [
     datetime(2022, 12, 31),
-    datetime(2023, 12, 31)]
+    datetime(2023, 12, 31),
+    datetime(2024, 12, 31),
+    datetime(2025, 12, 31)]
 ts = [_.timestamp() for _ in datetimes]
 for t in ts:
     print(datetime.fromtimestamp(t), int(interp(t, xs, ys)))
