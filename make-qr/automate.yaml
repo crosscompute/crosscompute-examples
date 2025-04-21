@@ -28,7 +28,7 @@ scripts:
   - path: run.ipynb
 environment:
   packages:
-    - id: qrcode
+    - id: qrcode[pil]
       manager: pip
 display:
   styles:
