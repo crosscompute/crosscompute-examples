@@ -2,7 +2,7 @@
 crosscompute: 0.9.5
 name: Add Numbers
 version: 0.1.0
-copyright:
+copyrights:
   - name: CrossCompute Inc.
     slug: crosscompute
     years:
