@@ -2,9 +2,11 @@
 crosscompute: 0.9.5
 name: Randomize Histograms
 version: 0.1.0
-copyright:
-  name: CrossCompute Inc.
-  year: 2024
+copyrights:
+  - name: CrossCompute Inc.
+    slug: crosscompute
+    years:
+      - 2024
 input:
   variables:
     - id: mean
