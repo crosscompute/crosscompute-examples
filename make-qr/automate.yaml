@@ -3,7 +3,7 @@ crosscompute: 0.9.5
 name: Make QR Code
 slug: make-qr
 description: Turn text into a QR code
-version: 0.1.1.1
+version: 0.1.1.2
 copyrights:
   - name: CrossCompute Inc.
     slug: crosscompute
@@ -35,5 +35,4 @@ display:
     - path: style.css
   pages:
     - id: output
-      configuration:
-        design: none
+      design: none

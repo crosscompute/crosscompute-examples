@@ -40,9 +40,7 @@ environment:
       manager: pip
 display:
   pages:
-    - id: automation
-      configuration:
-        design: none
+    - id: tool
+      design: none
     - id: output
-      configuration:
-        design: none
+      design: none

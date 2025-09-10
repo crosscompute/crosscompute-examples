@@ -131,8 +131,6 @@ display:
     - path: style.css
   pages:
     - id: tool
-      configuration:
-        design: input
+      design: input
     - id: output
-      configuration:
-        design: none
+      design: none

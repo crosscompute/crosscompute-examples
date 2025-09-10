@@ -33,8 +33,6 @@ environment:
 display:
   pages:
     - id: automation
-      configuration:
-        design: output
+      design: output
     - id: output
-      configuration:
-        design: none
+      design: none

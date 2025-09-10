@@ -37,5 +37,4 @@ display:
     - path: style.css
   pages:
     - id: output
-      configuration:
-        design: none
+      design: none

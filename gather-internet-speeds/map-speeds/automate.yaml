@@ -38,5 +38,4 @@ environment:
 display:
   pages:
     - id: automation
-      configuration:
-        design: output
+      design: output

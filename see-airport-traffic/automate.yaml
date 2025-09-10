@@ -60,9 +60,7 @@ display:
   styles:
     - path: style.css
   pages:
-    - id: automation
-      configuration:
-        design: output
+    - id: tool
+      design: output
     - id: output
-      configuration:
-        design: none
+      design: none
