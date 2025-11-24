@@ -71,7 +71,7 @@ presets:
       path: presets-vc-bc.csv
 scripts:
   - path: run.ipynb
-environment:
+execution:
   packages:
     - id: matplotlib
       manager: pip

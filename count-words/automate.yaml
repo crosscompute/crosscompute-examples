@@ -32,7 +32,7 @@ display:
   pages:
     - id: output
       design: none
-environment:
+execution:
   packages:
     - id: pandas
       manager: pip

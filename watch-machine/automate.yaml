@@ -16,7 +16,7 @@ batches:
   - folder: batches/standard
 scripts:
   - function: run.plot_all
-environment:
+execution:
   packages:
     - id: matplotlib
       manager: pip

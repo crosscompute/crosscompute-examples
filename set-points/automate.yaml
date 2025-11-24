@@ -27,7 +27,7 @@ batches:
   - folder: batches/standard
 scripts:
   - path: run.ipynb
-environment:
+execution:
   packages:
     - id: geotable
       manager: pip

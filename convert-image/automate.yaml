@@ -20,7 +20,7 @@ presets:
   - folder: presets/standard
 scripts:
   - command: python3 run.py {input_folder} {output_folder} {debug_folder}
-environment:
+execution:
   packages:
     - id: pillow
       manager: pip

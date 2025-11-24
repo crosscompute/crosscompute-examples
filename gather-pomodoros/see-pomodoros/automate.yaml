@@ -15,7 +15,7 @@ datasets:
       path: ../log-pomodoro/runs
 scripts:
   - path: run.py
-environment:
+execution:
   interval: 1 hour
 display:
   pages:

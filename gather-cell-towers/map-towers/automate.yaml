@@ -28,7 +28,7 @@ datasets:
       folder: ../report-tower/runs
 scripts:
   - path: run.ipynb
-environment:
+execution:
   interval: 1 hour
 display:
   pages:

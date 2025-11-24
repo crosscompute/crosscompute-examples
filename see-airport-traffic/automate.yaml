@@ -45,7 +45,7 @@ batches:
       path: datasets/batches.csv
 scripts:
   - path: run.ipynb
-environment:
+execution:
   packages:
     - id: matplotlib
       manager: pip

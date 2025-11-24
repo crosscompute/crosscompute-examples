@@ -30,7 +30,7 @@ batches:
       path: datasets/batches.csv
 scripts:
   - path: run.ipynb
-environment:
+execution:
   packages:
     - id: invisibleroads-macros-disk
       manager: pip

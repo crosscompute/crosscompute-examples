@@ -29,7 +29,7 @@ datasets:
       folder: ../report-speed/runs
 scripts:
   - path: run.ipynb
-environment:
+execution:
   image: python
   packages:
     - id: numpy
