@@ -1,0 +1,10 @@
+---
+tools:
+  - slug: add-numbers
+    repository:
+      uri: git@github.com:crosscompute/crosscompute-examples
+      version: 0.9.5
+      path: add-numbers/automate.yaml
+    environment:
+    runnability: public
+    visibility: public
