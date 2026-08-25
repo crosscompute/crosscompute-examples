@@ -9,14 +9,14 @@ input:
       view: file
       path: a.pdf
       configuration:
-        mime-types:
-          - application/pdf
+        accept-types:
+          - value: application/pdf
     - id: b
       view: file
       path: b.pdf
       configuration:
-        mime-types:
-          - application/pdf
+        accept-types:
+          - value: application/pdf
 output:
   variables:
     - id: c
