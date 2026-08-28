@@ -12,8 +12,8 @@ output:
       view: image
       path: ram.png
       label: RAM Usage History
-batches:
-  - folder: batches/standard
+presets:
+  - folder: presets/standard
 scripts:
   - function: run.plot_all
 environment:

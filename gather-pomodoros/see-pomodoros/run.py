@@ -23,7 +23,7 @@ def get_pomodoros_by_project_id_by_date_by_username(runs_folder):
 
 
 output_folder = Path(getenv(
-    'CROSSCOMPUTE_OUTPUT_FOLDER', 'batches/standard/output'))
+    'OUTPUT_FOLDER', 'presets/standard/output'))
 runs_folder = Path('datasets/runs')
 summary_lines = []
 for [

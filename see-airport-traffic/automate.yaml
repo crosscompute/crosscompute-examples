@@ -36,13 +36,13 @@ output:
       path: histogram.png
   templates:
     - path: output.md
-batches:
+presets:
   - folder: >-
-      batches/{city_name | slug}-{destination_name | slug}-{travel_mode | slug}
+      presets/{city_name | slug}-{destination_name | slug}-{travel_mode | slug}
     name: '{city_name} - {destination_name} - {travel_mode}'
     slug: '{city_name | slug}-{destination_name | slug}-{travel_mode | slug}'
     configuration:
-      path: datasets/batches.csv
+      path: datasets/presets.csv
 scripts:
   - path: run.ipynb
 environment:

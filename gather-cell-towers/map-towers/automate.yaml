@@ -17,8 +17,8 @@ output:
               circle-radius: 5
   templates:
     - path: output.md
-batches:
-  - folder: batches/standard
+presets:
+  - folder: presets/standard
 datasets:
   - path: datasets/cell-towers.csv
     reference:

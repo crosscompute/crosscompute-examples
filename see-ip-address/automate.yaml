@@ -17,7 +17,7 @@ output:
       view: markdown
       path: ip-addresses.txt
       label: IP Address
-batches:
-  - folder: batches/standard
+presets:
+  - folder: presets/standard
 scripts:
   - command: python3 run.py {input_folder} {debug_folder} {output_folder}

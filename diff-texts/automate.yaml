@@ -21,8 +21,8 @@ output:
       path: diff.txt
   templates:
     - path: output.md
-batches:
-  - folder: batches/standard
+presets:
+  - folder: presets/standard
 scripts:
   - command: bash run.sh
 display:

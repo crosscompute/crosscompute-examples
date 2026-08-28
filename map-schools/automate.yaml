@@ -23,11 +23,11 @@ output:
         style: mapbox://styles/mapbox/dark-v11
   templates:
     - path: output.md
-batches:
+presets:
   - name: '{type | title} Schools {period}'
-    folder: batches/{type}-{period}
+    folder: presets/{type}-{period}
     configuration:
-      path: datasets/batches.csv
+      path: datasets/presets.csv
 scripts:
   - path: run.ipynb
 environment:

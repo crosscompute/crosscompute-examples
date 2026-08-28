@@ -19,9 +19,9 @@ output:
     - path: output.md
 tests:
   - folder: tests/standard
-batches:
+presets:
   - name: '{document_text}'
-    folder: batches/{document_text | slug}
+    folder: presets/{document_text | slug}
     configuration:
       path: datasets/proverbs.txt
 scripts:

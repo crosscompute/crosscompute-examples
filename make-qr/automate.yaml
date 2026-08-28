@@ -16,8 +16,8 @@ output:
     - id: qr
       view: image
       path: qr.png
-batches:
-  - folder: batches/standard
+presets:
+  - folder: presets/standard
 scripts:
   - path: run.ipynb
 display:

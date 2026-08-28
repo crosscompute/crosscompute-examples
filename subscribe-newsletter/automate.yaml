@@ -12,8 +12,8 @@ input:
 output:
   templates:
     - path: output.md
-batches:
-  - folder: batches/standard
+presets:
+  - folder: presets/standard
 display:
   buttons:
     - id: continue

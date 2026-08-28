@@ -44,9 +44,9 @@ output:
             paint:
               fill-color: yellow
         path: geometries.json
-batches:
-  - folder: batches/usa-maine
-  - folder: batches/usa-florida
+presets:
+  - folder: presets/usa-maine
+  - folder: presets/usa-florida
 display:
   styles:
     - path: style.css

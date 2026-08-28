@@ -15,10 +15,10 @@ output:
     - id: c
       view: number
       path: variables.dictionary
-batches:
+presets:
   - name: '{a} + {b}'
-    folder: batches/{a}-{b}
+    folder: presets/{a}-{b}
     configuration:
-      path: batches.csv
+      path: presets.csv
 scripts:
   - command: python3 run.py {input_folder} {output_folder}

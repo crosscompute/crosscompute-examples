@@ -13,8 +13,8 @@ output:
     - id: image_link
       view: link
       path: image.png
-batches:
-  - folder: batches/standard
+presets:
+  - folder: presets/standard
 scripts:
   - command: python3 run.py {input_folder} {output_folder} {debug_folder}
 environment:

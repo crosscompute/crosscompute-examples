@@ -15,8 +15,8 @@ output:
       path: cards.json
   templates:
     - path: output.md
-batches:
-  - folder: batches/standard
+presets:
+  - folder: presets/standard
 scripts:
   - path: run.py
 display:
