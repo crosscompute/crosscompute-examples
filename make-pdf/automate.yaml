@@ -24,8 +24,8 @@ output:
     - id: document-link
       view: link
       path: document.pdf
-batches:
-  - folder: batches/standard
+presets:
+  - folder: presets/standard
 scripts:
   - command: bash run.sh
 display:

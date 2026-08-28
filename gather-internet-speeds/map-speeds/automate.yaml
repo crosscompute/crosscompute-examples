@@ -21,8 +21,8 @@ output:
         weight: d => d[2]
   templates:
     - path: output.md
-batches:
-  - folder: batches/standard
+presets:
+  - folder: presets/standard
 datasets:
   - folder: datasets/runs
     reference:

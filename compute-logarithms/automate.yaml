@@ -26,10 +26,10 @@ output:
 tests:
   - folder: tests/base-e
   - folder: tests/base-10
-batches:
-  - folder: batches/base-2
-  - folder: batches/base-e
-  - folder: batches/base-10
+presets:
+  - folder: presets/base-2
+  - folder: presets/base-e
+  - folder: presets/base-10
 scripts:
   - path: run.ipynb
 display:

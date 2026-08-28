@@ -23,8 +23,8 @@ output:
           - type: circle
             paint:
               circle-color: yellow
-batches:
-  - folder: batches/standard
+presets:
+  - folder: presets/standard
 scripts:
   - path: run.ipynb
 execution:
