@@ -6,7 +6,7 @@ copyrights:
   - name: CrossCompute Inc.
     slug: crosscompute
     years:
-      - 2024
+      - value: 2024
 input:
   variables:
     - id: mean
